@@ -1,0 +1,28 @@
+# Install once with:  pre-commit install
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=5120"]
+      - id: check-yaml
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: end-of-file-fixer
+        exclude: \.ipynb$
+      - id: trailing-whitespace
+        exclude: \.ipynb$
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.4
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+  - repo: local
+    hooks:
+      - id: verify-static
+        name: static repository verification
+        entry: python scripts/verify_repo.py --static
+        language: system
+        pass_filenames: false
+        stages: [pre-push]

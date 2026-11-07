@@ -1,0 +1,43 @@
+# --- large / generated artefacts (never committed) ---
+data/
+weights/
+runs/
+outputs/
+third_party/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+*.plan
+*.rrd
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.ply
+*.npz
+*.pkl
+
+# --- python / tooling ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+
+# --- editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+*.swp

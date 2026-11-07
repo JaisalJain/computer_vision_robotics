@@ -1,0 +1,8 @@
+# Hard pins that protect the CUDA 12.8 / sm_120 (Blackwell) PyTorch build.
+# Use this file with EVERY install:  pip install -c requirements/constraints.txt ...
+# (add --extra-index-url https://download.pytorch.org/whl/cu128 when torch itself may be resolved).
+# A package that cannot be installed under these pins is not installed; an alternative is used instead.
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+numpy>=2.5,<2.6
+opencv-python>=5.0,<5.1

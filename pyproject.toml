@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cvlab"
+version = "0.1.0"
+description = "Shared utilities for the computer-vision-for-robotics portfolio: camera geometry, point clouds, metrics and plotting."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [{ name = "Jaisal Jain" }]
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.13",
+    "matplotlib>=3.9",
+    "pandas>=2.2",
+    "pillow>=10.0",
+    "opencv-python>=4.10",
+    "tqdm>=4.66",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.8", "pre-commit>=4.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-include = ["*.ipynb"]
+extend-exclude = ["data", "weights", "runs", "outputs", "third_party"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "NPY"]
+ignore = ["B905"]
+
+[tool.ruff.lint.per-file-ignores]
+"*.ipynb" = ["E402", "E501", "B018"]
+"src/cvlab/geometry.py" = ["E741"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["cvlab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["gpu: needs a CUDA GPU (skipped automatically without one)"]
+filterwarnings = ["ignore::DeprecationWarning"]

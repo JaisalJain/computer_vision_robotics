@@ -1,0 +1,23 @@
+# Core stack shared by every project (install with the constraints file):
+#   pip install --extra-index-url https://download.pytorch.org/whl/cu128 \
+#       -c requirements/constraints.txt -r requirements/base.txt
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+numpy>=2.5,<2.6
+opencv-python>=5.0,<5.1
+scipy>=1.15
+scikit-learn>=1.6
+matplotlib>=3.10
+pandas>=2.2
+pillow>=11.0
+tqdm>=4.67
+requests>=2.32
+PyYAML>=6.0
+huggingface_hub>=1.0
+jupyterlab>=4.4
+ipykernel>=6.29
+nbconvert>=7.16
+nbformat>=5.10
+ruff>=0.17
+pytest>=9.0
+pre-commit>=4.7

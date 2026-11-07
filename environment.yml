@@ -1,0 +1,14 @@
+# Conda route:  conda env create -f environment.yml && conda activate cv
+# Installs Python 3.12, the CUDA 12.8 PyTorch build (sm_120 / Blackwell ready), the
+# shared core stack and the cvlab package. Project extras: make setup-<project>.
+name: cv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - -c requirements/constraints.txt
+      - -r requirements/base.txt
+      - -e .
