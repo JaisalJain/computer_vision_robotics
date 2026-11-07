@@ -11,6 +11,7 @@ Usage::
     python scripts/verify_repo.py --static              # skip pytest (CI: make verify-static)
     python scripts/verify_repo.py --project 03_object_detection [--include PATH ...]
         # one project + global checks; untracked files outside the project are ignored
+        # (--skip-shared-docs: do not yet require the root README / license / stack entries)
 """
 
 from __future__ import annotations
@@ -112,8 +113,11 @@ def headings(markdown: str) -> list[str]:
 class Scope:
     """Files that the checks look at (tracked + untracked-not-ignored, optionally scoped)."""
 
-    def __init__(self, project: str | None, include: list[str]) -> None:
+    def __init__(
+        self, project: str | None, include: list[str], skip_shared_docs: bool = False
+    ) -> None:
         self.project = project
+        self.skip_shared_docs = skip_shared_docs
         tracked = set(git_lines("ls-files", "-z"))
         untracked = set(git_lines("ls-files", "-z", "-o", "--exclude-standard"))
         if project is None:
@@ -424,12 +428,13 @@ def check_projects(scope: Scope) -> list[str]:
         ]
         if not assets:
             errs.append(f"{proj}: no figures in assets/{proj}/")
-        if f"projects/{proj}" not in root_readme:
-            errs.append(f"{proj}: not linked from the root README project table")
-        if proj not in tpl_text:
-            errs.append(f"{proj}: no entry in THIRD_PARTY_LICENSES.md")
-        if proj not in stack_text:
-            errs.append(f"{proj}: no entry in docs/stack.md")
+        if not scope.skip_shared_docs:
+            if f"projects/{proj}" not in root_readme:
+                errs.append(f"{proj}: not linked from the root README project table")
+            if proj not in tpl_text:
+                errs.append(f"{proj}: no entry in THIRD_PARTY_LICENSES.md")
+            if proj not in stack_text:
+                errs.append(f"{proj}: no entry in docs/stack.md")
     return errs
 
 
@@ -494,12 +499,17 @@ def main() -> int:
     ap.add_argument("--static", action="store_true", help="skip pytest (used in CI)")
     ap.add_argument("--project", help="restrict project-level checks to projects/<PROJECT>")
     ap.add_argument("--include", nargs="*", default=[], help="extra untracked paths in scope")
+    ap.add_argument(
+        "--skip-shared-docs",
+        action="store_true",
+        help="do not require root README / THIRD_PARTY_LICENSES / stack entries (pre-commit use)",
+    )
     args = ap.parse_args()
     if args.project and not (ROOT / "projects" / args.project).is_dir():
         print(f"unknown project: {args.project}")
         return 2
 
-    scope = Scope(args.project, args.include)
+    scope = Scope(args.project, args.include, args.skip_shared_docs)
     checks: list[tuple[str, Callable[[Scope], list[str]]]] = [
         ("required files", check_required_files),
         (".gitignore", check_gitignore),

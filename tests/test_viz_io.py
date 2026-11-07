@@ -73,3 +73,15 @@ def test_plots_and_savefig(tmp_path, monkeypatch, rng):
     plt.close("all")
     gif = viz.save_gif([np.zeros((50, 50, 3), np.uint8)] * 4, tmp_path / "a.gif")
     assert gif.stat().st_size > 0
+
+
+def test_add_third_party_missing(monkeypatch, tmp_path):
+    monkeypatch.setenv("CVLAB_ROOT", str(tmp_path))
+    with pytest.raises(FileNotFoundError, match="setup_third_party"):
+        cio.add_third_party("does-not-exist")
+    (tmp_path / "third_party" / "pkg" / "src").mkdir(parents=True)
+    path = cio.add_third_party("pkg", "src")
+    import sys
+
+    assert str(path) in sys.path
+    sys.path.remove(str(path))

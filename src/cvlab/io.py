@@ -75,6 +75,28 @@ def project_dir(project: str) -> Path:
     return _sub("projects", project)
 
 
+def third_party_dir(*parts: str) -> Path:
+    """``<repo>/third_party/...`` (pinned clones from ``scripts/setup_third_party.sh``)."""
+    return _sub("third_party", *parts)
+
+
+def add_third_party(name: str, subdir: str = "") -> Path:
+    """Make a pinned third-party checkout importable (prepends it to ``sys.path``).
+
+    Example: ``add_third_party("depth-anything-3", "src")`` then ``import depth_anything_3``.
+    """
+    import sys
+
+    path = third_party_dir(name, subdir) if subdir else third_party_dir(name)
+    if not path.is_dir():
+        raise FileNotFoundError(
+            f"{path} not found - run `bash scripts/setup_third_party.sh {name}` first"
+        )
+    if str(path) not in sys.path:
+        sys.path.insert(0, str(path))
+    return path
+
+
 def read_image(path: str | Path, rgb: bool = True, max_side: int | None = None) -> np.ndarray:
     """Read an image as ``uint8`` HxWx3 (RGB by default, BGR if ``rgb=False``).
 

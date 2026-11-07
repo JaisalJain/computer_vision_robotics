@@ -11,8 +11,8 @@ Every notebook is a tutorial: an explanation precedes each code cell, every code
 
 ## Projects
 
-| # | Project | Topic | Key models / tools |
-|---|---|---|---|
+| # | Project | Preview | What you'll build | Key models / tools |
+|---|---|---|---|---|
 
 *Projects are added as they are completed.*
 
