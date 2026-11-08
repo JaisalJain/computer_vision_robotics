@@ -1,0 +1,13 @@
+# Project 04_open_vocab_detection - extras on top of requirements/base.txt.
+# Install: make setup-04_open_vocab_detection
+#   (= pip install --extra-index-url https://download.pytorch.org/whl/cu128 \
+#        -c requirements/constraints.txt -r requirements/04_open_vocab_detection.txt)
+# Ultralytics (YOLO26 / YOLOE-26) is AGPL-3.0.
+ultralytics==8.4.204
+# Tokenizer used by YOLOE set_classes(); installed up front (pinned commit) so that Ultralytics
+# never pip-installs it at runtime without our constraints. Not the unrelated PyPI package "clip".
+clip @ git+https://github.com/ultralytics/CLIP.git@7ffa84b3bfa40c42ecc1c77147a855e69cb2dd40
+# Grounding DINO, LLMDet, OWLv2, OmDet-Turbo and SAM 3 (Hugging Face transformers v5 API).
+transformers==5.22.2
+# COCO-style AP evaluation.
+pycocotools==2.0.11

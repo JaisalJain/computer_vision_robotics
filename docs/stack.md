@@ -68,6 +68,23 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 | RF-DETR Nano / Small COCO weights | rfdetr 1.12.0 checkpoints (md5 fb6504cc..., fb37061c...) | make data-03_object_detection -> weights/rfdetr/ (set RF_HOME there). Source: https://raw.githubusercontent.com/roboflow/rf-detr/develop/src/rfdetr/assets/model_weights.py |
 | african-wildlife / medical-pills / coco8 datasets | Ultralytics assets v0.0.0 | make data-03_object_detection -> data/ultralytics/<name>/. Source: https://github.com/ultralytics/assets/releases/tag/v0.0.0 |
 
+## 04_open_vocab_detection (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| ultralytics | 8.4.204 | make setup-04_open_vocab_detection (pip -c requirements/constraints.txt). Source: https://pypi.org/project/ultralytics/ (checked 2026-11-08) |
+| clip (ultralytics/CLIP fork) | git 7ffa84b3bfa40c42ecc1c77147a855e69cb2dd40 | pip install -c requirements/constraints.txt 'clip @ git+https://github.com/ultralytics/CLIP.git@7ffa84b3bfa40c42ecc1c77147a855e69cb2dd40'. Source: https://github.com/ultralytics/CLIP (checked 2026-11-08) |
+| transformers | 5.22.2 | pip -c requirements/constraints.txt (in requirements/04_open_vocab_detection.txt). Source: https://pypi.org/project/transformers/ (checked 2026-11-08) |
+| pycocotools | 2.0.11 | pip -c requirements/constraints.txt (in requirements/04_open_vocab_detection.txt). Source: https://pypi.org/project/pycocotools/ (checked 2026-11-08) |
+| YOLO26-s (closed-set COCO) | yolo26s.pt, assets v8.4.0 | make data-04_open_vocab_detection -> weights/ultralytics/. Source: https://github.com/ultralytics/assets/releases/tag/v8.4.0 |
+| YOLOE-26-s-seg + MobileCLIP2-B text encoder | yoloe-26s-seg.pt + mobileclip2_b.ts, assets v8.4.0 | make data-04_open_vocab_detection -> weights/ultralytics/. Source: https://docs.ultralytics.com/models/yoloe/ |
+| Grounding DINO-T | IDEA-Research/grounding-dino-tiny @a2bb814dd30d776dcf7e30523b00659f4f141c71 | make data-04_open_vocab_detection (HF cache, safetensors). Source: https://huggingface.co/IDEA-Research/grounding-dino-tiny |
+| LLMDet-T | iSEE-Laboratory/llmdet_tiny @d05199165a19320a9236396e20fca0a5e065189c | make data-04_open_vocab_detection (HF cache). Source: https://huggingface.co/iSEE-Laboratory/llmdet_tiny |
+| OWLv2-B/16 ensemble | google/owlv2-base-patch16-ensemble @cfd3195ba4ea9592eec887ded089f4c08eff231d | make data-04_open_vocab_detection (HF cache). Source: https://huggingface.co/google/owlv2-base-patch16-ensemble |
+| OmDet-Turbo-T | omlab/omdet-turbo-swin-tiny-hf @7fe93cecfb770c4d76cf71163956221249cab566 | make data-04_open_vocab_detection (HF cache). Source: https://huggingface.co/omlab/omdet-turbo-swin-tiny-hf |
+| SAM 3 (gated) | facebook/sam3 @3c879f39826c281e95690f02c7821c4de09afae7 (bf16, ~3.3 GB) | hf auth login + make data-04_open_vocab_detection (HF cache). Source: https://huggingface.co/facebook/sam3 |
+| MM-Grounding-DINO-T (solutions) | openmmlab-community/mm_grounding_dino_tiny_o365v1_goldg_v3det @ef2053a | make data-04_open_vocab_detection (HF cache). Source: https://huggingface.co/openmmlab-community/mm_grounding_dino_tiny_o365v1_goldg_v3det |
+
 ## 05_segmentation (checked 2026-11-08)
 
 | Package / model | Version | Install / source |

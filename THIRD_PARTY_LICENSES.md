@@ -68,6 +68,27 @@ The MIT license of this repository covers only its own code. Every model, datase
 | coco8 (Ultralytics) | dataset | **COCO annotations CC BY 4.0; images under their Flickr licenses; Ultralytics packaging AGPL-3.0** | https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8.zip | Mixed license. |
 | TUM RGB-D fr1_desk | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | Shared dataset; attribution: Sturm et al., IROS 2012. |
 
+## 04_open_vocab_detection
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| ultralytics package (YOLO26 / YOLOE-26 code) | library | **AGPL-3.0** | https://pypi.org/project/ultralytics/8.4.204/ | Copyleft; closed-source commercial use needs an Ultralytics Enterprise license |
+| YOLO26-s weights (yolo26s.pt) | model | **AGPL-3.0** | https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26s.pt | Copyleft |
+| YOLOE-26-s-seg weights (yoloe-26s-seg.pt) | model | **AGPL-3.0** | https://github.com/ultralytics/assets/releases/download/v8.4.0/yoloe-26s-seg.pt | Copyleft |
+| mobileclip2_b.ts (YOLOE-26 text encoder, from Apple MobileCLIP2-B) | model | **Apple AMLR (apple-amlr on the HF model card)** | https://github.com/ultralytics/assets/releases/download/v8.4.0/mobileclip2_b.ts | Research-only terms, so NON-COMMERCIAL; Ultralytics redistribution terms also apply |
+| clip (Ultralytics fork of OpenAI CLIP, YOLOE tokenizer) @7ffa84b | library | **MIT (OpenAI CLIP); the fork's pyproject header mentions AGPL-3.0** | https://github.com/ultralytics/CLIP | License is unclear: MIT code inside an Ultralytics fork whose header says AGPL; treat as AGPL to be safe |
+| Grounding DINO-T (IDEA-Research/grounding-dino-tiny @a2bb814) | model | Apache-2.0 | https://huggingface.co/IDEA-Research/grounding-dino-tiny |  |
+| LLMDet-T (iSEE-Laboratory/llmdet_tiny @d051991) | model | Apache-2.0 | https://huggingface.co/iSEE-Laboratory/llmdet_tiny |  |
+| MM-Grounding-DINO-T (openmmlab-community/mm_grounding_dino_tiny_o365v1_goldg_v3det @ef2053a, solutions only) | model | Apache-2.0 | https://huggingface.co/openmmlab-community/mm_grounding_dino_tiny_o365v1_goldg_v3det |  |
+| OWLv2-B/16 (google/owlv2-base-patch16-ensemble @cfd3195) | model | Apache-2.0 | https://huggingface.co/google/owlv2-base-patch16-ensemble |  |
+| OmDet-Turbo-T (omlab/omdet-turbo-swin-tiny-hf @7fe93ce) | model | Apache-2.0 | https://huggingface.co/omlab/omdet-turbo-swin-tiny-hf |  |
+| SAM 3 (facebook/sam3 @3c879f3) | model | **SAM License (Meta, custom)** | https://huggingface.co/facebook/sam3 | Gated on HF; custom non-OSI license (royalty-free use and redistribution under Meta's terms; trade-control restrictions) |
+| transformers 5.22.2 | library | Apache-2.0 | https://pypi.org/project/transformers/5.22.2/ |  |
+| pycocotools 2.0.11 | library | BSD-2-Clause (FreeBSD) | https://pypi.org/project/pycocotools/2.0.11/ |  |
+| COCO val2017 (200-image fixed-seed subset + instances_val2017 annotations) | dataset | Annotations CC BY 4.0; images under Flickr terms of use | https://cocodataset.org/#download | Images fetched one by one from images.cocodataset.org |
+| Ultralytics african-wildlife | dataset | **AGPL-3.0 (Ultralytics release)** | https://github.com/ultralytics/assets/releases/download/v0.0.0/african-wildlife.zip | Copyleft packaging; original image sources not documented (unclear provenance) |
+| TUM RGB-D freiburg1_desk | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset |  |
+
 ## 05_segmentation
 
 | Component | Kind | License | Source | Notes |

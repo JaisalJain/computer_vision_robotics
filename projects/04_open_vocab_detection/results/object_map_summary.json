@@ -1,0 +1,35 @@
+[
+  {
+    "model": "YOLOE-26-s",
+    "threshold": 0.3,
+    "ms / frame": 8.7,
+    "detections (with depth)": 325,
+    "map objects": 17,
+    "classes mapped (of 7)": 5,
+    "mean recall": 0.415,
+    "median spread [cm]": 1.7,
+    "spurious [%]": 14.8
+  },
+  {
+    "model": "LLMDet-T",
+    "threshold": 0.35,
+    "ms / frame": 181.6,
+    "detections (with depth)": 980,
+    "map objects": 34,
+    "classes mapped (of 7)": 7,
+    "mean recall": 0.634,
+    "median spread [cm]": 2.5,
+    "spurious [%]": 10.5
+  },
+  {
+    "model": "SAM 3",
+    "threshold": 0.7,
+    "ms / frame": 520.6,
+    "detections (with depth)": 558,
+    "map objects": 16,
+    "classes mapped (of 7)": 7,
+    "mean recall": 0.543,
+    "median spread [cm]": 3.7,
+    "spurious [%]": 3.9
+  }
+]

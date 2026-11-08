@@ -1,0 +1,404 @@
+{
+  "yoloe26s": {
+    "label": "YOLOE-26-s",
+    "plain": {
+      "prompts": [
+        "buffalo",
+        "elephant",
+        "rhino",
+        "zebra"
+      ],
+      "AP": 0.39907426807848406,
+      "AP50": 0.4961721231579236,
+      "per_class_AP": {
+        "buffalo": 0.2712925991028521,
+        "elephant": 0.499141455863239,
+        "rhino": 0.05696919075661067,
+        "zebra": 0.7688938265912344
+      }
+    },
+    "specific": {
+      "prompts": [
+        "african buffalo",
+        "african elephant",
+        "rhinoceros",
+        "plains zebra"
+      ],
+      "AP": 0.5024036201076111,
+      "AP50": 0.6087298570042037,
+      "per_class_AP": {
+        "buffalo": 0.5343615423801124,
+        "elephant": 0.6169896196685959,
+        "rhino": 0.09188768876887689,
+        "zebra": 0.7663756296128595
+      }
+    },
+    "photo_template": {
+      "prompts": [
+        "a photo of a buffalo",
+        "a photo of an elephant",
+        "a photo of a rhino",
+        "a photo of a zebra"
+      ],
+      "AP": 0.487209770623413,
+      "AP50": 0.5941548449998,
+      "per_class_AP": {
+        "buffalo": 0.5353044072019925,
+        "elephant": 0.5779866484818346,
+        "rhino": 0.07354185418541855,
+        "zebra": 0.7620061726244065
+      }
+    },
+    "plural": {
+      "prompts": [
+        "buffaloes",
+        "elephants",
+        "rhinos",
+        "zebras"
+      ],
+      "AP": 0.48636021645485017,
+      "AP50": 0.5979641979258679,
+      "per_class_AP": {
+        "buffalo": 0.5058427680407046,
+        "elephant": 0.6153214408836392,
+        "rhino": 0.06301883500428805,
+        "zebra": 0.7612578218907686
+      }
+    }
+  },
+  "gdino_t": {
+    "label": "Grounding DINO-T",
+    "plain": {
+      "prompts": [
+        "buffalo",
+        "elephant",
+        "rhino",
+        "zebra"
+      ],
+      "AP": 0.5915463029790409,
+      "AP50": 0.656050291656497,
+      "per_class_AP": {
+        "buffalo": 0.4199927057506601,
+        "elephant": 0.7317111197576679,
+        "rhino": 0.3749006555673401,
+        "zebra": 0.8395807308404958
+      }
+    },
+    "specific": {
+      "prompts": [
+        "african buffalo",
+        "african elephant",
+        "rhinoceros",
+        "plains zebra"
+      ],
+      "AP": 0.19164887846534745,
+      "AP50": 0.2258487507236161,
+      "per_class_AP": {
+        "buffalo": 0.16304258193124047,
+        "elephant": 0.39534847924574834,
+        "rhino": 0.17070234967310247,
+        "zebra": 0.037502103011298416
+      }
+    },
+    "photo_template": {
+      "prompts": [
+        "a photo of a buffalo",
+        "a photo of an elephant",
+        "a photo of a rhino",
+        "a photo of a zebra"
+      ],
+      "AP": 0.2898344786075874,
+      "AP50": 0.36072535506449155,
+      "per_class_AP": {
+        "buffalo": 0.17738429471475417,
+        "elephant": 0.3042748087694159,
+        "rhino": 0.21595633374817055,
+        "zebra": 0.4617224771980089
+      }
+    },
+    "plural": {
+      "prompts": [
+        "buffaloes",
+        "elephants",
+        "rhinos",
+        "zebras"
+      ],
+      "AP": 0.48717712474231367,
+      "AP50": 0.5561266375627317,
+      "per_class_AP": {
+        "buffalo": 0.2490030701966275,
+        "elephant": 0.542411179416853,
+        "rhino": 0.4066869836210256,
+        "zebra": 0.7506072657347488
+      }
+    }
+  },
+  "llmdet_t": {
+    "label": "LLMDet-T",
+    "plain": {
+      "prompts": [
+        "buffalo",
+        "elephant",
+        "rhino",
+        "zebra"
+      ],
+      "AP": 0.6871301346610111,
+      "AP50": 0.7707450693197859,
+      "per_class_AP": {
+        "buffalo": 0.7913356327072697,
+        "elephant": 0.7855112637100934,
+        "rhino": 0.3433513564466708,
+        "zebra": 0.8283222857800108
+      }
+    },
+    "specific": {
+      "prompts": [
+        "african buffalo",
+        "african elephant",
+        "rhinoceros",
+        "plains zebra"
+      ],
+      "AP": 0.8031068852187571,
+      "AP50": 0.8951605663771023,
+      "per_class_AP": {
+        "buffalo": 0.79550691897134,
+        "elephant": 0.8237663906406386,
+        "rhino": 0.7579697419296574,
+        "zebra": 0.8351844893333921
+      }
+    },
+    "photo_template": {
+      "prompts": [
+        "a photo of a buffalo",
+        "a photo of an elephant",
+        "a photo of a rhino",
+        "a photo of a zebra"
+      ],
+      "AP": 0.20188711901722817,
+      "AP50": 0.24854446398472765,
+      "per_class_AP": {
+        "buffalo": 0.27806135710226865,
+        "elephant": 0.06310101511573281,
+        "rhino": 0.19861945220201102,
+        "zebra": 0.2677666516489001
+      }
+    },
+    "plural": {
+      "prompts": [
+        "buffaloes",
+        "elephants",
+        "rhinos",
+        "zebras"
+      ],
+      "AP": 0.7106431783911344,
+      "AP50": 0.795424242628218,
+      "per_class_AP": {
+        "buffalo": 0.7821463371694052,
+        "elephant": 0.763076927560681,
+        "rhino": 0.46419211997723925,
+        "zebra": 0.8331573288572117
+      }
+    }
+  },
+  "owlv2_b": {
+    "label": "OWLv2-B/16",
+    "plain": {
+      "prompts": [
+        "buffalo",
+        "elephant",
+        "rhino",
+        "zebra"
+      ],
+      "AP": 0.7750612398142,
+      "AP50": 0.8928583700046687,
+      "per_class_AP": {
+        "buffalo": 0.7301800861145821,
+        "elephant": 0.7792545627394871,
+        "rhino": 0.8157874852479678,
+        "zebra": 0.7750228251547634
+      }
+    },
+    "specific": {
+      "prompts": [
+        "african buffalo",
+        "african elephant",
+        "rhinoceros",
+        "plains zebra"
+      ],
+      "AP": 0.7438726994718627,
+      "AP50": 0.8566086127373645,
+      "per_class_AP": {
+        "buffalo": 0.6400051599745031,
+        "elephant": 0.7301907424259267,
+        "rhino": 0.8346422562375052,
+        "zebra": 0.7706526392495159
+      }
+    },
+    "photo_template": {
+      "prompts": [
+        "a photo of a buffalo",
+        "a photo of an elephant",
+        "a photo of a rhino",
+        "a photo of a zebra"
+      ],
+      "AP": 0.7552545544497941,
+      "AP50": 0.867666670474179,
+      "per_class_AP": {
+        "buffalo": 0.7246246386936813,
+        "elephant": 0.7332439078668102,
+        "rhino": 0.7931020625149502,
+        "zebra": 0.7700476087237343
+      }
+    },
+    "plural": {
+      "prompts": [
+        "buffaloes",
+        "elephants",
+        "rhinos",
+        "zebras"
+      ],
+      "AP": 0.7729655065348666,
+      "AP50": 0.8988356232152204,
+      "per_class_AP": {
+        "buffalo": 0.7061991308810498,
+        "elephant": 0.7830937312146048,
+        "rhino": 0.843039268643425,
+        "zebra": 0.7595298954003868
+      }
+    }
+  },
+  "omdet_t": {
+    "label": "OmDet-Turbo-T",
+    "plain": {
+      "prompts": [
+        "buffalo",
+        "elephant",
+        "rhino",
+        "zebra"
+      ],
+      "AP": 0.5703399949225851,
+      "AP50": 0.6495004469605126,
+      "per_class_AP": {
+        "buffalo": 0.46969952618652844,
+        "elephant": 0.5373968856708325,
+        "rhino": 0.5147277411687736,
+        "zebra": 0.7595358266642056
+      }
+    },
+    "specific": {
+      "prompts": [
+        "african buffalo",
+        "african elephant",
+        "rhinoceros",
+        "plains zebra"
+      ],
+      "AP": 0.6406431655719641,
+      "AP50": 0.739280399466249,
+      "per_class_AP": {
+        "buffalo": 0.47476855778456334,
+        "elephant": 0.6984875330088726,
+        "rhino": 0.6519850596538534,
+        "zebra": 0.7373315118405666
+      }
+    },
+    "photo_template": {
+      "prompts": [
+        "a photo of a buffalo",
+        "a photo of an elephant",
+        "a photo of a rhino",
+        "a photo of a zebra"
+      ],
+      "AP": 0.592092731314564,
+      "AP50": 0.6857391607666882,
+      "per_class_AP": {
+        "buffalo": 0.47490133590139694,
+        "elephant": 0.5594847564235408,
+        "rhino": 0.5869944539092287,
+        "zebra": 0.7469903790240893
+      }
+    },
+    "plural": {
+      "prompts": [
+        "buffaloes",
+        "elephants",
+        "rhinos",
+        "zebras"
+      ],
+      "AP": 0.5245792687231199,
+      "AP50": 0.6031636551119482,
+      "per_class_AP": {
+        "buffalo": 0.4960295660737903,
+        "elephant": 0.4912487528412748,
+        "rhino": 0.377481222253324,
+        "zebra": 0.73355753372409
+      }
+    }
+  },
+  "sam3": {
+    "label": "SAM 3",
+    "plain": {
+      "prompts": [
+        "buffalo",
+        "elephant",
+        "rhino",
+        "zebra"
+      ],
+      "AP": 0.8490432763165815,
+      "AP50": 0.9753271279787011,
+      "per_class_AP": {
+        "buffalo": 0.8101067683431928,
+        "elephant": 0.8690236567068848,
+        "rhino": 0.8834289363878878,
+        "zebra": 0.8336137438283605
+      }
+    },
+    "specific": {
+      "prompts": [
+        "african buffalo",
+        "african elephant",
+        "rhinoceros",
+        "plains zebra"
+      ],
+      "AP": 0.8339267807330789,
+      "AP50": 0.9584730700552193,
+      "per_class_AP": {
+        "buffalo": 0.742158015605658,
+        "elephant": 0.8756707788669902,
+        "rhino": 0.8928077771236815,
+        "zebra": 0.8250705513359861
+      }
+    },
+    "photo_template": {
+      "prompts": [
+        "a photo of a buffalo",
+        "a photo of an elephant",
+        "a photo of a rhino",
+        "a photo of a zebra"
+      ],
+      "AP": 0.8044112607332882,
+      "AP50": 0.9393443600487659,
+      "per_class_AP": {
+        "buffalo": 0.6980958874117138,
+        "elephant": 0.8538573508290362,
+        "rhino": 0.8641608589615298,
+        "zebra": 0.8015309457308727
+      }
+    },
+    "plural": {
+      "prompts": [
+        "buffaloes",
+        "elephants",
+        "rhinos",
+        "zebras"
+      ],
+      "AP": 0.583708264426044,
+      "AP50": 0.6885899952866023,
+      "per_class_AP": {
+        "buffalo": 0.24374635210773826,
+        "elephant": 0.8643354436109759,
+        "rhino": 0.41635289202101977,
+        "zebra": 0.8103983699644419
+      }
+    }
+  }
+}

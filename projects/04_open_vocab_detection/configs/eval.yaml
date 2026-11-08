@@ -1,0 +1,37 @@
+# Evaluation settings for scripts/eval_detectors.py (project 04).
+# Every number in the README/notebooks comes from a run with these settings on an
+# RTX 5060 Laptop GPU (8 GB).
+
+models: [yolo26s, yoloe26s, gdino_t, llmdet_t, owlv2_b, omdet_t, sam3]
+
+precision:            # weights/activations dtype per model (Ultralytics: half=True)
+  default: float16
+  sam3: bfloat16
+
+eval:
+  min_score: 0.01     # keep low-score detections so the PR curve reaches high recall
+  max_det: 100        # COCO AP uses the top-100 detections per image
+  f1_iou: 0.5         # IoU for the operating-point (F1 vs threshold) analysis
+
+latency:
+  warmup: 3
+  iters: 20
+
+datasets:
+  coco:
+    annotations: data/coco/annotations/instances_val2017_ovd200.json
+    images: data/coco/val2017
+  wildlife:
+    images: data/ultralytics/african-wildlife/images/val
+    labels: data/ultralytics/african-wildlife/labels/val
+    names: [buffalo, elephant, rhino, zebra]
+    novel: [buffalo, rhino]   # not among the 80 COCO classes
+
+# Prompt-wording study on african-wildlife (names in the same order as `names`).
+prompt_study:
+  models: [yoloe26s, gdino_t, llmdet_t, owlv2_b, omdet_t, sam3]
+  variants:
+    plain: [buffalo, elephant, rhino, zebra]
+    specific: [african buffalo, african elephant, rhinoceros, plains zebra]
+    photo_template: [a photo of a buffalo, a photo of an elephant, a photo of a rhino, a photo of a zebra]
+    plural: [buffaloes, elephants, rhinos, zebras]
