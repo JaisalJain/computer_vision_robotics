@@ -1,0 +1,506 @@
+{
+  "noise": [
+    {
+      "sigma_px": 0.1,
+      "method": "8-pt raw pixels",
+      "rot_err_deg": 0.09619304685656332,
+      "t_err_deg": 0.18396737769968258
+    },
+    {
+      "sigma_px": 0.1,
+      "method": "8-pt normalised",
+      "rot_err_deg": 0.06495570101570888,
+      "t_err_deg": 0.12916490296757133
+    },
+    {
+      "sigma_px": 0.1,
+      "method": "OpenCV FM_8POINT",
+      "rot_err_deg": 0.06495461973240974,
+      "t_err_deg": 0.12917028133492442
+    },
+    {
+      "sigma_px": 0.1,
+      "method": "8-pt + RANSAC",
+      "rot_err_deg": 0.5112168408606106,
+      "t_err_deg": 1.1984262185604462
+    },
+    {
+      "sigma_px": 0.1,
+      "method": "5-pt + RANSAC",
+      "rot_err_deg": 0.5581865399017454,
+      "t_err_deg": 0.6018145265313115
+    },
+    {
+      "sigma_px": 0.1,
+      "method": "5-pt + MAGSAC++",
+      "rot_err_deg": 0.05747805933193343,
+      "t_err_deg": 0.05552906725124052
+    },
+    {
+      "sigma_px": 0.5,
+      "method": "8-pt raw pixels",
+      "rot_err_deg": 1.4528119292447723,
+      "t_err_deg": 2.481793621499115
+    },
+    {
+      "sigma_px": 0.5,
+      "method": "8-pt normalised",
+      "rot_err_deg": 0.327151411990239,
+      "t_err_deg": 0.6574155257530676
+    },
+    {
+      "sigma_px": 0.5,
+      "method": "OpenCV FM_8POINT",
+      "rot_err_deg": 0.32715190979468134,
+      "t_err_deg": 0.6574100683148487
+    },
+    {
+      "sigma_px": 0.5,
+      "method": "8-pt + RANSAC",
+      "rot_err_deg": 1.5055961594569676,
+      "t_err_deg": 1.8987913565814014
+    },
+    {
+      "sigma_px": 0.5,
+      "method": "5-pt + RANSAC",
+      "rot_err_deg": 1.2204468536985347,
+      "t_err_deg": 1.2263263533679294
+    },
+    {
+      "sigma_px": 0.5,
+      "method": "5-pt + MAGSAC++",
+      "rot_err_deg": 0.24147172884413357,
+      "t_err_deg": 0.2593264559151932
+    },
+    {
+      "sigma_px": 1.0,
+      "method": "8-pt raw pixels",
+      "rot_err_deg": 5.563445084267283,
+      "t_err_deg": 9.221165679513394
+    },
+    {
+      "sigma_px": 1.0,
+      "method": "8-pt normalised",
+      "rot_err_deg": 0.6641052103235909,
+      "t_err_deg": 1.3435796040232444
+    },
+    {
+      "sigma_px": 1.0,
+      "method": "OpenCV FM_8POINT",
+      "rot_err_deg": 0.6641057601898984,
+      "t_err_deg": 1.3435800479789042
+    },
+    {
+      "sigma_px": 1.0,
+      "method": "8-pt + RANSAC",
+      "rot_err_deg": 2.909360259279973,
+      "t_err_deg": 4.8992253830377575
+    },
+    {
+      "sigma_px": 1.0,
+      "method": "5-pt + RANSAC",
+      "rot_err_deg": 2.5599591037889358,
+      "t_err_deg": 2.45817895686657
+    },
+    {
+      "sigma_px": 1.0,
+      "method": "5-pt + MAGSAC++",
+      "rot_err_deg": 0.6732368895036215,
+      "t_err_deg": 0.7717310803573467
+    },
+    {
+      "sigma_px": 2.0,
+      "method": "8-pt raw pixels",
+      "rot_err_deg": 18.087911525417645,
+      "t_err_deg": 33.690041959537666
+    },
+    {
+      "sigma_px": 2.0,
+      "method": "8-pt normalised",
+      "rot_err_deg": 1.3630328855047027,
+      "t_err_deg": 2.7482142430751066
+    },
+    {
+      "sigma_px": 2.0,
+      "method": "OpenCV FM_8POINT",
+      "rot_err_deg": 1.3630303060712379,
+      "t_err_deg": 2.748229837654347
+    },
+    {
+      "sigma_px": 2.0,
+      "method": "8-pt + RANSAC",
+      "rot_err_deg": 5.350007252565506,
+      "t_err_deg": 11.14778914254382
+    },
+    {
+      "sigma_px": 2.0,
+      "method": "5-pt + RANSAC",
+      "rot_err_deg": 5.188008985632296,
+      "t_err_deg": 5.140349028255277
+    },
+    {
+      "sigma_px": 2.0,
+      "method": "5-pt + MAGSAC++",
+      "rot_err_deg": 2.3660018703767434,
+      "t_err_deg": 2.680397328610316
+    },
+    {
+      "sigma_px": 4.0,
+      "method": "8-pt raw pixels",
+      "rot_err_deg": 32.07959994111489,
+      "t_err_deg": 74.40818592582951
+    },
+    {
+      "sigma_px": 4.0,
+      "method": "8-pt normalised",
+      "rot_err_deg": 2.6876700555769943,
+      "t_err_deg": 5.290236477596467
+    },
+    {
+      "sigma_px": 4.0,
+      "method": "OpenCV FM_8POINT",
+      "rot_err_deg": 2.687669338591987,
+      "t_err_deg": 5.290243614674592
+    },
+    {
+      "sigma_px": 4.0,
+      "method": "8-pt + RANSAC",
+      "rot_err_deg": 11.380500549329668,
+      "t_err_deg": 18.01303899781024
+    },
+    {
+      "sigma_px": 4.0,
+      "method": "5-pt + RANSAC",
+      "rot_err_deg": 9.878103607616985,
+      "t_err_deg": 9.544528717818173
+    },
+    {
+      "sigma_px": 4.0,
+      "method": "5-pt + MAGSAC++",
+      "rot_err_deg": 9.724068812298327,
+      "t_err_deg": 10.48762078874304
+    }
+  ],
+  "outliers": [
+    {
+      "outlier_frac": 0.0,
+      "method": "8-pt normalised",
+      "rot_err_deg": 0.327151411990239,
+      "t_err_deg": 0.6574155257530676
+    },
+    {
+      "outlier_frac": 0.0,
+      "method": "8-pt + RANSAC",
+      "rot_err_deg": 1.5055961594569676,
+      "t_err_deg": 1.8987913565814014
+    },
+    {
+      "outlier_frac": 0.0,
+      "method": "5-pt + RANSAC",
+      "rot_err_deg": 1.2204468536985347,
+      "t_err_deg": 1.2263263533679294
+    },
+    {
+      "outlier_frac": 0.0,
+      "method": "5-pt + MAGSAC++",
+      "rot_err_deg": 0.24147172884413357,
+      "t_err_deg": 0.2593264559151932
+    },
+    {
+      "outlier_frac": 0.1,
+      "method": "8-pt normalised",
+      "rot_err_deg": 25.210307619196527,
+      "t_err_deg": 70.6999874132176
+    },
+    {
+      "outlier_frac": 0.1,
+      "method": "8-pt + RANSAC",
+      "rot_err_deg": 1.4164261472698723,
+      "t_err_deg": 2.6498614683906063
+    },
+    {
+      "outlier_frac": 0.1,
+      "method": "5-pt + RANSAC",
+      "rot_err_deg": 1.1482835194197183,
+      "t_err_deg": 1.3633516742836749
+    },
+    {
+      "outlier_frac": 0.1,
+      "method": "5-pt + MAGSAC++",
+      "rot_err_deg": 0.26827999767595534,
+      "t_err_deg": 0.26884513566845514
+    },
+    {
+      "outlier_frac": 0.25,
+      "method": "8-pt normalised",
+      "rot_err_deg": 37.32252215542981,
+      "t_err_deg": 69.55941646027696
+    },
+    {
+      "outlier_frac": 0.25,
+      "method": "8-pt + RANSAC",
+      "rot_err_deg": 1.7280252652657007,
+      "t_err_deg": 3.6025498629388366
+    },
+    {
+      "outlier_frac": 0.25,
+      "method": "5-pt + RANSAC",
+      "rot_err_deg": 1.3548620523634187,
+      "t_err_deg": 1.6539742997404567
+    },
+    {
+      "outlier_frac": 0.25,
+      "method": "5-pt + MAGSAC++",
+      "rot_err_deg": 0.29026480371220253,
+      "t_err_deg": 0.3299338027715617
+    },
+    {
+      "outlier_frac": 0.4,
+      "method": "8-pt normalised",
+      "rot_err_deg": 52.81240389517463,
+      "t_err_deg": 80.15107810660129
+    },
+    {
+      "outlier_frac": 0.4,
+      "method": "8-pt + RANSAC",
+      "rot_err_deg": 1.4186785450423545,
+      "t_err_deg": 3.3606374834974115
+    },
+    {
+      "outlier_frac": 0.4,
+      "method": "5-pt + RANSAC",
+      "rot_err_deg": 0.6866526589404673,
+      "t_err_deg": 1.0660194864757728
+    },
+    {
+      "outlier_frac": 0.4,
+      "method": "5-pt + MAGSAC++",
+      "rot_err_deg": 0.33372283866229907,
+      "t_err_deg": 0.36983309495253835
+    },
+    {
+      "outlier_frac": 0.6,
+      "method": "8-pt normalised",
+      "rot_err_deg": 72.30261245128307,
+      "t_err_deg": 83.43503698100591
+    },
+    {
+      "outlier_frac": 0.6,
+      "method": "8-pt + RANSAC",
+      "rot_err_deg": 5.177873352849554,
+      "t_err_deg": 10.692342606161098
+    },
+    {
+      "outlier_frac": 0.6,
+      "method": "5-pt + RANSAC",
+      "rot_err_deg": 1.0402785080058472,
+      "t_err_deg": 1.4293948820115823
+    },
+    {
+      "outlier_frac": 0.6,
+      "method": "5-pt + MAGSAC++",
+      "rot_err_deg": 0.5486078813683837,
+      "t_err_deg": 0.6125515145485614
+    }
+  ],
+  "triangulation": [
+    {
+      "sigma_px": 0.25,
+      "method": "DLT (cvlab)",
+      "rmse_3d_mm": 5.3511840273286335,
+      "reproj_err_px": 0.14507550975994668,
+      "time_ms": 5.323033998138271
+    },
+    {
+      "sigma_px": 0.25,
+      "method": "cv2.triangulatePoints",
+      "rmse_3d_mm": 5.3511840273282,
+      "reproj_err_px": 0.14507550975994735,
+      "time_ms": 0.20902599862893112
+    },
+    {
+      "sigma_px": 0.25,
+      "method": "correctMatches + DLT",
+      "rmse_3d_mm": 5.351590086678512,
+      "reproj_err_px": 0.14427015267560817,
+      "time_ms": null
+    },
+    {
+      "sigma_px": 0.5,
+      "method": "DLT (cvlab)",
+      "rmse_3d_mm": 10.703589332719057,
+      "reproj_err_px": 0.2901520578404409,
+      "time_ms": 4.194697998173069
+    },
+    {
+      "sigma_px": 0.5,
+      "method": "cv2.triangulatePoints",
+      "rmse_3d_mm": 10.703589332719233,
+      "reproj_err_px": 0.2901520578404408,
+      "time_ms": 0.1973329999600537
+    },
+    {
+      "sigma_px": 0.5,
+      "method": "correctMatches + DLT",
+      "rmse_3d_mm": 10.70431963334606,
+      "reproj_err_px": 0.2885413266587716,
+      "time_ms": null
+    },
+    {
+      "sigma_px": 1.0,
+      "method": "DLT (cvlab)",
+      "rmse_3d_mm": 21.413295511689217,
+      "reproj_err_px": 0.5803083977342421,
+      "time_ms": 4.166548998910002
+    },
+    {
+      "sigma_px": 1.0,
+      "method": "cv2.triangulatePoints",
+      "rmse_3d_mm": 21.413295511688723,
+      "reproj_err_px": 0.5803083977342425,
+      "time_ms": 0.19433299894444644
+    },
+    {
+      "sigma_px": 1.0,
+      "method": "correctMatches + DLT",
+      "rmse_3d_mm": 21.41448837861886,
+      "reproj_err_px": 0.5770866973874333,
+      "time_ms": null
+    },
+    {
+      "sigma_px": 2.0,
+      "method": "DLT (cvlab)",
+      "rmse_3d_mm": 42.86099262189744,
+      "reproj_err_px": 1.160634954950806,
+      "time_ms": 4.186816000583349
+    },
+    {
+      "sigma_px": 2.0,
+      "method": "cv2.triangulatePoints",
+      "rmse_3d_mm": 42.860992621897566,
+      "reproj_err_px": 1.160634954950806,
+      "time_ms": 0.19396900097490288
+    },
+    {
+      "sigma_px": 2.0,
+      "method": "correctMatches + DLT",
+      "rmse_3d_mm": 42.862783983413344,
+      "reproj_err_px": 1.1541892417197994,
+      "time_ms": null
+    }
+  ],
+  "baseline": [
+    {
+      "baseline_m": 0.02,
+      "median_tri_angle_deg": 0.32182759999658417,
+      "median_abs_depth_err_m": 0.47557415114286083,
+      "predicted_median_err_m": 0.5002897724061347
+    },
+    {
+      "baseline_m": 0.05,
+      "median_tri_angle_deg": 0.805051185540383,
+      "median_abs_depth_err_m": 0.19746573134148537,
+      "predicted_median_err_m": 0.20011590896245388
+    },
+    {
+      "baseline_m": 0.1,
+      "median_tri_angle_deg": 1.6118682853982553,
+      "median_abs_depth_err_m": 0.0987942264010302,
+      "predicted_median_err_m": 0.10005795448122694
+    },
+    {
+      "baseline_m": 0.2,
+      "median_tri_angle_deg": 3.2240767832874484,
+      "median_abs_depth_err_m": 0.049270555239863345,
+      "predicted_median_err_m": 0.05002897724061347
+    },
+    {
+      "baseline_m": 0.5,
+      "median_tri_angle_deg": 8.045111154680733,
+      "median_abs_depth_err_m": 0.02027979358755827,
+      "predicted_median_err_m": 0.02001159089624539
+    },
+    {
+      "baseline_m": 1.0,
+      "median_tri_angle_deg": 15.832406698898883,
+      "median_abs_depth_err_m": 0.010385041539302975,
+      "predicted_median_err_m": 0.010005795448122695
+    },
+    {
+      "baseline_m": 2.0,
+      "median_tri_angle_deg": 29.477815589894252,
+      "median_abs_depth_err_m": 0.005925439059307536,
+      "predicted_median_err_m": 0.005002897724061347
+    }
+  ],
+  "tum_auc": [
+    {
+      "method": "8-pt (all matches)",
+      "auc@5": 0.0,
+      "auc@10": 0.0,
+      "auc@20": 0.011708110154287929,
+      "median rot err [deg]": 7.725110793967014,
+      "median t err [deg]": 65.30766357177302
+    },
+    {
+      "method": "8-pt + RANSAC",
+      "auc@5": 0.06920901746794486,
+      "auc@10": 0.17448269186044754,
+      "auc@20": 0.2826487704681485,
+      "median rot err [deg]": 2.0850352322494174,
+      "median t err [deg]": 27.23162769373529
+    },
+    {
+      "method": "5-pt + RANSAC",
+      "auc@5": 0.14288980284657868,
+      "auc@10": 0.339001476855092,
+      "auc@20": 0.5544877048440962,
+      "median rot err [deg]": 1.2126655334625935,
+      "median t err [deg]": 6.716996517827898
+    },
+    {
+      "method": "5-pt + MAGSAC++",
+      "auc@5": 0.2701066263454678,
+      "auc@10": 0.4797171916319008,
+      "auc@20": 0.6617231000607455,
+      "median rot err [deg]": 0.8749135442980362,
+      "median t err [deg]": 5.33605474290245
+    }
+  ],
+  "summary": [
+    {
+      "method": "8-pt raw pixels",
+      "rot err @1px [deg]": 5.563445084267283,
+      "t-dir err @1px [deg]": 9.221165679513394
+    },
+    {
+      "method": "8-pt normalised",
+      "rot err @1px [deg]": 0.6641052103235909,
+      "t-dir err @1px [deg]": 1.3435796040232444,
+      "rot err @25% outliers [deg]": 37.32252215542981
+    },
+    {
+      "method": "OpenCV FM_8POINT",
+      "rot err @1px [deg]": 0.6641057601898984,
+      "t-dir err @1px [deg]": 1.3435800479789042
+    },
+    {
+      "method": "8-pt + RANSAC",
+      "rot err @1px [deg]": 2.909360259279973,
+      "t-dir err @1px [deg]": 4.8992253830377575,
+      "rot err @25% outliers [deg]": 1.7280252652657007
+    },
+    {
+      "method": "5-pt + RANSAC",
+      "rot err @1px [deg]": 2.5599591037889358,
+      "t-dir err @1px [deg]": 2.45817895686657,
+      "rot err @25% outliers [deg]": 1.3548620523634187
+    },
+    {
+      "method": "5-pt + MAGSAC++",
+      "rot err @1px [deg]": 0.6732368895036215,
+      "t-dir err @1px [deg]": 0.7717310803573467,
+      "rot err @25% outliers [deg]": 0.29026480371220253
+    }
+  ]
+}

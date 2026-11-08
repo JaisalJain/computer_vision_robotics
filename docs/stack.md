@@ -75,6 +75,19 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 | Depth-Anything-V2-Metric-Indoor-Small-hf | HF main (24.8 M params) | make data-08_monocular_depth (HF cache). Source: https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-Indoor-Small-hf |
 | TUM RGB-D fr1_desk + fr1_xyz | freiburg1 tgz | make data-08_monocular_depth (scripts/download_shared.py tum()). Source: https://cvg.cit.tum.de/data/datasets/rgbd-dataset |
 
+## 09_multiview_geometry (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| pycolmap | 4.2.1 (COLMAP 4.2.1, CPU build) | pip install -c requirements/constraints.txt pycolmap==4.2.1 (via make setup-09_multiview_geometry); never together with pycolmap-cuda12 or the [panorama] extra. Source: https://pypi.org/project/pycolmap/ (checked 2026-11-08) |
+| kornia | 0.9.0 | pip install -c requirements/constraints.txt kornia==0.9.0 (via make setup-09_multiview_geometry). Source: https://pypi.org/project/kornia/ (checked 2026-11-08) |
+| kornia_rs | 0.2.0 | Installed automatically as a kornia dependency. Source: https://pypi.org/project/kornia-rs/ (checked 2026-11-08) |
+| DISK depth checkpoint | depth-save.pth (4.4 MB) | python scripts/download_09_multiview_geometry.py -> weights/torch_hub/checkpoints (kornia DISK.from_pretrained('depth')). Source: https://github.com/cvlab-epfl/disk (checked 2026-11-08) |
+| LightGlue for DISK | v0.1_arxiv release (disk_lightglue.pth, 47.6 MB) | python scripts/download_09_multiview_geometry.py -> weights/torch_hub/checkpoints (kornia LightGlue('disk')). Source: https://github.com/cvg/LightGlue/releases/tag/v0.1_arxiv (checked 2026-11-08) |
+| Middlebury MiddEval3 quarter resolution | MiddEval3-data-Q.zip + MiddEval3-GT0-Q.zip (45 MB) | make data-09_multiview_geometry. Source: https://vision.middlebury.edu/stereo/submit3/ (checked 2026-11-08) |
+| COLMAP South Building | colmap release 3.11.1 asset south-building.zip (419 MB; photos downscaled to 1024 px) | make data-09_multiview_geometry. Source: https://github.com/colmap/colmap/releases/download/3.11.1/south-building.zip (checked 2026-11-08) |
+| TUM RGB-D fr1_desk | rgbd_dataset_freiburg1_desk | make data-09_multiview_geometry (scripts/download_shared.py tum('fr1_desk')). Source: https://cvg.cit.tum.de/data/datasets/rgbd-dataset (checked 2026-11-08) |
+
 ## 12_visual_odometry (checked 2026-11-08)
 
 | Package / model | Version | Install / source |

@@ -71,6 +71,19 @@ The MIT license of this repository covers only its own code. Every model, datase
 | addict 2.4.0 | library | MIT | https://github.com/mewwts/addict |  |
 | imageio 2.38.1 | library | BSD-2-Clause | https://github.com/imageio/imageio |  |
 
+## 09_multiview_geometry
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| COLMAP / pycolmap 4.2.1 | library | BSD-3-Clause | https://github.com/colmap/colmap | CPU wheel from PyPI |
+| kornia 0.9.0 (+ kornia_rs 0.2.0) | library | Apache-2.0 | https://github.com/kornia/kornia | DISK and LightGlue implementations |
+| DISK weights (depth-save.pth) | model | Apache-2.0 | https://github.com/cvlab-epfl/disk | Downloaded by kornia DISK.from_pretrained('depth') from raw.githubusercontent.com/cvlab-epfl/disk; the HF kornia/disk card says MIT |
+| LightGlue weights for DISK (disk_lightglue.pth, release v0.1_arxiv) | model | Apache-2.0 | https://github.com/cvg/LightGlue | Downloaded by kornia LightGlue('disk'); SuperPoint (non-commercial) deliberately not used |
+| OpenCV 5.0 | library | Apache-2.0 | https://github.com/opencv/opencv | Core stack |
+| Middlebury MiddEval3 quarter-resolution (data-Q + GT0-Q) | dataset | **Permission to use and publish images and disparity maps, with citation (Scharstein et al., GCPR 2014); no formal SPDX license** | https://vision.middlebury.edu/stereo/submit3/ | Citation required. |
+| COLMAP South Building (128 photos + reference sparse model) | dataset | **UNCLEAR: none stated (research use; photos by C. Zach, distributed with COLMAP)** | https://github.com/colmap/colmap/releases/download/3.11.1/south-building.zip | Only downscaled figures are committed. |
+| TUM RGB-D fr1_desk | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | Shared with projects 08/12/15. |
+
 ## 12_visual_odometry
 
 | Component | Kind | License | Source | Notes |

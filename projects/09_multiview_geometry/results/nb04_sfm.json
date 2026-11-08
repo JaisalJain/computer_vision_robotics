@@ -1,0 +1,362 @@
+{
+  "subset": [
+    "P1180141.JPG",
+    "P1180143.JPG",
+    "P1180145.JPG",
+    "P1180147.JPG",
+    "P1180149.JPG",
+    "P1180151.JPG",
+    "P1180153.JPG",
+    "P1180155.JPG",
+    "P1180157.JPG",
+    "P1180159.JPG",
+    "P1180161.JPG",
+    "P1180163.JPG",
+    "P1180165.JPG",
+    "P1180167.JPG",
+    "P1180169.JPG",
+    "P1180171.JPG",
+    "P1180173.JPG",
+    "P1180175.JPG",
+    "P1180177.JPG",
+    "P1180179.JPG",
+    "P1180181.JPG",
+    "P1180183.JPG",
+    "P1180185.JPG",
+    "P1180187.JPG",
+    "P1180189.JPG",
+    "P1180191.JPG",
+    "P1180193.JPG",
+    "P1180195.JPG",
+    "P1180197.JPG",
+    "P1180199.JPG",
+    "P1180201.JPG",
+    "P1180203.JPG"
+  ],
+  "sift": {
+    "num_images_input": 32,
+    "num_reg_images": 32,
+    "num_points3D": 7071,
+    "mean_track_length": 3.6675152029415923,
+    "mean_observations_per_image": 810.40625,
+    "mean_reprojection_error": 0.21564888735257187,
+    "db": {
+      "num_images": 32,
+      "num_keypoints": 300180,
+      "num_matched_pairs": 496,
+      "num_verified_pairs": 496,
+      "num_matches": 50706,
+      "num_inlier_matches": 41447
+    },
+    "times_s": {
+      "features": 3.2699849210002867,
+      "matching": 11.394038758000079,
+      "mapping": 4.201943042000039
+    }
+  },
+  "disk_lightglue": {
+    "num_images_input": 32,
+    "num_reg_images": 32,
+    "num_points3D": 9446,
+    "mean_track_length": 4.111264027101418,
+    "mean_observations_per_image": 1213.59375,
+    "mean_reprojection_error": 0.5675621543749557,
+    "db": {
+      "num_images": 32,
+      "num_keypoints": 65536,
+      "num_matched_pairs": 496,
+      "num_verified_pairs": 496,
+      "num_matches": 100289,
+      "num_inlier_matches": 88539
+    },
+    "times_s": {
+      "features_s": 2.551569496999946,
+      "matching_s": 5.9091035689998535,
+      "import_s": 0.16110658799971134,
+      "verification_s": 2.0625925419999476,
+      "mapping_s": 7.90466158900017
+    },
+    "peak_vram_mb": 1237.6455078125
+  },
+  "disk_lightglue_window8": {
+    "num_images_input": 32,
+    "num_reg_images": 32,
+    "num_points3D": 9209,
+    "mean_track_length": 4.159300684113368,
+    "mean_observations_per_image": 1196.96875,
+    "mean_reprojection_error": 0.5506922418942423
+  },
+  "accuracy_vs_reference": [
+    {
+      "method": "COLMAP SIFT (all pairs)",
+      "registered": 32,
+      "median rot err [deg]": 0.3558825115306937,
+      "max rot err [deg]": 1.3875860031293827,
+      "median centre err [% spacing]": 3.182423562250148,
+      "max centre err [% spacing]": 10.969640115584667,
+      "focal error vs reference [%]": 0.5162532100941278
+    },
+    {
+      "method": "DISK + LightGlue (all pairs)",
+      "registered": 32,
+      "median rot err [deg]": 26.255128986719228,
+      "max rot err [deg]": 158.97757741689702,
+      "median centre err [% spacing]": 524.1529222342882,
+      "max centre err [% spacing]": 1033.6347033375437,
+      "focal error vs reference [%]": 0.16879316546728645
+    },
+    {
+      "method": "DISK + LightGlue (w=8)",
+      "registered": 32,
+      "median rot err [deg]": 0.2996402302186319,
+      "max rot err [deg]": 0.45621339415742296,
+      "median centre err [% spacing]": 2.2210418173199864,
+      "max centre err [% spacing]": 4.724894034738376,
+      "focal error vs reference [%]": -0.06504827682755959
+    }
+  ],
+  "doppelganger_pairs": [
+    {
+      "method": "COLMAP SIFT",
+      "pairs with inliers": 129,
+      "co-visible pairs (reference)": 170,
+      "inlier pairs NOT co-visible": 19,
+      "median inliers of those": 18.0,
+      "max inliers of those": 24,
+      "co-visible pairs without inliers": 60
+    },
+    {
+      "method": "DISK + LightGlue",
+      "pairs with inliers": 387,
+      "co-visible pairs (reference)": 170,
+      "inlier pairs NOT co-visible": 222,
+      "median inliers of those": 39.0,
+      "max inliers of those": 392,
+      "co-visible pairs without inliers": 5
+    }
+  ],
+  "window_runs": [
+    {
+      "window w": 3,
+      "seed": 0,
+      "pairs": 90,
+      "false pairs kept": 0,
+      "registered": 32,
+      "median rot err [deg]": 3.2378623961372943,
+      "max rot err [deg]": 42.036069232975485,
+      "median centre err [% spacing]": 34.19822240061381,
+      "points": 7749,
+      "reproj err [px]": 0.5353575601356465,
+      "verify + map [s]": 33.46420744399984,
+      "all registered, < 1 deg": false
+    },
+    {
+      "window w": 3,
+      "seed": 1,
+      "pairs": 90,
+      "false pairs kept": 0,
+      "registered": 32,
+      "median rot err [deg]": 0.2753883345713376,
+      "max rot err [deg]": 0.46934142560888753,
+      "median centre err [% spacing]": 2.1520505511671555,
+      "points": 8630,
+      "reproj err [px]": 0.5314485709568504,
+      "verify + map [s]": 4.2216060099999595,
+      "all registered, < 1 deg": true
+    },
+    {
+      "window w": 3,
+      "seed": 2,
+      "pairs": 90,
+      "false pairs kept": 0,
+      "registered": 32,
+      "median rot err [deg]": 2.128402968668858,
+      "max rot err [deg]": 9.371442130077149,
+      "median centre err [% spacing]": 21.878128907647273,
+      "points": 8524,
+      "reproj err [px]": 0.5238172974711699,
+      "verify + map [s]": 16.819231503000083,
+      "all registered, < 1 deg": false
+    },
+    {
+      "window w": 5,
+      "seed": 0,
+      "pairs": 145,
+      "false pairs kept": 3,
+      "registered": 32,
+      "median rot err [deg]": 0.25070851402428707,
+      "max rot err [deg]": 0.40145591776961864,
+      "median centre err [% spacing]": 2.0254395393045725,
+      "points": 8978,
+      "reproj err [px]": 0.5478800864954011,
+      "verify + map [s]": 4.960436778000258,
+      "all registered, < 1 deg": true
+    },
+    {
+      "window w": 5,
+      "seed": 1,
+      "pairs": 145,
+      "false pairs kept": 3,
+      "registered": 31,
+      "median rot err [deg]": 2.983469019993714,
+      "max rot err [deg]": 47.65449558275905,
+      "median centre err [% spacing]": 31.57260816585442,
+      "points": 7551,
+      "reproj err [px]": 0.4914391939105611,
+      "verify + map [s]": 26.351346672999625,
+      "all registered, < 1 deg": false
+    },
+    {
+      "window w": 5,
+      "seed": 2,
+      "pairs": 145,
+      "false pairs kept": 3,
+      "registered": 32,
+      "median rot err [deg]": 5.514563432016682,
+      "max rot err [deg]": 28.450919970277777,
+      "median centre err [% spacing]": 55.56081612196387,
+      "points": 8453,
+      "reproj err [px]": 0.5443708753229888,
+      "verify + map [s]": 23.096446259000004,
+      "all registered, < 1 deg": false
+    },
+    {
+      "window w": 8,
+      "seed": 0,
+      "pairs": 220,
+      "false pairs kept": 38,
+      "registered": 32,
+      "median rot err [deg]": 0.2996402302186319,
+      "max rot err [deg]": 0.45621339415742296,
+      "median centre err [% spacing]": 2.2210418173199864,
+      "points": 9209,
+      "reproj err [px]": 0.5506922418942423,
+      "verify + map [s]": 8.167566931000238,
+      "all registered, < 1 deg": true
+    },
+    {
+      "window w": 8,
+      "seed": 1,
+      "pairs": 220,
+      "false pairs kept": 38,
+      "registered": 32,
+      "median rot err [deg]": 0.9658136641741311,
+      "max rot err [deg]": 3.011701206317439,
+      "median centre err [% spacing]": 9.096956653835836,
+      "points": 9219,
+      "reproj err [px]": 0.5519943919025603,
+      "verify + map [s]": 9.80734339000037,
+      "all registered, < 1 deg": true
+    },
+    {
+      "window w": 8,
+      "seed": 2,
+      "pairs": 220,
+      "false pairs kept": 38,
+      "registered": 32,
+      "median rot err [deg]": 0.3049879373491245,
+      "max rot err [deg]": 0.42362529304915164,
+      "median centre err [% spacing]": 2.2413250429602045,
+      "points": 9210,
+      "reproj err [px]": 0.5513282810406138,
+      "verify + map [s]": 8.014522699999816,
+      "all registered, < 1 deg": true
+    }
+  ],
+  "window_summary": [
+    {
+      "window w": 3,
+      "pairs": 90,
+      "false pairs kept": 0,
+      "runs": 3,
+      "runs OK": 1,
+      "best median rot err [deg]": 0.2753883345713376,
+      "worst median rot err [deg]": 3.2378623961372943
+    },
+    {
+      "window w": 5,
+      "pairs": 145,
+      "false pairs kept": 3,
+      "runs": 3,
+      "runs OK": 1,
+      "best median rot err [deg]": 0.25070851402428707,
+      "worst median rot err [deg]": 5.514563432016682
+    },
+    {
+      "window w": 8,
+      "pairs": 220,
+      "false pairs kept": 38,
+      "runs": 3,
+      "runs OK": 3,
+      "best median rot err [deg]": 0.2996402302186319,
+      "worst median rot err [deg]": 0.9658136641741311
+    }
+  ],
+  "wide": [
+    {
+      "method": "COLMAP SIFT (all pairs)",
+      "registered": 22,
+      "median rot err [deg]": 0.2596410875803091,
+      "max rot err [deg]": 0.44187192380680596,
+      "median centre err [% spacing]": 0.6246239222311728,
+      "max centre err [% spacing]": 1.8144171674906688,
+      "models": 1,
+      "points": 4787,
+      "reproj err [px]": 0.22137515184033507,
+      "time [s]": 20.320703455000057
+    },
+    {
+      "method": "DISK + LightGlue (all pairs)",
+      "registered": 32,
+      "median rot err [deg]": 1.0922699998010037,
+      "max rot err [deg]": 180.0,
+      "median centre err [% spacing]": 134.13255710339462,
+      "max centre err [% spacing]": 425.44150237540435,
+      "models": 1,
+      "points": 9450,
+      "reproj err [px]": 0.5967431256494341,
+      "time [s]": 19.85503863399981
+    },
+    {
+      "method": "DISK + LightGlue (w=3)",
+      "registered": 25,
+      "median rot err [deg]": 36.389887820245576,
+      "max rot err [deg]": 130.95780552624112,
+      "median centre err [% spacing]": 160.3260508500843,
+      "max centre err [% spacing]": 448.07669402277105,
+      "models": 2,
+      "points": 4880,
+      "reproj err [px]": 0.5711091724644431,
+      "time [s]": 7.4802536619999955
+    },
+    {
+      "method": "DISK + LightGlue (w=8)",
+      "registered": 28,
+      "median rot err [deg]": 11.30835251960778,
+      "max rot err [deg]": 171.67430957896343,
+      "median centre err [% spacing]": 224.8062208846644,
+      "max centre err [% spacing]": 507.3569716058061,
+      "models": 2,
+      "points": 6994,
+      "reproj err [px]": 0.5136369474735312,
+      "time [s]": 13.771185808000155
+    }
+  ],
+  "exports": {
+    "sift": {
+      "model_dirs": [
+        "0"
+      ],
+      "ply": "outputs/09_multiview_geometry/south_building_sift_sparse.ply",
+      "ply_kb": 103.7529296875
+    },
+    "disk_lightglue_window8": {
+      "model_dirs": [
+        "0"
+      ],
+      "ply": "outputs/09_multiview_geometry/south_building_disk_lightglue_window8_sparse.ply",
+      "ply_kb": 135.0712890625
+    }
+  },
+  "reference_focal_px": 853.2266666666666
+}

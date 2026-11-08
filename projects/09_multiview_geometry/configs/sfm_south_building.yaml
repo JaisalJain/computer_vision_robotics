@@ -1,0 +1,23 @@
+# South Building SfM settings, read by scripts/run_sfm.py (notebook 04 uses the same values).
+# Paths are relative to the repository root.
+image_dir: data/south_building/images        # photos downscaled to 1024 px by the download script
+output_dir: runs/09_multiview_geometry/south_building
+
+# Image subsets of the 128 sorted photos (Python slice start:stop:step).
+subsets:
+  half: {start: 0, stop: 64, step: 2}        # 32 images, contiguous half loop (default)
+  wide: {start: 0, stop: 128, step: 4}       # 32 images over the full loop (wider baselines)
+
+colmap:
+  camera_model: SIMPLE_RADIAL                # one shared camera (f, cx, cy, k), self-calibrated
+  max_num_features: 8192                     # SIFT features per image
+
+disk_lightglue:
+  max_keypoints: 2048                        # DISK keypoints per image
+  fp16: true                                 # autocast on the GPU
+  # Match only pairs at most `pair_window` images apart (0 = all pairs). Exhaustive LightGlue
+  # matching links the building's look-alike facades and folds the model (notebook 04,
+  # sections 5-6). Over repeated runs on the half loop, windows of 3 and 5 sometimes gave an
+  # accurate model and sometimes a folded one; a window of 8 was accurate in every run
+  # (notebook 04, section 7).
+  pair_window: 8
