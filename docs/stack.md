@@ -41,6 +41,21 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 | facebook/dinov2-small | HF rev ed25f3a31f01 (85 MiB) | make data-02_representation_learning (HF cache). Source: https://huggingface.co/facebook/dinov2-small |
 | Imagenette-160 | imagenette2-160 (99 MB tgz, 9469 train / 3925 val) | make data-02_representation_learning (scripts/download_shared.py imagenette()). Source: https://s3.amazonaws.com/fast-ai-imageclas/imagenette2-160.tgz |
 
+## 05_segmentation (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| transformers (Sam3Model, Sam3TrackerModel, Sam3TrackerVideoModel, Sam3VideoModel, Sam2Model, Sam2VideoModel, GroundingDino) | 5.22.2 | python -m pip install -c requirements/constraints.txt transformers==5.22.2 (via make setup-05_segmentation). Source: https://pypi.org/project/transformers/ (checked 2026-11-08) |
+| tokenizers | 0.23.3 | make setup-05_segmentation (pinned in requirements/05_segmentation.txt). Source: https://pypi.org/project/tokenizers/ (checked 2026-11-08) |
+| safetensors | 0.8.0 | make setup-05_segmentation. Source: https://pypi.org/project/safetensors/ (checked 2026-11-08) |
+| ultralytics | 8.4.204 | python -m pip install -c requirements/constraints.txt ultralytics==8.4.204; YOLO_AUTOINSTALL=false at runtime. Source: https://pypi.org/project/ultralytics/ (checked 2026-11-08) |
+| SAM 3 checkpoint facebook/sam3 | HF revision 3c879f3982 (model.safetensors + configs only, 3285 MiB) | python scripts/download_05_segmentation.py (huggingface_hub snapshot_download with allow_patterns; gated). Source: https://huggingface.co/facebook/sam3 (checked 2026-11-08) |
+| SAM 2.1 facebook/sam2.1-hiera-tiny / -small / -base-plus | HF revisions de431c4043 / ee5bba1d82 / b7320756a1 | python scripts/download_05_segmentation.py. Source: https://huggingface.co/facebook/sam2.1-hiera-small (checked 2026-11-08) |
+| Grounding DINO IDEA-Research/grounding-dino-tiny | HF revision a2bb814dd3 | python scripts/download_05_segmentation.py. Source: https://huggingface.co/IDEA-Research/grounding-dino-tiny (checked 2026-11-08) |
+| YOLO26n-seg / YOLO26s-seg weights | ultralytics/assets v8.4.0 | python scripts/download_05_segmentation.py -> weights/ultralytics/. Source: https://github.com/ultralytics/assets/releases/tag/v8.4.0 (checked 2026-11-08) |
+| DAVIS 2017 TrainVal 480p (2 sequences, 17 MB extracted) | 2017 release | python scripts/download_05_segmentation.py (HTTP range requests into the 833 MB zip; --full-zip fallback). Source: https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip (checked 2026-11-08) |
+| coco8-seg / coco128-seg | Ultralytics assets v0.0.0 | python scripts/download_05_segmentation.py -> data/ultralytics/. Source: https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128-seg.zip (checked 2026-11-08) |
+
 ## 07_pose_estimation (checked 2026-11-08)
 
 | Package / model | Version | Install / source |

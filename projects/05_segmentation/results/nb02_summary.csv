@@ -1,0 +1,5 @@
+,mask AP,mask AP50,mask AP75,ms / prompt,image encoder ms,peak VRAM (MiB),params (M),absent: instances / query,absent: hit rate
+SAM 3 (text),0.4949,0.7864,0.5163,52.3,366.7,2424.0,840.4,0.016,0.016
+Grounding DINO-T + SAM 2.1-S,0.4285,0.6972,0.4573,366.0,,2365.0,210.8,0.104,0.096
+YOLO26n-seg (closed set),0.4268,0.6538,0.4715,8.2,,389.0,3.1,,
+YOLO26s-seg (closed set),0.4724,0.7093,0.5247,8.5,,418.0,11.5,,

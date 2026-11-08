@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "dataset": "coco128-seg",
+    "n_images": 128,
+    "protocol": "prompts = GT class names of each image (oracle vocabulary); YOLO predictions filtered to the same names",
+    "n_absent_per_image": 3,
+    "env": {
+      "python": "3.12.16",
+      "numpy": "2.5.4",
+      "opencv": "5.0.0",
+      "torch": "2.11.0+cu128",
+      "cuda_available": true,
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "vram_gb": 7.53,
+      "compute_capability": "sm_120",
+      "torchvision": "0.26.0+cu128"
+    }
+  },
+  "methods": {
+    "SAM 3 (text)": {
+      "AP": 0.4949,
+      "AP50": 0.7864,
+      "AP75": 0.5163,
+      "n_gt": 929,
+      "n_classes": 71,
+      "ms_per_prompt": 52.3,
+      "peak_vram_MiB": 2424.0,
+      "params_M": 840.4,
+      "image_encoder_ms": 366.7,
+      "absent_fp_per_query": 0.016,
+      "absent_query_hit_rate": 0.016,
+      "threshold_ap": 0.05,
+      "threshold_op": 0.5
+    },
+    "Grounding DINO-T + SAM 2.1-S": {
+      "AP": 0.4285,
+      "AP50": 0.6972,
+      "AP75": 0.4573,
+      "n_gt": 929,
+      "n_classes": 71,
+      "ms_per_prompt": 366.0,
+      "peak_vram_MiB": 2365.0,
+      "params_M": 210.8,
+      "absent_fp_per_query": 0.104,
+      "absent_query_hit_rate": 0.096,
+      "threshold_ap": [
+        0.1,
+        0.1
+      ],
+      "threshold_op": [
+        0.35,
+        0.25
+      ]
+    },
+    "YOLO26n-seg (closed set)": {
+      "AP": 0.4268,
+      "AP50": 0.6538,
+      "AP75": 0.4715,
+      "n_gt": 929,
+      "n_classes": 71,
+      "ms_per_prompt": 8.2,
+      "peak_vram_MiB": 389.0,
+      "params_M": 3.1,
+      "note": "ms_per_prompt = ms per image (all classes)"
+    },
+    "YOLO26s-seg (closed set)": {
+      "AP": 0.4724,
+      "AP50": 0.7093,
+      "AP75": 0.5247,
+      "n_gt": 929,
+      "n_classes": 71,
+      "ms_per_prompt": 8.5,
+      "peak_vram_MiB": 418.0,
+      "params_M": 11.5,
+      "note": "ms_per_prompt = ms per image (all classes)"
+    }
+  }
+}

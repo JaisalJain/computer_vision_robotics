@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "dataset": "coco128-seg",
+    "n_images": 128,
+    "min_area_px": 100,
+    "n_clicks": 5,
+    "env": {
+      "python": "3.12.16",
+      "numpy": "2.5.4",
+      "opencv": "5.0.0",
+      "torch": "2.11.0+cu128",
+      "cuda_available": true,
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "vram_gb": 7.53,
+      "compute_capability": "sm_120",
+      "torchvision": "0.26.0+cu128"
+    }
+  },
+  "models": {
+    "SAM 3": {
+      "model_id": "facebook/sam3",
+      "params_M": 458.3,
+      "dtype": "bfloat16",
+      "load_s": 2.6,
+      "weights_vram_MiB": 894.0,
+      "peak_vram_MiB": 1128.0,
+      "encoder_ms": 329.9,
+      "decoder_ms": 3.32,
+      "n_instances": 861,
+      "mIoU_click_top": 0.6553,
+      "mIoU_click_oracle": 0.7502,
+      "mIoU_box": 0.7815,
+      "mIoU_per_click": [
+        0.6553,
+        0.7605,
+        0.7988,
+        0.8187,
+        0.8283
+      ],
+      "NoC@85": 3.84,
+      "NoC@90": 4.9
+    },
+    "SAM 2.1-T": {
+      "model_id": "facebook/sam2.1-hiera-tiny",
+      "params_M": 31.4,
+      "dtype": "bfloat16",
+      "load_s": 1.6,
+      "weights_vram_MiB": 125.0,
+      "peak_vram_MiB": 328.0,
+      "encoder_ms": 27.4,
+      "decoder_ms": 3.25,
+      "n_instances": 861,
+      "mIoU_click_top": 0.6021,
+      "mIoU_click_oracle": 0.7047,
+      "mIoU_box": 0.7705,
+      "mIoU_per_click": [
+        0.6021,
+        0.7237,
+        0.7789,
+        0.8076,
+        0.8229
+      ],
+      "NoC@85": 3.99,
+      "NoC@90": 4.93
+    },
+    "SAM 2.1-S": {
+      "model_id": "facebook/sam2.1-hiera-small",
+      "params_M": 38.5,
+      "dtype": "bfloat16",
+      "load_s": 0.8,
+      "weights_vram_MiB": 172.0,
+      "peak_vram_MiB": 344.0,
+      "encoder_ms": 31.7,
+      "decoder_ms": 3.27,
+      "n_instances": 861,
+      "mIoU_click_top": 0.6128,
+      "mIoU_click_oracle": 0.7169,
+      "mIoU_box": 0.7725,
+      "mIoU_per_click": [
+        0.6128,
+        0.7256,
+        0.7825,
+        0.8071,
+        0.823
+      ],
+      "NoC@85": 3.91,
+      "NoC@90": 4.86
+    },
+    "SAM 2.1-B+": {
+      "model_id": "facebook/sam2.1-hiera-base-plus",
+      "params_M": 73.3,
+      "dtype": "bfloat16",
+      "load_s": 1.6,
+      "weights_vram_MiB": 238.0,
+      "peak_vram_MiB": 438.0,
+      "encoder_ms": 55.0,
+      "decoder_ms": 3.26,
+      "n_instances": 861,
+      "mIoU_click_top": 0.6312,
+      "mIoU_click_oracle": 0.7284,
+      "mIoU_box": 0.7776,
+      "mIoU_per_click": [
+        0.6312,
+        0.729,
+        0.7881,
+        0.8074,
+        0.8243
+      ],
+      "NoC@85": 3.82,
+      "NoC@90": 4.82
+    }
+  }
+}

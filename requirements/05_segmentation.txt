@@ -1,0 +1,10 @@
+# Project 05_segmentation - extras on top of requirements/base.txt.
+# Install: make setup-05_segmentation
+#   (= pip install -c requirements/constraints.txt -r requirements/05_segmentation.txt)
+# SAM 3, SAM 2.1 and Grounding DINO run through Hugging Face transformers (no official sam2/sam3
+# repo install; never `pip install sam2` - that PyPI name is an unrelated third-party fork).
+transformers==5.22.2
+tokenizers==0.23.3
+safetensors==0.8.0
+# YOLO26-seg. AGPL-3.0: see THIRD_PARTY_LICENSES.md. Set YOLO_AUTOINSTALL=false at runtime.
+ultralytics==8.4.204

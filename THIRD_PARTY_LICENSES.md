@@ -35,6 +35,20 @@ The MIT license of this repository covers only its own code. Every model, datase
 | Jinja2 3.1.6 | library | BSD-3-Clause | https://github.com/pallets/jinja | Needed by the pandas Styler for the notebook tables. |
 | Grad-CAM / HiResCAM / deletion-insertion implementation | code | MIT (this repository) | projects/02_representation_learning/scripts/replearn.py | Own implementation; the grad-cam PyPI package (MIT) is not used because it hard-depends on opencv-python-headless. |
 
+## 05_segmentation
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| SAM 3 (facebook/sam3, rev 3c879f3982) | model | **SAM License (custom Meta license, Nov 2025)** | https://huggingface.co/facebook/sam3 | GATED (manual approval). Custom license: commercial use permitted, but military/ITAR/weapons uses are banned, the license must ship with redistributions, and publications must acknowledge SAM. Flag as custom/restricted. |
+| SAM 2.1 hiera tiny/small/base-plus (facebook/sam2.1-hiera-*) | model | Apache-2.0 | https://huggingface.co/facebook/sam2.1-hiera-small |  |
+| Grounding DINO tiny (IDEA-Research/grounding-dino-tiny) | model | Apache-2.0 | https://huggingface.co/IDEA-Research/grounding-dino-tiny |  |
+| YOLO26n-seg / YOLO26s-seg weights | model | **AGPL-3.0** | https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n-seg.pt | Copyleft: networked/distributed use requires releasing source or an Ultralytics enterprise license. |
+| ultralytics 8.4.204 | library | **AGPL-3.0** | https://github.com/ultralytics/ultralytics | Copyleft (AGPL). |
+| transformers 5.22.2 (+ tokenizers 0.23.3, safetensors 0.8.0) | library | Apache-2.0 | https://github.com/huggingface/transformers |  |
+| coco8-seg / coco128-seg (Ultralytics packaging of COCO train2017) | dataset | **COCO annotations CC BY 4.0; images under their Flickr licenses; the Ultralytics zip ships a GPL-3.0 LICENSE file** | https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128-seg.zip | Copyleft packaging license (GPL-3.0 per the LICENSE file in the zip); not redistributed here. |
+| DAVIS 2017 TrainVal 480p (car-roundabout, dogs-jump only) | dataset | **Annotations described as CC BY 4.0 on the DAVIS challenge pages; frames from the original videos (research use); evaluation code BSD-3-Clause** | https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip | UNCLEAR: the current site states no explicit license. Not redistributed; only a few downscaled frames appear in figures and the GIF. |
+| TUM RGB-D fr1_desk (one frame) | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | Shared dataset (projects 08, 12, 15). |
+
 ## 07_pose_estimation
 
 | Component | Kind | License | Source | Notes |

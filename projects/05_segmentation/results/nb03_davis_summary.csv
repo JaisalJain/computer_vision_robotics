@@ -1,0 +1,15 @@
+model,prompt,sequence,J_mean,F_mean,JF_mean,J_recall,J_decay,ms/frame,peak VRAM (MiB)
+SAM 3,mask,car-roundabout,0.9891,0.9766,0.9829,1.0,0.0015,415.1,1943.0
+SAM 3,mask,dogs-jump,0.9453,0.9922,0.9688,0.9896,-0.0416,543.8,1943.0
+SAM 3,box,car-roundabout,0.9861,0.9677,0.9769,1.0,-0.0018,411.8,1943.0
+SAM 3,box,dogs-jump,0.9451,0.992,0.9685,0.9896,-0.0421,544.4,1943.0
+SAM 3,click,car-roundabout,0.9868,0.9681,0.9774,1.0,-0.0011,411.8,1943.0
+SAM 3,click,dogs-jump,0.944,0.9923,0.9682,0.9896,-0.0435,545.1,1943.0
+SAM 2.1-S,mask,car-roundabout,0.9878,0.9698,0.9788,1.0,0.0016,81.3,1014.0
+SAM 2.1-S,mask,dogs-jump,0.9419,0.992,0.967,0.9896,-0.0403,168.4,1014.0
+SAM 2.1-S,box,car-roundabout,0.9851,0.9685,0.9768,1.0,0.0012,81.2,1014.0
+SAM 2.1-S,box,dogs-jump,0.9364,0.9896,0.963,0.9896,-0.0468,168.5,1014.0
+SAM 2.1-S,click,car-roundabout,0.9848,0.9684,0.9766,1.0,0.0008,81.2,1014.0
+SAM 2.1-S,click,dogs-jump,0.9193,0.9736,0.9465,0.9896,-0.0761,168.3,1014.0
+SAM 3 (Sam3VideoModel),text,car-roundabout,0.9817,0.9614,0.9715,,,1588.7,6325.0
+SAM 3 (Sam3VideoModel),text,dogs-jump,0.9444,0.9911,0.9678,,,520.1,6325.0

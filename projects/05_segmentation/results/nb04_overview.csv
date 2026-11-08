@@ -1,0 +1,12 @@
+model / pipeline,task,params (M),latency (ms),latency unit,peak VRAM (MiB),quality
+SAM 2.1-T,promptable image seg (click/box),31.4,37.3,image + 1 click,331.0,box mIoU 0.770 (coco128)
+SAM 2.1-S,promptable image seg (click/box),38.5,43.0,image + 1 click,346.0,box mIoU 0.772 (coco128)
+SAM 2.1-B+,promptable image seg (click/box),73.3,68.9,image + 1 click,440.0,box mIoU 0.778 (coco128)
+SAM 3,promptable image seg (click/box),458.3,346.7,image + 1 click,1163.0,box mIoU 0.781 (coco128)
+SAM 3 (text),text-prompted instance seg,840.4,52.3,"phrase, cached image (+367 ms/image enc.)",2424.0,mask AP 0.495 (coco128)
+Grounding DINO-T + SAM 2.1-S,text-prompted instance seg,210.8,366.0,phrase (GDINO pass + SAM 2.1 decode),2365.0,mask AP 0.428 (coco128)
+YOLO26n-seg,closed-set instance seg (80 COCO classes),3.1,4.9,image,176.0,"mask AP 0.427 (coco128, oracle classes)"
+YOLO26s-seg,closed-set instance seg (80 COCO classes),11.5,7.4,image,197.0,"mask AP 0.472 (coco128, oracle classes)"
+SAM 2.1-S video,video object seg (DAVIS),,124.8,frame,1014.0,J&F 0.973 (2 DAVIS seqs)
+SAM 3 video,video object seg (DAVIS),,479.4,frame,1943.0,J&F 0.976 (2 DAVIS seqs)
+SAM 3 (Sam3VideoModel) video,video object seg (DAVIS),,1054.4,frame,6325.0,J&F 0.970 (2 DAVIS seqs)
