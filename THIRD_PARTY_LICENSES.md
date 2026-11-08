@@ -17,6 +17,24 @@ The MIT license of this repository covers only its own code. Every model, datase
 | Jupyter (nbconvert, ipykernel) | BSD-3-Clause | https://jupyter.org |
 | Hugging Face Hub client | Apache-2.0 | https://github.com/huggingface/huggingface_hub |
 
+## 02_representation_learning
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| Imagenette-160 (fast.ai) | dataset | **Apache-2.0 (repository); images are an ImageNet subset, ImageNet terms of access apply (non-commercial research/education)** | https://github.com/fastai/imagenette | ImageNet terms of access apply to the images (non-commercial research/education). |
+| timm/resnet18.a1_in1k | model | Apache-2.0 | https://huggingface.co/timm/resnet18.a1_in1k | Trained on ImageNet-1k. |
+| timm/efficientnet_b0.ra_in1k | model | Apache-2.0 | https://huggingface.co/timm/efficientnet_b0.ra_in1k | Trained on ImageNet-1k. |
+| timm/convnext_nano.in12k_ft_in1k | model | Apache-2.0 | https://huggingface.co/timm/convnext_nano.in12k_ft_in1k | Trained on ImageNet-12k, then fine-tuned on ImageNet-1k. |
+| facebook/dinov3-vits16-pretrain-lvd1689m (DINOv3 ViT-S/16) | model | **DINOv3 License (custom, Meta)** | https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m | Gated (manual access, granted to the owner, used for committed outputs). Commercial use allowed but requires 'Built with DINOv3' attribution when redistributing; acceptable-use restrictions (e.g. military/ITAR). |
+| timm/vit_small_patch16_dinov3.lvd1689m (ungated mirror, fallback only) | model | **DINOv3 License (custom, Meta)** | https://huggingface.co/timm/vit_small_patch16_dinov3.lvd1689m | Only downloaded/used when the gated repo is inaccessible; same weights and same license terms. |
+| facebook/dinov2-small (DINOv2 ViT-S/14) | model | Apache-2.0 | https://huggingface.co/facebook/dinov2-small |  |
+| timm 1.0.31 | library | Apache-2.0 | https://github.com/huggingface/pytorch-image-models |  |
+| transformers 5.22.2 | library | Apache-2.0 | https://github.com/huggingface/transformers |  |
+| safetensors 0.8.0 | library | Apache-2.0 | https://github.com/huggingface/safetensors |  |
+| scikit-learn 1.9.1 | library | BSD-3-Clause | https://scikit-learn.org | Logistic regression, t-SNE, StandardScaler. |
+| Jinja2 3.1.6 | library | BSD-3-Clause | https://github.com/pallets/jinja | Needed by the pandas Styler for the notebook tables. |
+| Grad-CAM / HiResCAM / deletion-insertion implementation | code | MIT (this repository) | projects/02_representation_learning/scripts/replearn.py | Own implementation; the grad-cam PyPI package (MIT) is not used because it hard-depends on opencv-python-headless. |
+
 ## 07_pose_estimation
 
 | Component | Kind | License | Source | Notes |

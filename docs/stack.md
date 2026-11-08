@@ -24,6 +24,23 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 
 `torch.cuda.get_arch_list()` includes `sm_120`, so the Blackwell GPU runs native kernels without PTX JIT.
 
+## 02_representation_learning (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| timm | 1.0.31 | pip install -c requirements/constraints.txt timm==1.0.31 (requirements/02_representation_learning.txt). Source: https://pypi.org/project/timm/1.0.31/ |
+| transformers | 5.22.2 | pip install -c requirements/constraints.txt transformers==5.22.2 (requirements/02_representation_learning.txt). Source: https://pypi.org/project/transformers/5.22.2/ |
+| safetensors | 0.8.0 | pip install -c requirements/constraints.txt safetensors==0.8.0 (requirements/02_representation_learning.txt). Source: https://pypi.org/project/safetensors/0.8.0/ |
+| Jinja2 | 3.1.6 | pip install -c requirements/constraints.txt Jinja2==3.1.6 (requirements/02_representation_learning.txt). Source: https://pypi.org/project/Jinja2/3.1.6/ |
+| scikit-learn | 1.9.1 | core stack (requirements/base.txt). Source: https://pypi.org/project/scikit-learn/1.9.1/ |
+| timm/resnet18.a1_in1k | HF rev 491b427b45c9 (45 MiB) | make data-02_representation_learning (HF cache). Source: https://huggingface.co/timm/resnet18.a1_in1k |
+| timm/efficientnet_b0.ra_in1k | HF rev 1b5383e5f79c (21 MiB) | make data-02_representation_learning (HF cache). Source: https://huggingface.co/timm/efficientnet_b0.ra_in1k |
+| timm/convnext_nano.in12k_ft_in1k | HF rev f185680dbe45 (60 MiB) | make data-02_representation_learning (HF cache). Source: https://huggingface.co/timm/convnext_nano.in12k_ft_in1k |
+| facebook/dinov3-vits16-pretrain-lvd1689m | HF rev 114c13799502 (83 MiB), transformers DINOv3ViTModel, 4 register tokens | accept the license on the HF model page + hf auth login; make data-02_representation_learning. Source: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m (gated; access confirmed 2026-11-07) |
+| timm/vit_small_patch16_dinov3.lvd1689m (fallback) | HF rev 3bf4720a82ec (83 MiB) | auto-downloaded by the download script / replearn.load_encoder only when the gated repo is inaccessible. Source: https://huggingface.co/timm/vit_small_patch16_dinov3.lvd1689m |
+| facebook/dinov2-small | HF rev ed25f3a31f01 (85 MiB) | make data-02_representation_learning (HF cache). Source: https://huggingface.co/facebook/dinov2-small |
+| Imagenette-160 | imagenette2-160 (99 MB tgz, 9469 train / 3925 val) | make data-02_representation_learning (scripts/download_shared.py imagenette()). Source: https://s3.amazonaws.com/fast-ai-imageclas/imagenette2-160.tgz |
+
 ## 07_pose_estimation (checked 2026-11-08)
 
 | Package / model | Version | Install / source |
