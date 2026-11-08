@@ -1,0 +1,4 @@
+# Project 01_classical_cv needs nothing beyond requirements/base.txt:
+# OpenCV 5.0 (opencv-python 5.0.0.93: SIFT, ORB, USAC/MAGSAC++, Stitcher, calibration), NumPy,
+# SciPy (k-d tree), pandas, matplotlib and PyYAML are all part of the core stack.
+# Do not add opencv-contrib-python or opencv-python-headless: they share the cv2 namespace.

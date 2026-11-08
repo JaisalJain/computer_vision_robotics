@@ -1,0 +1,8 @@
+# Checkerboard calibration settings for scripts/calibrate_camera.py.
+# Values match OpenCV's left*.jpg / right*.jpg sample set used in notebook 03.
+pattern: [9, 6]          # inner corners per row, per column (a 10x7-square board)
+square_size: 1.0         # edge length of one square; use metres (e.g. 0.025) for metric extrinsics
+subpix_half_window: 7    # cornerSubPix winSize half-size -> 15x15 px window (chosen by leave-one-out error in notebook 03)
+subpix_max_iter: 30
+subpix_eps: 0.001
+loo_flag_factor: 2.0     # flag views whose leave-one-out error exceeds this multiple of the median

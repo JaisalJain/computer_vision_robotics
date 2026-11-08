@@ -17,6 +17,21 @@ The MIT license of this repository covers only its own code. Every model, datase
 | Jupyter (nbconvert, ipykernel) | BSD-3-Clause | https://jupyter.org |
 | Hugging Face Hub client | Apache-2.0 | https://github.com/huggingface/huggingface_hub |
 
+## 01_classical_cv
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| OpenCV 5.0 (opencv-python 5.0.0.93) | library | Apache-2.0 | https://github.com/opencv/opencv |  |
+| OpenCV sample images left*/right*.jpg, box.png, box_in_scene.png (samples/data @5.0.0) | dataset | Apache-2.0 (repository license; per-image provenance not documented) | https://github.com/opencv/opencv/tree/5.0.0/samples/data | downloaded at runtime into data/, not committed |
+| graf1.png, graf3.png, H1to3p.xml (Oxford affine-covariant regions dataset, via OpenCV samples/data) | dataset | **research dataset, terms not stated explicitly** | https://www.robots.ox.ac.uk/~vgg/data/affine/ | UNCLEAR license: downloaded at runtime only, not committed, not shown in README figures (summary plots only) |
+| boat1-6.jpg (opencv_extra testdata/stitching @5.0.0) | dataset | **unclear (repository declares no license)** | https://github.com/opencv/opencv_extra/tree/5.0.0/testdata/stitching | UNCLEAR license: downloaded at runtime only, never committed as files; downscaled panoramas built from them appear only as notebook outputs, not in assets/ |
+| TUM RGB-D fr1_desk | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | shared dataset (scripts/download_shared.py); attribution: Sturm et al., IROS 2012 |
+| NumPy | library | BSD-3-Clause | https://github.com/numpy/numpy |  |
+| SciPy | library | BSD-3-Clause | https://github.com/scipy/scipy |  |
+| pandas | library | BSD-3-Clause | https://github.com/pandas-dev/pandas |  |
+| matplotlib | library | Matplotlib License (PSF-based, BSD-compatible) | https://github.com/matplotlib/matplotlib |  |
+| PyYAML | library | MIT | https://github.com/yaml/pyyaml |  |
+
 ## 02_representation_learning
 
 | Component | Kind | License | Source | Notes |

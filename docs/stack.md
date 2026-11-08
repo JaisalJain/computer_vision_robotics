@@ -24,6 +24,18 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 
 `torch.cuda.get_arch_list()` includes `sm_120`, so the Blackwell GPU runs native kernels without PTX JIT.
 
+## 01_classical_cv (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| opencv-python | 5.0.0.93 (cv2 5.0.0) | core stack (requirements/base.txt); no extra packages for this project. Source: https://pypi.org/project/opencv-python/ (checked 2026-11-08; GitHub has OpenCV 5.1.0 since 2026-11-06 but PyPI wheel is still 5.0.0.93) |
+| numpy | 2.5.4 | core stack. Source: https://pypi.org/project/numpy/ |
+| scipy | 1.18.1 | core stack. Source: https://pypi.org/project/scipy/ |
+| pandas | 3.1.1 | core stack. Source: https://pypi.org/project/pandas/ |
+| matplotlib | 3.11.2 | core stack. Source: https://pypi.org/project/matplotlib/ |
+| PyYAML | 6.0.3 | already installed in cv env (dependency of the core stack). Source: https://pypi.org/project/PyYAML/ |
+| OpenCV sample data | tag 5.0.0 | python scripts/download_01_classical_cv.py (make data-01_classical_cv). Source: https://raw.githubusercontent.com/opencv/opencv/5.0.0/samples/data/ and https://raw.githubusercontent.com/opencv/opencv_extra/5.0.0/testdata/stitching/ |
+
 ## 02_representation_learning (checked 2026-11-08)
 
 | Package / model | Version | Install / source |

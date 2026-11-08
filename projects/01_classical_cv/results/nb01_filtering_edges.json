@@ -1,0 +1,498 @@
+{
+  "dolly_zoom": [
+    {
+      "fov_x_deg": 90.0,
+      "f_px": 320.00000000000006,
+      "distance_m": 1.9427214588475281,
+      "mean_vertical_edge_px": 77.50942413096115,
+      "near_far_edge_ratio": 1.3306986370627776
+    },
+    {
+      "fov_x_deg": 60.0,
+      "f_px": 554.2562584220408,
+      "distance_m": 3.364892271678248,
+      "mean_vertical_edge_px": 76.80730097366681,
+      "near_far_edge_ratio": 1.1779433905251073
+    },
+    {
+      "fov_x_deg": 35.0,
+      "f_px": 1014.910336756228,
+      "distance_m": 6.161525281320297,
+      "mean_vertical_edge_px": 76.56655326225984,
+      "near_far_edge_ratio": 1.0933176006159417
+    },
+    {
+      "fov_x_deg": 15.0,
+      "f_px": 2430.6413160720485,
+      "distance_m": 14.756434510920515,
+      "mean_vertical_edge_px": 76.48274164692117,
+      "near_far_edge_ratio": 1.0379216833999225
+    }
+  ],
+  "projection_max_abs_diff_px": 1.1368683772161603e-13,
+  "sharpness": {
+    "frames_scored": 191,
+    "best_frame": 129,
+    "best_score": 692.3693236558278,
+    "worst_frame": 252,
+    "worst_score": 57.56646360820135,
+    "median_score": 193.91644801202352
+  },
+  "color_threshold_iou": [
+    {
+      "brightness_scale": 1.0,
+      "iou_hsv": 1.0,
+      "iou_rgb": 1.0
+    },
+    {
+      "brightness_scale": 0.8,
+      "iou_hsv": 0.9486472514216785,
+      "iou_rgb": 0.5842179206993444
+    },
+    {
+      "brightness_scale": 0.6,
+      "iou_hsv": 0.8869677419354839,
+      "iou_rgb": 0.24391195753980643
+    },
+    {
+      "brightness_scale": 0.5,
+      "iou_hsv": 0.8341535008201675,
+      "iou_rgb": 0.1682016859194505
+    },
+    {
+      "brightness_scale": 0.4,
+      "iou_hsv": 0.7265376344086022,
+      "iou_rgb": 0.0
+    },
+    {
+      "brightness_scale": 0.3,
+      "iou_hsv": 0.5872347736448759,
+      "iou_rgb": 0.0
+    },
+    {
+      "brightness_scale": 0.2,
+      "iou_hsv": 0.19037275175949256,
+      "iou_rgb": 0.0
+    }
+  ],
+  "aliasing": [
+    {
+      "method": "naive [::4]",
+      "aliased_contrast": 0.35321247577667236,
+      "passband_contrast": 0.35943877696990967
+    },
+    {
+      "method": "INTER_AREA (box)",
+      "aliased_contrast": 0.049093130975961685,
+      "passband_contrast": 0.34198033809661865
+    },
+    {
+      "method": "Gaussian s=1 + [::4]",
+      "aliased_contrast": 0.060742951929569244,
+      "passband_contrast": 0.34511929750442505
+    },
+    {
+      "method": "Gaussian s=2 + [::4]",
+      "aliased_contrast": 0.0038679277058690786,
+      "passband_contrast": 0.3069167137145996
+    }
+  ],
+  "conv_max_abs_error": {
+    "direct vs OpenCV": 8.344650268554688e-07,
+    "separable vs OpenCV": 2.2389563070213114e-07,
+    "cv2.getGaussianKernel vs ours": 2.7755575615628914e-17
+  },
+  "conv_timing_640x480_float32": [
+    {
+      "sigma": 0.5,
+      "kernel_size": 5,
+      "numpy_direct_ms": 6.760220999543283,
+      "numpy_separable_ms": 2.275019399712619,
+      "cv2_sepFilter2D_ms": 0.07571694002763252,
+      "cv2_GaussianBlur_ms": 0.07910295997135108,
+      "direct/separable": 2.9715003750725097
+    },
+    {
+      "sigma": 1.0,
+      "kernel_size": 7,
+      "numpy_direct_ms": 12.554240666455977,
+      "numpy_separable_ms": 3.143133400044462,
+      "cv2_sepFilter2D_ms": 0.12019376003081561,
+      "cv2_GaussianBlur_ms": 0.1197162400239904,
+      "direct/separable": 3.9941800326637065
+    },
+    {
+      "sigma": 2.0,
+      "kernel_size": 13,
+      "numpy_direct_ms": 45.234398333074445,
+      "numpy_separable_ms": 5.823461799991492,
+      "cv2_sepFilter2D_ms": 0.22539114001119742,
+      "cv2_GaussianBlur_ms": 0.22530770005687373,
+      "direct/separable": 7.767613128867873
+    },
+    {
+      "sigma": 3.0,
+      "kernel_size": 19,
+      "numpy_direct_ms": 92.46337300010055,
+      "numpy_separable_ms": 8.470259000023361,
+      "cv2_sepFilter2D_ms": 0.33420063997255056,
+      "cv2_GaussianBlur_ms": 0.3382138798951928,
+      "direct/separable": 10.916239161027487
+    },
+    {
+      "sigma": 4.0,
+      "kernel_size": 25,
+      "numpy_direct_ms": 186.42589333285287,
+      "numpy_separable_ms": 13.689072600209329,
+      "cv2_sepFilter2D_ms": 0.5505273200833471,
+      "cv2_GaussianBlur_ms": 0.4972229000304651,
+      "direct/separable": 13.618591907387657
+    },
+    {
+      "sigma": 6.0,
+      "kernel_size": 37,
+      "numpy_direct_ms": 379.2309939999541,
+      "numpy_separable_ms": 17.6065835999907,
+      "cv2_sepFilter2D_ms": 0.8169359000567056,
+      "cv2_GaussianBlur_ms": 0.772538919973158,
+      "direct/separable": 21.53915845434968
+    }
+  ],
+  "denoising": [
+    {
+      "noise": "gaussian s=20",
+      "filter": "(noisy input)",
+      "psnr_db": 22.806680527603866,
+      "ssim": 0.4907920330652928,
+      "time_ms": 0.0
+    },
+    {
+      "noise": "gaussian s=20",
+      "filter": "box 5x5",
+      "psnr_db": 24.02088966643649,
+      "ssim": 0.7644623616743219,
+      "time_ms": 0.11898466679364599
+    },
+    {
+      "noise": "gaussian s=20",
+      "filter": "gaussian s=1.5",
+      "psnr_db": 24.63902252102156,
+      "ssim": 0.7980398634937806,
+      "time_ms": 0.18981966726035657
+    },
+    {
+      "noise": "gaussian s=20",
+      "filter": "median 5x5",
+      "psnr_db": 25.401539582765857,
+      "ssim": 0.7744765558292473,
+      "time_ms": 0.8651883335915045
+    },
+    {
+      "noise": "gaussian s=20",
+      "filter": "bilateral d=9",
+      "psnr_db": 28.05502618869921,
+      "ssim": 0.7927674353621835,
+      "time_ms": 13.965189000373357
+    },
+    {
+      "noise": "gaussian s=20",
+      "filter": "nl-means h=15",
+      "psnr_db": 25.165286851811835,
+      "ssim": 0.756118765126175,
+      "time_ms": 147.63662466672636
+    },
+    {
+      "noise": "salt&pepper 5%",
+      "filter": "(noisy input)",
+      "psnr_db": 17.464083873973454,
+      "ssim": 0.4472511249538524,
+      "time_ms": 0.0
+    },
+    {
+      "noise": "salt&pepper 5%",
+      "filter": "box 5x5",
+      "psnr_db": 23.254811917545013,
+      "ssim": 0.6831510502933593,
+      "time_ms": 0.11521633314259816
+    },
+    {
+      "noise": "salt&pepper 5%",
+      "filter": "gaussian s=1.5",
+      "psnr_db": 23.802445191384116,
+      "ssim": 0.7265329924717543,
+      "time_ms": 0.14938566649410254
+    },
+    {
+      "noise": "salt&pepper 5%",
+      "filter": "median 5x5",
+      "psnr_db": 26.53917482958814,
+      "ssim": 0.8840149586799511,
+      "time_ms": 0.9418220000346386
+    },
+    {
+      "noise": "salt&pepper 5%",
+      "filter": "bilateral d=9",
+      "psnr_db": 17.3888426139137,
+      "ssim": 0.41368520363506806,
+      "time_ms": 15.608136333260822
+    },
+    {
+      "noise": "salt&pepper 5%",
+      "filter": "nl-means h=15",
+      "psnr_db": 17.4754707565616,
+      "ssim": 0.42985520332954597,
+      "time_ms": 167.9940076667966
+    }
+  ],
+  "canny_threshold_sweep_noise20": {
+    "blur_0": {
+      "best_f1": 0.7624988933572936,
+      "best_high": 380
+    },
+    "blur_1": {
+      "best_f1": 0.973110235109146,
+      "best_high": 150
+    },
+    "blur_2": {
+      "best_f1": 0.9995185363500054,
+      "best_high": 80
+    },
+    "blur_3": {
+      "best_f1": 0.9980701822922937,
+      "best_high": 30
+    }
+  },
+  "canny_noise_sweep": [
+    {
+      "noise_sigma": 0,
+      "blur_sigma": 0.0,
+      "best_f1": 0.9999999999995,
+      "best_high": 10
+    },
+    {
+      "noise_sigma": 0,
+      "blur_sigma": 1.0,
+      "best_f1": 0.9999999999995,
+      "best_high": 10
+    },
+    {
+      "noise_sigma": 0,
+      "blur_sigma": 2.0,
+      "best_f1": 0.9999999999995,
+      "best_high": 10
+    },
+    {
+      "noise_sigma": 0,
+      "blur_sigma": 3.0,
+      "best_f1": 0.9924848484843485,
+      "best_high": 10
+    },
+    {
+      "noise_sigma": 5,
+      "blur_sigma": 0.0,
+      "best_f1": 0.9999999999995,
+      "best_high": 170
+    },
+    {
+      "noise_sigma": 5,
+      "blur_sigma": 1.0,
+      "best_f1": 0.9999999999995,
+      "best_high": 40
+    },
+    {
+      "noise_sigma": 5,
+      "blur_sigma": 2.0,
+      "best_f1": 0.9999999999995,
+      "best_high": 20
+    },
+    {
+      "noise_sigma": 5,
+      "blur_sigma": 3.0,
+      "best_f1": 0.997829756449946,
+      "best_high": 20
+    },
+    {
+      "noise_sigma": 10,
+      "blur_sigma": 0.0,
+      "best_f1": 0.9904252950340134,
+      "best_high": 240
+    },
+    {
+      "noise_sigma": 10,
+      "blur_sigma": 1.0,
+      "best_f1": 0.9997742153980097,
+      "best_high": 120
+    },
+    {
+      "noise_sigma": 10,
+      "blur_sigma": 2.0,
+      "best_f1": 0.9999999999995,
+      "best_high": 30
+    },
+    {
+      "noise_sigma": 10,
+      "blur_sigma": 3.0,
+      "best_f1": 0.997829756449946,
+      "best_high": 20
+    },
+    {
+      "noise_sigma": 20,
+      "blur_sigma": 0.0,
+      "best_f1": 0.7555655456024948,
+      "best_high": 400
+    },
+    {
+      "noise_sigma": 20,
+      "blur_sigma": 1.0,
+      "best_f1": 0.9629502488057667,
+      "best_high": 150
+    },
+    {
+      "noise_sigma": 20,
+      "blur_sigma": 2.0,
+      "best_f1": 0.9976740750899854,
+      "best_high": 50
+    },
+    {
+      "noise_sigma": 20,
+      "blur_sigma": 3.0,
+      "best_f1": 0.9980732159341529,
+      "best_high": 30
+    },
+    {
+      "noise_sigma": 30,
+      "blur_sigma": 0.0,
+      "best_f1": 0.19666894421436257,
+      "best_high": 400
+    },
+    {
+      "noise_sigma": 30,
+      "blur_sigma": 1.0,
+      "best_f1": 0.7581225280417042,
+      "best_high": 220
+    },
+    {
+      "noise_sigma": 30,
+      "blur_sigma": 2.0,
+      "best_f1": 0.9548036420154934,
+      "best_high": 70
+    },
+    {
+      "noise_sigma": 30,
+      "blur_sigma": 3.0,
+      "best_f1": 0.984839474093025,
+      "best_high": 30
+    },
+    {
+      "noise_sigma": 40,
+      "blur_sigma": 0.0,
+      "best_f1": 0.11231192050960734,
+      "best_high": 400
+    },
+    {
+      "noise_sigma": 40,
+      "blur_sigma": 1.0,
+      "best_f1": 0.6794322990285121,
+      "best_high": 330
+    },
+    {
+      "noise_sigma": 40,
+      "blur_sigma": 2.0,
+      "best_f1": 0.8606617874101419,
+      "best_high": 90
+    },
+    {
+      "noise_sigma": 40,
+      "blur_sigma": 3.0,
+      "best_f1": 0.9620401652571534,
+      "best_high": 40
+    }
+  ],
+  "summary": [
+    {
+      "experiment": "pinhole projection",
+      "setting": "ours vs cv2.projectPoints",
+      "metric": "max abs difference [px]",
+      "value": 1.1368683772161603e-13
+    },
+    {
+      "experiment": "dolly zoom",
+      "setting": "FOV 90 deg",
+      "metric": "near/far vertical edge ratio",
+      "value": 1.331
+    },
+    {
+      "experiment": "dolly zoom",
+      "setting": "FOV 15 deg",
+      "metric": "near/far vertical edge ratio",
+      "value": 1.038
+    },
+    {
+      "experiment": "colour threshold",
+      "setting": "exposure x0.4, HSV rule",
+      "metric": "IoU vs s=1",
+      "value": 0.7265376344086022
+    },
+    {
+      "experiment": "colour threshold",
+      "setting": "exposure x0.4, RGB rule",
+      "metric": "IoU vs s=1",
+      "value": 0.0
+    },
+    {
+      "experiment": "aliasing (zone plate, /4)",
+      "setting": "naive subsampling",
+      "metric": "aliased contrast (ideal 0)",
+      "value": 0.35321247577667236
+    },
+    {
+      "experiment": "aliasing (zone plate, /4)",
+      "setting": "Gaussian s=2 + subsampling",
+      "metric": "aliased contrast (ideal 0)",
+      "value": 0.0038679277058690786
+    },
+    {
+      "experiment": "convolution k=25",
+      "setting": "NumPy direct",
+      "metric": "time [ms]",
+      "value": 186.42589333285287
+    },
+    {
+      "experiment": "convolution k=25",
+      "setting": "NumPy separable",
+      "metric": "time [ms]",
+      "value": 13.689072600209329
+    },
+    {
+      "experiment": "convolution k=25",
+      "setting": "cv2.GaussianBlur",
+      "metric": "time [ms]",
+      "value": 0.4972229000304651
+    },
+    {
+      "experiment": "denoising (gaussian s=20)",
+      "setting": "best: bilateral d=9",
+      "metric": "PSNR [dB]",
+      "value": 28.05502618869921
+    },
+    {
+      "experiment": "denoising (salt&pepper 5%)",
+      "setting": "best: median 5x5",
+      "metric": "PSNR [dB]",
+      "value": 26.53917482958814
+    },
+    {
+      "experiment": "Canny, noise s=20",
+      "setting": "no pre-blur",
+      "metric": "best F1",
+      "value": 0.7555655456024948
+    },
+    {
+      "experiment": "Canny, noise s=20",
+      "setting": "pre-blur s=2",
+      "metric": "best F1",
+      "value": 0.9976740750899854
+    }
+  ],
+  "notebook_runtime_s": 13.222919607000222
+}

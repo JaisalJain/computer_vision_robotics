@@ -13,6 +13,7 @@ Every notebook is a tutorial: an explanation precedes each code cell, every code
 
 | # | Project | Preview | What you'll build | Key models / tools |
 |---|---|---|---|---|
+| 01 | [Classical CV](projects/01_classical_cv/) | <img src="assets/01_classical_cv/thumb.png" width="160" alt="Classical CV"> | Filtering and edges, SIFT/ORB matching with RANSAC homographies and panoramas, checkerboard camera calibration and undistortion | OpenCV 5.0 (SIFT, ORB, MAGSAC++, Canny, calibrateCamera, Stitcher) |
 | 02 | [Representation learning](projects/02_representation_learning/) | <img src="assets/02_representation_learning/thumb.png" width="160" alt="Representation learning"> | Linear probe vs fine-tuning of timm CNNs, frozen DINOv3/DINOv2 k-NN and few-shot features, Grad-CAM from scratch | ResNet-18, EfficientNet-B0, ConvNeXt-Nano (timm), DINOv3 ViT-S/16, DINOv2 ViT-S/14 |
 | 05 | [Segmentation](projects/05_segmentation/) | <img src="assets/05_segmentation/thumb.png" width="160" alt="Segmentation"> | SAM 3 vs SAM 2.1 click/box/text segmentation, DAVIS video propagation with J&F, and YOLO26-seg real-time masks | SAM 3, SAM 2.1, Grounding DINO-T, YOLO26-seg |
 | 07 | [Pose estimation](projects/07_pose_estimation/) | <img src="assets/07_pose_estimation/thumb.png" width="160" alt="Pose estimation"> | YOLO26 human keypoints with OKS/mAP, an AprilTag/ArUco 6-DoF PnP accuracy benchmark, and robot frame chains | YOLO26n/s-pose, cv2.aruco (AprilTag 36h11, ChArUco), AprilTag 3, solvePnP IPPE |
