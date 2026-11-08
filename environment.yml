@@ -1,6 +1,7 @@
-# Conda route:  conda env create -f environment.yml && conda activate cv
+# Conda route:  PYTHONNOUSERSITE=1 conda env create -f environment.yml && conda activate cv
 # Installs Python 3.12, the CUDA 12.8 PyTorch build (sm_120 / Blackwell ready), the
 # shared core stack and the cvlab package. Project extras: make setup-<project>.
+# PYTHONNOUSERSITE=1 keeps user-site packages (~/.local) out of the env.
 name: cv
 channels:
   - conda-forge
@@ -12,3 +13,5 @@ dependencies:
       - -c requirements/constraints.txt
       - -r requirements/base.txt
       - -e .
+variables:
+  PYTHONNOUSERSITE: "1"   # isolate the env from packages in ~/.local
