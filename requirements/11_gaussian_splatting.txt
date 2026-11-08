@@ -1,0 +1,29 @@
+# Project 11 (Gaussian splatting) extras on top of requirements/base.txt, pinned to the tested versions.
+#   make setup-11_gaussian_splatting   (pip install -c requirements/constraints.txt -r this file)
+#
+# gsplat ships no prebuilt wheel for torch 2.11 / CUDA 12.8: the PyPI package JIT-compiles its CUDA
+# extension on first use (about a minute here, cached in ~/.cache/torch_extensions). That needs the CUDA
+# 12.8 compiler + headers in the env (see the project README for the exact conda command:
+# cuda-nvcc, cuda-cudart-dev, cuda-cccl and the libcu*-dev packages from nvidia/label/cuda-12.8.1)
+# and, for the host compiler, CPATH=$CONDA_PREFIX/targets/x86_64-linux/include and
+# LIBRARY_PATH=$CONDA_PREFIX/lib (scripts/splatkit.py sets both before gsplat is used).
+gsplat==1.5.3
+ninja==1.13.2
+jaxtyping==0.3.11
+rich==15.0.0
+# PSNR / SSIM / LPIPS (LPIPS uses torchvision's AlexNet, fetched by the download script).
+torchmetrics==1.9.0
+lightning-utilities==0.15.3
+# Official COLMAP bindings (CPU wheel): load sparse/0 models and run SfM on your own photos.
+# Do NOT install the pycolmap[panorama] extra (it pulls opencv-python-headless).
+pycolmap==4.2.1
+# Depth Anything 3 (feed-forward initialisation) is imported from the pinned clone in third_party/
+# (bash scripts/setup_third_party.sh depth-anything-3); these are the packages it imports.
+safetensors==0.8.0
+einops==0.8.2
+omegaconf==2.4.0
+addict==2.4.0
+imageio==2.38.1
+trimesh==5.2.0
+plyfile==1.1.5
+evo==1.38.1

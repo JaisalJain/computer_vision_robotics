@@ -186,6 +186,22 @@ The MIT license of this repository covers only its own code. Every model, datase
 | South Building (COLMAP dataset) | dataset | **UNCLEAR (research use)** | https://colmap.github.io/datasets.html (zip: https://github.com/colmap/colmap/releases/download/3.11.1/south-building.zip) | UNCLEAR; shared with project 09; downloaded locally only |
 | TUM RGB-D fr1_desk | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | attribution Sturm et al., IROS 2012; shared with projects 08/09/12/15 |
 
+## 11_gaussian_splatting
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| gsplat 1.5.3 | library | Apache-2.0 | https://github.com/nerfstudio-project/gsplat | CUDA extension JIT-compiled locally for sm_120 |
+| pycolmap / COLMAP 4.2.1 | library | BSD-3-Clause | https://github.com/colmap/colmap |  |
+| torchmetrics 1.9.0 (PSNR, SSIM, LPIPS) | library | Apache-2.0 | https://github.com/Lightning-AI/torchmetrics |  |
+| LPIPS linear calibration weights (bundled in torchmetrics) | model | BSD-2-Clause | https://github.com/richzhang/PerceptualSimilarity |  |
+| torchvision AlexNet ImageNet weights (LPIPS backbone) | model | **BSD-3-Clause (torchvision code); trained on ImageNet. UNCLEAR** | https://pytorch.org/vision/stable/models/generated/torchvision.models.alexnet.html | UNCLEAR: ImageNet terms restrict the images to non-commercial research; the status of the weights is commonly treated as unclear |
+| DA3-BASE weights (Depth Anything 3) | model | Apache-2.0 | https://huggingface.co/depth-anything/DA3-BASE |  |
+| Depth Anything 3 code @3d835ec | code | Apache-2.0 | https://github.com/ByteDance-Seed/Depth-Anything-3 | pinned clone in gitignored third_party/, imported from source |
+| evo 1.38.1 | library | **GPL-3.0** | https://github.com/MichaelGrupp/evo | COPYLEFT; import-time dependency of depth_anything_3.api, used unmodified |
+| plyfile 1.1.5 | library | **GPL-3.0** | https://github.com/dranjan/python-plyfile | COPYLEFT; import-time dependency of depth_anything_3.api, used unmodified |
+| jaxtyping, rich, ninja, einops, safetensors, omegaconf, addict, trimesh, imageio, lightning-utilities | library | MIT / Apache-2.0 / BSD | https://pypi.org/ | gsplat, torchmetrics and DA3 dependencies |
+| Mip-NeRF 360 bonsai scene (nvs-bench/mipnerf360 HF mirror) | dataset | **UNCLEAR: the mirror card says MIT; the original release states no license** | https://huggingface.co/datasets/nvs-bench/mipnerf360 ; https://jonbarron.info/mipnerf360/ | UNCLEAR; downloaded locally only; only renders and figures in assets/; cite Barron et al. 2022 |
+
 ## 12_visual_odometry
 
 | Component | Kind | License | Source | Notes |

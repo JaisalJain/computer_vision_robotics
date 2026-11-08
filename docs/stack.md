@@ -179,6 +179,24 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 | VGGT kitchen example images | 25 PNG at vggt@a288dd0 | make data-10_feedforward_3d (copied from third_party/vggt or raw.githubusercontent.com). Source: https://github.com/facebookresearch/vggt/tree/a288dd0f14786c93483e45524328726ab7b1b4ce/examples/kitchen (checked 2026-11-08) |
 | TUM RGB-D fr1_desk | rgbd_dataset_freiburg1_desk (24 undistorted sharp keyframes derived) | make data-10_feedforward_3d (download_shared.tum). Source: https://cvg.cit.tum.de/data/datasets/rgbd-dataset (checked 2026-11-08) |
 
+## 11_gaussian_splatting (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| gsplat | 1.5.3 | make setup-11_gaussian_splatting (pip -c requirements/constraints.txt gsplat==1.5.3); CUDA extension JIT-built on first use for sm_120 (54 s here) with CPATH=$CONDA_PREFIX/targets/x86_64-linux/include LIBRARY_PATH=$CONDA_PREFIX/lib (optionally CUDA_HOME=$CONDA_PREFIX TORCH_CUDA_ARCH_LIST=12.0). Source: https://pypi.org/project/gsplat/ (checked 2026-11-08) |
+| CUDA 12.8 compiler set (conda) | cuda-nvcc 12.8.93 | conda install -n cv -c nvidia/label/cuda-12.8.1 -c defaults cuda-nvcc=12.8 cuda-cudart-dev=12.8 cuda-cccl=12.8 libcublas-dev libcusparse-dev libcusolver-dev libcurand-dev cuda-nvrtc-dev=12.8 cuda-profiler-api=12.8. Source: https://anaconda.org/nvidia (checked 2026-11-08) |
+| ninja | 1.13.2 | pip (requirements/11_gaussian_splatting.txt). Source: https://pypi.org/project/ninja/ |
+| jaxtyping | 0.3.11 | pip (requirements/11_gaussian_splatting.txt). Source: https://pypi.org/project/jaxtyping/ |
+| rich | 15.0.0 | pip (requirements/11_gaussian_splatting.txt). Source: https://pypi.org/project/rich/ |
+| torchmetrics | 1.9.0 | pip (requirements/11_gaussian_splatting.txt). Source: https://pypi.org/project/torchmetrics/ |
+| lightning-utilities | 0.15.3 | pip (requirements/11_gaussian_splatting.txt). Source: https://pypi.org/project/lightning-utilities/ |
+| pycolmap | 4.2.1 | pip (requirements/11_gaussian_splatting.txt); do not install the [panorama] extra (pulls opencv-python-headless). Source: https://pypi.org/project/pycolmap/ |
+| Depth Anything 3 (code) | commit 3d835ec | bash scripts/setup_third_party.sh depth-anything-3 (imported via cvlab.io.add_third_party). Source: https://github.com/ByteDance-Seed/Depth-Anything-3 |
+| DA3-BASE weights | HF depth-anything/DA3-BASE | make data-11_gaussian_splatting (Hugging Face cache). Source: https://huggingface.co/depth-anything/DA3-BASE |
+| DA3 import-time deps: safetensors, einops, omegaconf, addict, imageio, trimesh, plyfile, evo | 0.8.0, 0.8.2, 2.4.0, 2.4.0, 2.38.1, 5.2.0, 1.1.5, 1.38.1 | pip (requirements/11_gaussian_splatting.txt). Source: https://pypi.org/ |
+| torchvision AlexNet weights (LPIPS) | torchvision 0.26.0 IMAGENET1K_V1 | make data-11_gaussian_splatting (weights/torch_hub). Source: https://pytorch.org/vision/stable/models/generated/torchvision.models.alexnet.html |
+| Mip-NeRF 360 bonsai | nvs-bench/mipnerf360 (pinned revision in the download script) | make data-11_gaussian_splatting (about 373 MB, idempotent). Source: https://huggingface.co/datasets/nvs-bench/mipnerf360 |
+
 ## 12_visual_odometry (checked 2026-11-08)
 
 | Package / model | Version | Install / source |
