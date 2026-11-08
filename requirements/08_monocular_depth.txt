@@ -1,0 +1,17 @@
+# Project 08 (monocular depth) extras on top of requirements/base.txt, pinned to the tested versions.
+#   make setup-08_monocular_depth   (pip install -c requirements/constraints.txt -r this file)
+#
+# Depth Anything 3 itself is NOT pip-installed: its package metadata pins numpy<2. The code is a
+# pinned clone in third_party/depth-anything-3 (bash scripts/setup_third_party.sh depth-anything-3)
+# that the project imports from source. The packages below are what `depth_anything_3.api`
+# imports at import time; moviepy (only used for Gaussian-splat videos) is replaced by a stub.
+transformers==5.22.2   # Depth Anything V2 (AutoModelForDepthEstimation)
+safetensors==0.8.0
+einops==0.8.2
+omegaconf==2.4.0
+addict==2.4.0
+imageio==2.38.1
+trimesh==5.2.0
+plyfile==1.1.5
+pycolmap==4.2.1
+evo==1.38.1

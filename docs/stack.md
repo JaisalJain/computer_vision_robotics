@@ -53,6 +53,28 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 | TUM RGB-D fr1_desk | rgbd_dataset_freiburg1_desk | scripts/download_shared.py tum('fr1_desk') (called from download_07_pose_estimation.py). Source: https://cvg.cit.tum.de/data/datasets/rgbd-dataset (checked 2026-11-07) |
 | OpenCV ArUco tutorial photo + calibration | OpenCV 5.0.0 tag | make data-07_pose_estimation -> data/07_pose_estimation/. Source: https://raw.githubusercontent.com/opencv/opencv/5.0.0/doc/tutorials/objdetect/aruco_detection/images/singlemarkersoriginal.jpg (checked 2026-11-07) |
 
+## 08_monocular_depth (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| depth-anything-3 (source clone) | commit 3d835ec1a5802d64a8b8b15f817a1ab54809bfe4 | bash scripts/setup_third_party.sh depth-anything-3; imported via cvlab.io.add_third_party('depth-anything-3', 'src') (not pip-installed: metadata pins numpy<2). Source: https://github.com/ByteDance-Seed/Depth-Anything-3 |
+| transformers | 5.22.2 | pip install -c requirements/constraints.txt transformers==5.22.2 (requirements/08_monocular_depth.txt). Source: https://pypi.org/project/transformers/ |
+| safetensors | 0.8.0 | pip (requirements/08_monocular_depth.txt, constraints). Source: https://pypi.org/project/safetensors/ |
+| einops | 0.8.2 | pip (requirements/08_monocular_depth.txt, constraints). Source: https://pypi.org/project/einops/ |
+| omegaconf | 2.4.0 | pip (requirements/08_monocular_depth.txt, constraints). Source: https://pypi.org/project/omegaconf/ |
+| addict | 2.4.0 | pip (requirements/08_monocular_depth.txt, constraints). Source: https://pypi.org/project/addict/ |
+| imageio | 2.38.1 | pip (requirements/08_monocular_depth.txt, constraints). Source: https://pypi.org/project/imageio/ |
+| trimesh | 5.2.0 | pip (requirements/08_monocular_depth.txt, constraints). Source: https://pypi.org/project/trimesh/ |
+| plyfile | 1.1.5 | pip (requirements/08_monocular_depth.txt, constraints). Source: https://pypi.org/project/plyfile/ |
+| pycolmap | 4.2.1 | pip (requirements/08_monocular_depth.txt, constraints). Source: https://pypi.org/project/pycolmap/ |
+| evo | 1.38.1 | pip (requirements/08_monocular_depth.txt, constraints). Source: https://pypi.org/project/evo/ |
+| DA3-SMALL | HF main (34.3 M params) | make data-08_monocular_depth (HF cache). Source: https://huggingface.co/depth-anything/DA3-SMALL |
+| DA3-BASE | HF main (135.4 M params) | make data-08_monocular_depth (HF cache). Source: https://huggingface.co/depth-anything/DA3-BASE |
+| DA3METRIC-LARGE | HF main (334.2 M params) | make data-08_monocular_depth (HF cache). Source: https://huggingface.co/depth-anything/DA3METRIC-LARGE |
+| Depth-Anything-V2-Small-hf | HF main (24.8 M params) | make data-08_monocular_depth (HF cache). Source: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf |
+| Depth-Anything-V2-Metric-Indoor-Small-hf | HF main (24.8 M params) | make data-08_monocular_depth (HF cache). Source: https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-Indoor-Small-hf |
+| TUM RGB-D fr1_desk + fr1_xyz | freiburg1 tgz | make data-08_monocular_depth (scripts/download_shared.py tum()). Source: https://cvg.cit.tum.de/data/datasets/rgbd-dataset |
+
 ## 12_visual_odometry (checked 2026-11-08)
 
 | Package / model | Version | Install / source |

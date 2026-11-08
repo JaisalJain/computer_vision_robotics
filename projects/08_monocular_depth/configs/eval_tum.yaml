@@ -1,0 +1,14 @@
+# Benchmark protocol for scripts/eval_tum.py (monocular depth vs Kinect depth on TUM RGB-D).
+sequences: [fr1_desk, fr1_xyz]   # data/tum/<name>/rgbd_dataset_freiburg1_<...>
+frames_per_sequence: 48          # evenly spaced over the whole sequence
+models:                          # keys of mono_depth.MODELS, evaluated one at a time
+  - da2-small
+  - da3-small
+  - da3-base
+  - da2-metric-indoor-small
+  - da3metric-large
+da3_process_res: 504             # DA3 longest input side (upstream default)
+intrinsics: fr1                  # calibrated fr1 RGB intrinsics (cvlab.tum.camera_for)
+valid_depth_m: [0.1, 10.0]       # GT pixels used for the metrics
+warmup_iters: 5                  # untimed predictions before each timed loop
+timing_iters: 50                 # back-to-back predictions on one frame for the latency numbers

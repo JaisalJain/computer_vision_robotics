@@ -15,6 +15,7 @@ Every notebook is a tutorial: an explanation precedes each code cell, every code
 |---|---|---|---|---|
 | 02 | [Representation learning](projects/02_representation_learning/) | <img src="assets/02_representation_learning/thumb.png" width="160" alt="Representation learning"> | Linear probe vs fine-tuning of timm CNNs, frozen DINOv3/DINOv2 k-NN and few-shot features, Grad-CAM from scratch | ResNet-18, EfficientNet-B0, ConvNeXt-Nano (timm), DINOv3 ViT-S/16, DINOv2 ViT-S/14 |
 | 07 | [Pose estimation](projects/07_pose_estimation/) | <img src="assets/07_pose_estimation/thumb.png" width="160" alt="Pose estimation"> | YOLO26 human keypoints with OKS/mAP, an AprilTag/ArUco 6-DoF PnP accuracy benchmark, and robot frame chains | YOLO26n/s-pose, cv2.aruco (AprilTag 36h11, ChArUco), AprilTag 3, solvePnP IPPE |
+| 08 | [Monocular depth](projects/08_monocular_depth/) | <img src="assets/08_monocular_depth/thumb.png" width="160" alt="Monocular depth"> | Depth Anything 3 vs V2 on TUM RGB-D: relative vs metric depth, alignment, benchmark, point clouds | DA3-Small/Base, DA3Metric-Large, Depth Anything V2 (Small, Metric-Indoor) |
 | 12 | [Visual odometry](projects/12_visual_odometry/) | <img src="assets/12_visual_odometry/thumb.png" width="160" alt="Visual odometry"> | Monocular and RGB-D feature-based VO on TUM fr1, scored with ATE/RPE, with drift and failure analysis | ORB, SIFT, 5-point E + MAGSAC++, EPnP-RANSAC, evo |
 
 *Projects are added as they are completed.*

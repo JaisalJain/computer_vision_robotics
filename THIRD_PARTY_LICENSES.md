@@ -49,6 +49,28 @@ The MIT license of this repository covers only its own code. Every model, datase
 | pupil-apriltags 1.0.4.post11 (bindings) + bundled AprilTag 3 C library | library | MIT (bindings) / BSD-2-Clause (AprilTag C library) | https://github.com/pupil-labs/apriltags | Optional comparison detector; the notebooks fall back to cv2.aruco if it is missing. |
 | scipy 1.18.1 (Rotation, linear_sum_assignment) | library | BSD-3-Clause | https://github.com/scipy/scipy | Core stack. |
 
+## 08_monocular_depth
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| Depth Anything 3 code (ByteDance-Seed/Depth-Anything-3 @3d835ec) | code | Apache-2.0 | https://github.com/ByteDance-Seed/Depth-Anything-3 | pinned clone in gitignored third_party/, imported from source, not redistributed |
+| DA3-SMALL weights | model | Apache-2.0 | https://huggingface.co/depth-anything/DA3-SMALL |  |
+| DA3-BASE weights | model | Apache-2.0 | https://huggingface.co/depth-anything/DA3-BASE |  |
+| DA3METRIC-LARGE weights | model | Apache-2.0 | https://huggingface.co/depth-anything/DA3METRIC-LARGE |  |
+| Depth-Anything-V2-Small-hf | model | Apache-2.0 | https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf |  |
+| Depth-Anything-V2-Metric-Indoor-Small-hf | model | **unclear** | https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-Indoor-Small-hf | UNCLEAR: the -hf repo has no license tag; the original Depth-Anything-V2-Metric-Hypersim-Small checkpoint repo is tagged Apache-2.0 |
+| TUM RGB-D (fr1_desk, fr1_xyz) | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | attribution required (Sturm et al., IROS 2012); small figures in assets/ show frames |
+| transformers 5.22.2 | library | Apache-2.0 | https://github.com/huggingface/transformers |  |
+| safetensors 0.8.0 | library | Apache-2.0 | https://github.com/huggingface/safetensors |  |
+| evo 1.38.1 | library | **GPL-3.0** | https://github.com/MichaelGrupp/evo | COPYLEFT; imported by depth_anything_3.api at import time and used unmodified as a library |
+| plyfile 1.1.5 | library | **GPL-3.0** | https://github.com/dranjan/python-plyfile | COPYLEFT; DA3 import-time dependency, used unmodified |
+| pycolmap 4.2.1 | library | BSD-3-Clause | https://github.com/colmap/colmap |  |
+| omegaconf 2.4.0 | library | BSD-3-Clause | https://github.com/omry/omegaconf |  |
+| trimesh 5.2.0 | library | MIT | https://github.com/mikedh/trimesh |  |
+| einops 0.8.2 | library | MIT | https://github.com/arogozhnikov/einops |  |
+| addict 2.4.0 | library | MIT | https://github.com/mewwts/addict |  |
+| imageio 2.38.1 | library | BSD-2-Clause | https://github.com/imageio/imageio |  |
+
 ## 12_visual_odometry
 
 | Component | Kind | License | Source | Notes |
