@@ -1,0 +1,6 @@
+model,role,precision,params [M],latency [ms],peak VRAM [MiB],objects / instances (4 frames)
+Grounding DINO-T,text -> boxes,fp32,172.3,332.9,1770,29
+OWLv2-B/16,text -> boxes,fp16,155.0,69.0,406,36
+SAM 3,box -> mask,bf16,458.3,377.9,1227,29
+SAM 2.1-S,box -> mask,bf16,38.5,81.4,383,29
+SAM 3 (text),text -> masks,bf16,840.4,662.7,2058,41

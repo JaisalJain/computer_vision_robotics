@@ -140,3 +140,20 @@ The MIT license of this repository covers only its own code. Every model, datase
 | open_clip_torch | library | MIT | https://github.com/mlfoundations/open_clip |  |
 | timm | library | Apache-2.0 | https://github.com/huggingface/pytorch-image-models | dependency of open_clip |
 | scikit-learn | library | BSD-3-Clause | https://github.com/scikit-learn/scikit-learn | core stack; used for the logistic-regression probe in the ex01 solution |
+
+## 15_robotics_capstone
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| IDEA-Research/grounding-dino-tiny (rev a2bb814) | model | Apache-2.0 | https://huggingface.co/IDEA-Research/grounding-dino-tiny |  |
+| google/owlv2-base-patch16-ensemble (rev cfd3195) | model | Apache-2.0 | https://huggingface.co/google/owlv2-base-patch16-ensemble |  |
+| facebook/sam3 (rev 3c879f3) | model | **SAM License (Meta custom license)** | https://huggingface.co/facebook/sam3 | Gated, custom non-OSI license with use restrictions. |
+| facebook/sam2.1-hiera-small (rev ee5bba1) | model | Apache-2.0 | https://huggingface.co/facebook/sam2.1-hiera-small |  |
+| depth-anything/Depth-Anything-V2-Metric-Indoor-Small-hf (rev 8078d68) | model | **Apache-2.0 (Small variant, per upstream README; HF card has no license tag)** | https://github.com/DepthAnything/Depth-Anything-V2 | The Base/Large metric variants are CC BY-NC 4.0 and are NOT used. |
+| TUM RGB-D fr1/desk | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | Cite Sturm et al., IROS 2012. |
+| transformers 5.22.2 | library | Apache-2.0 | https://github.com/huggingface/transformers |  |
+| rerun-sdk 0.42.0 | library | MIT OR Apache-2.0 | https://github.com/rerun-io/rerun | The PyPI license field is empty; the repo is dual-licensed. |
+| pyarrow 26.0.1 (rerun dependency) | library | Apache-2.0 | https://pypi.org/project/pyarrow/ |  |
+| scipy (KD-tree, convex hull, morphology) | library | BSD-3-Clause | https://scipy.org |  |
+| ROS 2 Jazzy rclpy / sensor_msgs / geometry_msgs / message_filters (optional node) | library | Apache-2.0 | https://docs.ros.org/en/jazzy/ | System apt packages, used only by the optional ros2/ node. |
+| vision_msgs 4.1.1 (optional node) | library | Apache-2.0 | https://github.com/ros-perception/vision_msgs |  |

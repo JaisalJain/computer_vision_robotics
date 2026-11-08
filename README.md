@@ -21,6 +21,7 @@ Every notebook is a tutorial: an explanation precedes each code cell, every code
 | 10 | [Feed-forward 3D reconstruction](projects/10_feedforward_3d/) | <img src="assets/10_feedforward_3d/thumb.png" width="160" alt="Feed-forward 3D reconstruction"> | Unposed photos to cameras, depth and point clouds with VGGT and Depth Anything 3, scored against COLMAP and mocap | VGGT-1B, DA3-Base, DA3-Large-1.1, pycolmap |
 | 12 | [Visual odometry](projects/12_visual_odometry/) | <img src="assets/12_visual_odometry/thumb.png" width="160" alt="Visual odometry"> | Monocular and RGB-D feature-based VO on TUM fr1, scored with ATE/RPE, with drift and failure analysis | ORB, SIFT, 5-point E + MAGSAC++, EPnP-RANSAC, evo |
 | 13 | [Vision-language models](projects/13_vision_language/) | <img src="assets/13_vision_language/thumb.png" width="160" alt="Vision-language models"> | Zero-shot SigLIP 2/CLIP classification, Florence-2 captions and grounding, and a benchmarked small VLM for robot-desk VQA | SigLIP 2, CLIP ViT-B/32, Florence-2-base, Qwen3.5-0.8B |
+| 15 | [Robotics capstone](projects/15_robotics_capstone/) | <img src="assets/15_robotics_capstone/thumb.png" width="160" alt="Robotics capstone"> | Text-queried RGB-D perception: open-vocab detection, SAM masks, object clouds, 3D boxes, grasp poses, world object map | Grounding DINO-T, OWLv2, SAM 3, SAM 2.1-S, Depth Anything V2 Metric |
 
 *Projects are added as they are completed.*
 

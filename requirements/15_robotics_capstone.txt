@@ -1,0 +1,18 @@
+# Project 15_robotics_capstone - extras on top of requirements/base.txt, pinned to the tested versions.
+# Install: make setup-15_robotics_capstone
+#   (= pip install --extra-index-url https://download.pytorch.org/whl/cu128 \
+#        -c requirements/constraints.txt -r requirements/15_robotics_capstone.txt)
+#
+# Grounding DINO-T, OWLv2, SAM 3 (gated: accept the SAM License on the Hugging Face page),
+# SAM 2.1 and Depth Anything V2 Metric all run through Hugging Face transformers.
+transformers==5.22.2
+tokenizers==0.23.3
+safetensors==0.8.0
+# Rerun viewer SDK: writes the .rrd recording. .rrd files are not compatible across Rerun
+# versions, so the version is pinned exactly (pulls in pyarrow and psutil).
+rerun-sdk==0.42.0
+pyarrow==26.0.1
+#
+# The optional ROS 2 node (projects/15_robotics_capstone/ros2/) does NOT use this environment:
+# it runs on the system Python of ROS 2 Jazzy (apt packages ros-jazzy-rclpy,
+# ros-jazzy-vision-msgs, ros-jazzy-sensor-msgs, ros-jazzy-geometry-msgs).

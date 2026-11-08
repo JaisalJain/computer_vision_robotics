@@ -140,3 +140,20 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 | Qwen/Qwen3.5-0.8B | rev 2fc06364715b967f1860aea9cf38778875588b17 (1.6 GB bf16) | make data-13_vision_language (HF hub, pinned); Qwen3_5ForConditionalGeneration, native in transformers 5.22. Source: https://huggingface.co/Qwen/Qwen3.5-0.8B (checked 2026-11-08) |
 | Ultralytics coco128 | assets v0.0.0 (128 images, 929 boxes) | make data-13_vision_language -> data/ultralytics/coco128. Source: https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128.zip (checked 2026-11-08) |
 | Imagenette-160 + TUM RGB-D fr1_desk | imagenette2-160; rgbd_dataset_freiburg1_desk | make data-13_vision_language (calls scripts/download_shared.py imagenette() and tum('fr1_desk')). Source: https://github.com/fastai/imagenette, https://cvg.cit.tum.de/data/datasets/rgbd-dataset (checked 2026-11-08) |
+
+## 15_robotics_capstone (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| transformers | 5.22.2 | pip install -c requirements/constraints.txt transformers==5.22.2 (make setup-15_robotics_capstone). Source: https://pypi.org/project/transformers/5.22.2/ (checked 2026-11-08) |
+| tokenizers | 0.23.3 | pip (dependency of transformers, pinned in requirements/15_robotics_capstone.txt). Source: https://pypi.org/project/tokenizers/ (checked 2026-11-08) |
+| safetensors | 0.8.0 | pip (pinned in requirements/15_robotics_capstone.txt). Source: https://pypi.org/project/safetensors/ (checked 2026-11-08) |
+| rerun-sdk | 0.42.0 | pip install -c requirements/constraints.txt rerun-sdk==0.42.0. Source: https://pypi.org/project/rerun-sdk/0.42.0/ (checked 2026-11-08) |
+| pyarrow | 26.0.1 | pip (dependency of rerun-sdk, pinned). Source: https://pypi.org/project/pyarrow/ (checked 2026-11-08) |
+| Grounding DINO-T | IDEA-Research/grounding-dino-tiny @ a2bb814dd30d776dcf7e30523b00659f4f141c71 | make data-15_robotics_capstone (HF cache, safetensors only). Source: https://huggingface.co/IDEA-Research/grounding-dino-tiny (checked 2026-11-08) |
+| OWLv2-B/16 ensemble | google/owlv2-base-patch16-ensemble @ cfd3195ba4ea9592eec887ded089f4c08eff231d | make data-15_robotics_capstone. Source: https://huggingface.co/google/owlv2-base-patch16-ensemble (checked 2026-11-08) |
+| SAM 3 (Sam3TrackerModel box prompts, Sam3Model text prompts) | facebook/sam3 @ 3c879f39826c281e95690f02c7821c4de09afae7 | make data-15_robotics_capstone (gated: accept license + hf auth login). Source: https://huggingface.co/facebook/sam3 (checked 2026-11-08) |
+| SAM 2.1 Hiera-S | facebook/sam2.1-hiera-small @ ee5bba1d82bb8749febdf90f45e84b687142ba03 | make data-15_robotics_capstone. Source: https://huggingface.co/facebook/sam2.1-hiera-small (checked 2026-11-08) |
+| Depth Anything V2 Metric-Indoor-Small | depth-anything/Depth-Anything-V2-Metric-Indoor-Small-hf @ 8078d68a9c75a972131914f6afd0c1723be0da7f | make data-15_robotics_capstone. Source: https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-Indoor-Small-hf (checked 2026-11-08) |
+| TUM RGB-D fr1/desk | rgbd_dataset_freiburg1_desk (344 MB tgz) | make data-15_robotics_capstone (scripts/download_shared.py tum('fr1_desk')). Source: https://cvg.cit.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_desk.tgz (checked 2026-11-08) |
+| ROS 2 Jazzy (rclpy 7.1.12, vision_msgs 4.1.1, message_filters), optional node only | jazzy (apt) | apt: ros-jazzy-rclpy ros-jazzy-vision-msgs ros-jazzy-sensor-msgs ros-jazzy-geometry-msgs (system Python 3.12, NOT the cv env). Source: https://docs.ros.org/en/jazzy/ (checked 2026-11-08) |

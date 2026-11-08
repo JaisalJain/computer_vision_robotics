@@ -1,0 +1,319 @@
+{
+  "frames": 72,
+  "stride": 8,
+  "detections": 467,
+  "observations_3d": 447,
+  "peak_vram_mib": {
+    "SAM 3": 2731,
+    "SAM 2.1-S": 1942
+  },
+  "latency_ms": {
+    "GDINO-T + SAM 3 | detect (Grounding DINO-T)": {
+      "mean [ms]": 343.1,
+      "p50 [ms]": 336.7,
+      "p90 [ms]": 371.6
+    },
+    "GDINO-T + SAM 3 | segment (SAM)": {
+      "mean [ms]": 348.9,
+      "p50 [ms]": 352.4,
+      "p90 [ms]": 368.6
+    },
+    "GDINO-T + SAM 3 | object clouds": {
+      "mean [ms]": 109.3,
+      "p50 [ms]": 94.6,
+      "p90 [ms]": 193.8
+    },
+    "GDINO-T + SAM 3 | planes + boxes": {
+      "mean [ms]": 118.7,
+      "p50 [ms]": 125.3,
+      "p90 [ms]": 172.4
+    },
+    "GDINO-T + SAM 3 | grasps": {
+      "mean [ms]": 160.3,
+      "p50 [ms]": 161.5,
+      "p90 [ms]": 252.6
+    },
+    "GDINO-T + SAM 3 | total": {
+      "mean [ms]": 1082.8,
+      "p50 [ms]": 1102.0,
+      "p90 [ms]": 1305.9
+    },
+    "GDINO-T + SAM 2.1-S | detect (Grounding DINO-T)": {
+      "mean [ms]": 346.5,
+      "p50 [ms]": 337.8,
+      "p90 [ms]": 374.6
+    },
+    "GDINO-T + SAM 2.1-S | segment (SAM)": {
+      "mean [ms]": 80.0,
+      "p50 [ms]": 82.5,
+      "p90 [ms]": 89.2
+    },
+    "GDINO-T + SAM 2.1-S | object clouds": {
+      "mean [ms]": 107.9,
+      "p50 [ms]": 93.0,
+      "p90 [ms]": 187.7
+    },
+    "GDINO-T + SAM 2.1-S | planes + boxes": {
+      "mean [ms]": 119.9,
+      "p50 [ms]": 124.7,
+      "p90 [ms]": 176.5
+    },
+    "GDINO-T + SAM 2.1-S | grasps": {
+      "mean [ms]": 162.7,
+      "p50 [ms]": 163.5,
+      "p90 [ms]": 257.0
+    },
+    "GDINO-T + SAM 2.1-S | total": {
+      "mean [ms]": 819.7,
+      "p50 [ms]": 827.7,
+      "p90 [ms]": 1001.0
+    }
+  },
+  "consistency": {
+    "baseline (SAM 3, fr1 + distortion) | box centre": {
+      "observations": 447.0,
+      "landmarks": 65.0,
+      "stable landmarks": 21.0,
+      "obs in stable landmarks [%]": 85.5,
+      "median dev [cm]": 2.1,
+      "p90 dev [cm]": 6.2,
+      "within 5 cm [%]": 85.3
+    },
+    "SAM 2.1-S masks | box centre": {
+      "observations": 447.0,
+      "landmarks": 64.0,
+      "stable landmarks": 21.0,
+      "obs in stable landmarks [%]": 86.4,
+      "median dev [cm]": 2.2,
+      "p90 dev [cm]": 6.2,
+      "within 5 cm [%]": 83.9
+    },
+    "no segmentation (box mask) | box centre": {
+      "observations": 451.0,
+      "landmarks": 68.0,
+      "stable landmarks": 20.0,
+      "obs in stable landmarks [%]": 84.3,
+      "median dev [cm]": 3.4,
+      "p90 dev [cm]": 8.2,
+      "within 5 cm [%]": 68.9
+    },
+    "fr1 K, distortion ignored | box centre": {
+      "observations": 447.0,
+      "landmarks": 64.0,
+      "stable landmarks": 20.0,
+      "obs in stable landmarks [%]": 85.7,
+      "median dev [cm]": 2.2,
+      "p90 dev [cm]": 6.1,
+      "within 5 cm [%]": 85.4
+    },
+    "ROS default intrinsics | box centre": {
+      "observations": 447.0,
+      "landmarks": 64.0,
+      "stable landmarks": 20.0,
+      "obs in stable landmarks [%]": 85.9,
+      "median dev [cm]": 2.2,
+      "p90 dev [cm]": 6.1,
+      "within 5 cm [%]": 85.9
+    },
+    "baseline (SAM 3, fr1 + distortion) | visible-point centroid": {
+      "observations": 447.0,
+      "landmarks": 64.0,
+      "stable landmarks": 19.0,
+      "obs in stable landmarks [%]": 85.0,
+      "median dev [cm]": 2.3,
+      "p90 dev [cm]": 6.2,
+      "within 5 cm [%]": 85.5
+    }
+  },
+  "landmarks": [
+    {
+      "landmark": 8,
+      "label": "cup",
+      "frames seen": 39,
+      "median dev [cm]": 2.9,
+      "p90 dev [cm]": 6.1,
+      "within 5 cm [%]": 85.0,
+      "frames with a grasp [%]": 79.0
+    },
+    {
+      "landmark": 10,
+      "label": "cereal box",
+      "frames seen": 36,
+      "median dev [cm]": 1.8,
+      "p90 dev [cm]": 5.6,
+      "within 5 cm [%]": 89.0,
+      "frames with a grasp [%]": 67.0
+    },
+    {
+      "landmark": 11,
+      "label": "book",
+      "frames seen": 34,
+      "median dev [cm]": 1.4,
+      "p90 dev [cm]": 3.9,
+      "within 5 cm [%]": 91.0,
+      "frames with a grasp [%]": 21.0
+    },
+    {
+      "landmark": 0,
+      "label": "keyboard",
+      "frames seen": 27,
+      "median dev [cm]": 2.7,
+      "p90 dev [cm]": 12.7,
+      "within 5 cm [%]": 78.0,
+      "frames with a grasp [%]": 22.0
+    },
+    {
+      "landmark": 16,
+      "label": "game controller",
+      "frames seen": 26,
+      "median dev [cm]": 2.0,
+      "p90 dev [cm]": 3.7,
+      "within 5 cm [%]": 100.0,
+      "frames with a grasp [%]": 85.0
+    },
+    {
+      "landmark": 20,
+      "label": "telephone",
+      "frames seen": 26,
+      "median dev [cm]": 2.2,
+      "p90 dev [cm]": 5.6,
+      "within 5 cm [%]": 81.0,
+      "frames with a grasp [%]": 27.0
+    },
+    {
+      "landmark": 1,
+      "label": "computer mouse",
+      "frames seen": 22,
+      "median dev [cm]": 3.2,
+      "p90 dev [cm]": 5.3,
+      "within 5 cm [%]": 86.0,
+      "frames with a grasp [%]": 82.0
+    },
+    {
+      "landmark": 13,
+      "label": "game controller",
+      "frames seen": 21,
+      "median dev [cm]": 1.2,
+      "p90 dev [cm]": 2.9,
+      "within 5 cm [%]": 100.0,
+      "frames with a grasp [%]": 100.0
+    },
+    {
+      "landmark": 12,
+      "label": "book",
+      "frames seen": 19,
+      "median dev [cm]": 2.6,
+      "p90 dev [cm]": 9.1,
+      "within 5 cm [%]": 79.0,
+      "frames with a grasp [%]": 32.0
+    },
+    {
+      "landmark": 18,
+      "label": "book",
+      "frames seen": 17,
+      "median dev [cm]": 4.3,
+      "p90 dev [cm]": 7.2,
+      "within 5 cm [%]": 65.0,
+      "frames with a grasp [%]": 41.0
+    },
+    {
+      "landmark": 28,
+      "label": "keyboard",
+      "frames seen": 17,
+      "median dev [cm]": 2.7,
+      "p90 dev [cm]": 6.4,
+      "within 5 cm [%]": 82.0,
+      "frames with a grasp [%]": 24.0
+    },
+    {
+      "landmark": 27,
+      "label": "computer mouse",
+      "frames seen": 14,
+      "median dev [cm]": 1.2,
+      "p90 dev [cm]": 2.0,
+      "within 5 cm [%]": 100.0,
+      "frames with a grasp [%]": 100.0
+    },
+    {
+      "landmark": 19,
+      "label": "book",
+      "frames seen": 14,
+      "median dev [cm]": 1.5,
+      "p90 dev [cm]": 4.2,
+      "within 5 cm [%]": 100.0,
+      "frames with a grasp [%]": 0.0
+    },
+    {
+      "landmark": 23,
+      "label": "computer mouse",
+      "frames seen": 13,
+      "median dev [cm]": 1.3,
+      "p90 dev [cm]": 2.5,
+      "within 5 cm [%]": 92.0,
+      "frames with a grasp [%]": 77.0
+    },
+    {
+      "landmark": 17,
+      "label": "cereal box",
+      "frames seen": 11,
+      "median dev [cm]": 3.1,
+      "p90 dev [cm]": 12.7,
+      "within 5 cm [%]": 64.0,
+      "frames with a grasp [%]": 9.0
+    },
+    {
+      "landmark": 24,
+      "label": "cereal box",
+      "frames seen": 11,
+      "median dev [cm]": 2.1,
+      "p90 dev [cm]": 6.8,
+      "within 5 cm [%]": 73.0,
+      "frames with a grasp [%]": 36.0
+    },
+    {
+      "landmark": 26,
+      "label": "keyboard",
+      "frames seen": 9,
+      "median dev [cm]": 2.0,
+      "p90 dev [cm]": 5.2,
+      "within 5 cm [%]": 78.0,
+      "frames with a grasp [%]": 11.0
+    },
+    {
+      "landmark": 22,
+      "label": "game controller",
+      "frames seen": 9,
+      "median dev [cm]": 3.0,
+      "p90 dev [cm]": 4.7,
+      "within 5 cm [%]": 89.0,
+      "frames with a grasp [%]": 100.0
+    },
+    {
+      "landmark": 60,
+      "label": "keyboard",
+      "frames seen": 7,
+      "median dev [cm]": 4.7,
+      "p90 dev [cm]": 6.1,
+      "within 5 cm [%]": 57.0,
+      "frames with a grasp [%]": 71.0
+    },
+    {
+      "landmark": 21,
+      "label": "computer mouse",
+      "frames seen": 5,
+      "median dev [cm]": 4.7,
+      "p90 dev [cm]": 9.2,
+      "within 5 cm [%]": 60.0,
+      "frames with a grasp [%]": 20.0
+    },
+    {
+      "landmark": 58,
+      "label": "book",
+      "frames seen": 5,
+      "median dev [cm]": 0.4,
+      "p90 dev [cm]": 1.1,
+      "within 5 cm [%]": 100.0,
+      "frames with a grasp [%]": 100.0
+    }
+  ]
+}
