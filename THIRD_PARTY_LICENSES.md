@@ -50,6 +50,24 @@ The MIT license of this repository covers only its own code. Every model, datase
 | Jinja2 3.1.6 | library | BSD-3-Clause | https://github.com/pallets/jinja | Needed by the pandas Styler for the notebook tables. |
 | Grad-CAM / HiResCAM / deletion-insertion implementation | code | MIT (this repository) | projects/02_representation_learning/scripts/replearn.py | Own implementation; the grad-cam PyPI package (MIT) is not used because it hard-depends on opencv-python-headless. |
 
+## 03_object_detection
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| ultralytics 8.4.204 | library | **AGPL-3.0** | https://github.com/ultralytics/ultralytics | COPYLEFT (AGPL-3.0, also covers network use); Enterprise license available. |
+| YOLO26n / YOLO26s COCO weights (assets v8.4.0) and models fine-tuned from them | model | **AGPL-3.0** | https://github.com/ultralytics/assets/releases/tag/v8.4.0 | COPYLEFT: fine-tuned derivatives are also AGPL-3.0; no weights are committed. |
+| rfdetr 1.12.0 (RF-DETR code) | library | Apache-2.0 | https://github.com/roboflow/rf-detr | Inference-only install (no [train] extra). The [plus] models use PML 1.0 and are not used. |
+| RF-DETR Nano / Small COCO checkpoints | model | Apache-2.0 | https://repo.roboflow.com/rfdetr/nano_coco/checkpoint_best_regular.pth ; https://repo.roboflow.com/rfdetr/small_coco/checkpoint_best_regular.pth | Downloaded to weights/rfdetr/ (about 0.7 GB in total). |
+| supervision 0.31.5 | library | MIT | https://github.com/roboflow/supervision | Installed as an rfdetr dependency. |
+| onnx 1.23.2 | library | Apache-2.0 | https://github.com/onnx/onnx |  |
+| onnxslim 0.1.99 | library | MIT | https://github.com/inisis/OnnxSlim |  |
+| onnxruntime-gpu 1.26.0 | library | MIT | https://github.com/microsoft/onnxruntime |  |
+| nvidia-ml-py 13.615.71 | library | BSD | https://pypi.org/project/nvidia-ml-py/ | NVML bindings used to read process GPU memory (also an ultralytics dependency). |
+| african-wildlife (Ultralytics) | dataset | **unclear (source images: no license stated; Ultralytics packaging AGPL-3.0)** | https://github.com/ultralytics/assets/releases/download/v0.0.0/african-wildlife.zip | UNCLEAR: the docs page says 'No license' for the source data. Not redistributed; downscaled images appear only in figures. |
+| medical-pills (Ultralytics) | dataset | **AGPL-3.0** | https://github.com/ultralytics/assets/releases/download/v0.0.0/medical-pills.zip | COPYLEFT packaging; used only in the exercise solution. |
+| coco8 (Ultralytics) | dataset | **COCO annotations CC BY 4.0; images under their Flickr licenses; Ultralytics packaging AGPL-3.0** | https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8.zip | Mixed license. |
+| TUM RGB-D fr1_desk | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | Shared dataset; attribution: Sturm et al., IROS 2012. |
+
 ## 05_segmentation
 
 | Component | Kind | License | Source | Notes |

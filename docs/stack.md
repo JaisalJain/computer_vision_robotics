@@ -53,6 +53,21 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 | facebook/dinov2-small | HF rev ed25f3a31f01 (85 MiB) | make data-02_representation_learning (HF cache). Source: https://huggingface.co/facebook/dinov2-small |
 | Imagenette-160 | imagenette2-160 (99 MB tgz, 9469 train / 3925 val) | make data-02_representation_learning (scripts/download_shared.py imagenette()). Source: https://s3.amazonaws.com/fast-ai-imageclas/imagenette2-160.tgz |
 
+## 03_object_detection (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| ultralytics | 8.4.204 | pip install -c requirements/constraints.txt ultralytics==8.4.204 (make setup-03_object_detection). Source: https://pypi.org/project/ultralytics/ |
+| onnx | 1.23.2 | pip install -c requirements/constraints.txt onnx==1.23.2. Source: https://pypi.org/project/onnx/ |
+| onnxslim | 0.1.99 | pip install -c requirements/constraints.txt onnxslim==0.1.99. Source: https://pypi.org/project/onnxslim/ |
+| onnxruntime-gpu | 1.26.0 | pip install -c requirements/constraints.txt onnxruntime-gpu==1.26.0 (no [cuda,cudnn] extras; import torch first). Source: https://pypi.org/project/onnxruntime-gpu/1.26.0/ and https://onnxruntime.ai/docs/execution-providers/CUDA-ExecutionProvider.html |
+| nvidia-ml-py | 13.615.71 | pip install -c requirements/constraints.txt nvidia-ml-py==13.615.71. Source: https://pypi.org/project/nvidia-ml-py/ |
+| rfdetr | 1.12.0 | pip install -c requirements/constraints.txt rfdetr==1.12.0 (no [train] extra; pulled in pydantic 2.14.3, av 19.0.2, pyDeprecate 0.9.0). Source: https://pypi.org/project/rfdetr/ and https://github.com/roboflow/rf-detr |
+| supervision | 0.31.5 | pip install -c requirements/constraints.txt supervision==0.31.5. Source: https://pypi.org/project/supervision/ |
+| YOLO26n / YOLO26s weights | assets v8.4.0 | make data-03_object_detection (scripts/download_03_object_detection.py -> weights/ultralytics/). Source: https://github.com/ultralytics/assets/releases/tag/v8.4.0 |
+| RF-DETR Nano / Small COCO weights | rfdetr 1.12.0 checkpoints (md5 fb6504cc..., fb37061c...) | make data-03_object_detection -> weights/rfdetr/ (set RF_HOME there). Source: https://raw.githubusercontent.com/roboflow/rf-detr/develop/src/rfdetr/assets/model_weights.py |
+| african-wildlife / medical-pills / coco8 datasets | Ultralytics assets v0.0.0 | make data-03_object_detection -> data/ultralytics/<name>/. Source: https://github.com/ultralytics/assets/releases/tag/v0.0.0 |
+
 ## 05_segmentation (checked 2026-11-08)
 
 | Package / model | Version | Install / source |

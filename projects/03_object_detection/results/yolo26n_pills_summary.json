@@ -1,0 +1,31 @@
+{
+  "name": "yolo26n_pills",
+  "model": "yolo26n.pt",
+  "data": "medical-pills.yaml",
+  "epochs": 30,
+  "imgsz": 640,
+  "batch": 16,
+  "seed": 0,
+  "train_minutes": 0.91,
+  "peak_vram_mb": 2536.3,
+  "best_checkpoint": "runs/03_object_detection/yolo26n_pills/weights/best.pt",
+  "best_fitness": 0.77542,
+  "final_val_metrics": {
+    "metrics/precision(B)": 0.9849924390769988,
+    "metrics/recall(B)": 0.9869646101457857,
+    "metrics/mAP50(B)": 0.9918109840066853,
+    "metrics/mAP50-95(B)": 0.7737185855467046
+  },
+  "env": {
+    "python": "3.12.16",
+    "numpy": "2.5.4",
+    "opencv": "5.0.0",
+    "torch": "2.11.0+cu128",
+    "cuda_available": true,
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "vram_gb": 7.53,
+    "compute_capability": "sm_120",
+    "torchvision": "0.26.0+cu128"
+  }
+}

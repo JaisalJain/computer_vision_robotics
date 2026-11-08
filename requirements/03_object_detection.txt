@@ -1,0 +1,18 @@
+# Project 03_object_detection - extras on top of requirements/base.txt.
+# Install: make setup-03_object_detection
+#   (= pip install --extra-index-url https://download.pytorch.org/whl/cu128 \
+#        -c requirements/constraints.txt -r requirements/03_object_detection.txt)
+#
+# Ultralytics YOLO26 (code, pretrained and fine-tuned weights) is AGPL-3.0.
+ultralytics==8.4.204
+# ONNX export + ONNX Runtime. onnxruntime-gpu 1.26.0 is the last PyPI build for CUDA 12 / cuDNN 9
+# (1.27+ target CUDA 13); do not add the [cuda,cudnn] extras: the torch wheels provide those libraries.
+onnx==1.23.2
+onnxslim==0.1.99
+onnxruntime-gpu==1.26.0
+# NVML bindings (process GPU memory in notebook 03); also a dependency of ultralytics.
+nvidia-ml-py==13.615.71
+# RF-DETR inference only (Apache-2.0). Do NOT install the [train] extra here: it would downgrade
+# torchmetrics in the shared env and pulls a release-candidate dependency (see the project README).
+rfdetr==1.12.0
+supervision==0.31.5
