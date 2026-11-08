@@ -1,0 +1,42 @@
+{
+  "sequence": "fr1_xyz",
+  "frames": 790,
+  "rows": [
+    {
+      "method": "mono-E, oracle scale",
+      "alignment": "SE3",
+      "ATE RMSE [cm]": 6.4061,
+      "ATE max [cm]": 13.1153,
+      "RPE 1 s [cm]": 4.4454,
+      "RPE 1 s [deg]": 2.5345,
+      "drift [% of distance]": 14.7456,
+      "poses": 178,
+      "keyframes": 177,
+      "ms/frame": 9.0599
+    },
+    {
+      "method": "mono-E, unit scale",
+      "alignment": "SIM3",
+      "ATE RMSE [cm]": 6.5193,
+      "ATE max [cm]": 13.4493,
+      "RPE 1 s [cm]": 7.6038,
+      "RPE 1 s [deg]": 2.5345,
+      "drift [% of distance]": 25.2225,
+      "poses": 178,
+      "keyframes": 177,
+      "ms/frame": 7.7727
+    },
+    {
+      "method": "RGB-D PnP, frame-to-frame",
+      "alignment": "SE3",
+      "ATE RMSE [cm]": 4.8237,
+      "ATE max [cm]": 8.95,
+      "RPE 1 s [cm]": 3.1983,
+      "RPE 1 s [deg]": 1.6702,
+      "drift [% of distance]": 10.6089,
+      "poses": 790,
+      "keyframes": 790,
+      "ms/frame": 10.2269
+    }
+  ]
+}

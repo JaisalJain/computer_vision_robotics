@@ -13,6 +13,7 @@ Every notebook is a tutorial: an explanation precedes each code cell, every code
 
 | # | Project | Preview | What you'll build | Key models / tools |
 |---|---|---|---|---|
+| 12 | [Visual odometry](projects/12_visual_odometry/) | <img src="assets/12_visual_odometry/thumb.png" width="160" alt="Visual odometry"> | Monocular and RGB-D feature-based VO on TUM fr1, scored with ATE/RPE, with drift and failure analysis | ORB, SIFT, 5-point E + MAGSAC++, EPnP-RANSAC, evo |
 
 *Projects are added as they are completed.*
 

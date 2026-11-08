@@ -1,0 +1,5 @@
+# Project 12_visual_odometry - extras on top of requirements/base.txt.
+# Install: make setup-12_visual_odometry
+#   (= pip install -c requirements/constraints.txt -r requirements/12_visual_odometry.txt)
+# evo is GPL-3.0; it is only used as an evaluation tool (ATE/RPE cross-check, evo_ape CLI).
+evo==1.38.1
