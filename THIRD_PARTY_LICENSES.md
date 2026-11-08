@@ -84,6 +84,23 @@ The MIT license of this repository covers only its own code. Every model, datase
 | COLMAP South Building (128 photos + reference sparse model) | dataset | **UNCLEAR: none stated (research use; photos by C. Zach, distributed with COLMAP)** | https://github.com/colmap/colmap/releases/download/3.11.1/south-building.zip | Only downscaled figures are committed. |
 | TUM RGB-D fr1_desk | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | Shared with projects 08/12/15. |
 
+## 10_feedforward_3d
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| VGGT-1B weights (facebook/VGGT-1B) | model | **CC-BY-NC-4.0** | https://huggingface.co/facebook/VGGT-1B | NON-COMMERCIAL |
+| VGGT code (facebookresearch/vggt @a288dd0) | code | VGGT License v1 (custom; commercial use allowed except military) | https://github.com/facebookresearch/vggt | pinned clone in gitignored third_party/, imported from source, not redistributed; custom license |
+| DA3-BASE weights (depth-anything/DA3-BASE) | model | Apache-2.0 | https://huggingface.co/depth-anything/DA3-BASE |  |
+| DA3-LARGE-1.1 weights (depth-anything/DA3-LARGE-1.1) | model | **CC-BY-NC-4.0 (treated as such)** | https://huggingface.co/depth-anything/DA3-LARGE-1.1 | NON-COMMERCIAL / UNCLEAR: HF card metadata says apache-2.0 but the DA3 GitHub README model table says CC BY-NC 4.0; treated as non-commercial |
+| Depth Anything 3 code (ByteDance-Seed/Depth-Anything-3 @3d835ec) | code | Apache-2.0 | https://github.com/ByteDance-Seed/Depth-Anything-3 | pinned clone in gitignored third_party/ |
+| pycolmap / COLMAP 4.2.1 | library | BSD-3-Clause | https://github.com/colmap/colmap |  |
+| evo 1.38.1 | library | **GPL-3.0** | https://github.com/MichaelGrupp/evo | COPYLEFT; import-time dependency of depth_anything_3.api, used unmodified |
+| plyfile 1.1.5 | library | **GPL-3.0** | https://github.com/dranjan/python-plyfile | COPYLEFT; import-time dependency of DA3, used unmodified |
+| einops 0.8.2, safetensors 0.8.0, omegaconf 2.4.0, addict 2.4.0, trimesh 5.2.0, imageio 2.38.1 | library | MIT / Apache-2.0 / BSD | https://pypi.org/ | import-time deps of VGGT / DA3; permissive |
+| Kitchen scene images (VGGT repo examples/kitchen, 25 PNG) | dataset | **UNCLEAR (shipped in the VGGT repository; scene matches Mip-NeRF 360 kitchen)** | https://github.com/facebookresearch/vggt/tree/a288dd0f14786c93483e45524328726ab7b1b4ce/examples/kitchen | UNCLEAR provenance/license; downloaded locally only, figures in assets/ |
+| South Building (COLMAP dataset) | dataset | **UNCLEAR (research use)** | https://colmap.github.io/datasets.html (zip: https://github.com/colmap/colmap/releases/download/3.11.1/south-building.zip) | UNCLEAR; shared with project 09; downloaded locally only |
+| TUM RGB-D fr1_desk | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | attribution Sturm et al., IROS 2012; shared with projects 08/09/12/15 |
+
 ## 12_visual_odometry
 
 | Component | Kind | License | Source | Notes |

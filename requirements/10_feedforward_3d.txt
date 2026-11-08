@@ -1,0 +1,20 @@
+# Project 10 (feed-forward 3D reconstruction) extras on top of requirements/base.txt, pinned to the
+# tested versions.
+#   make setup-10_feedforward_3d   (pip install -c requirements/constraints.txt -r this file)
+#
+# VGGT and Depth Anything 3 are NOT pip-installed: both package metadata files pin numpy<2. Their
+# code is a pinned clone in third_party/ (bash scripts/setup_third_party.sh vggt depth-anything-3)
+# that the project imports from source. The packages below are what `vggt` and
+# `depth_anything_3.api` import at import time; moviepy (only used by DA3 to render
+# Gaussian-splat videos) is replaced by a stub module in scripts/ff3d.py.
+safetensors==0.8.0
+einops==0.8.2
+omegaconf==2.4.0
+addict==2.4.0
+imageio==2.38.1
+trimesh==5.2.0
+plyfile==1.1.5
+evo==1.38.1
+# pycolmap: CPU wheel (COLMAP 4.2.1 bindings) for the SIFT + incremental SfM reference. Do NOT
+# install the pycolmap[panorama] extra (it pulls opencv-python-headless).
+pycolmap==4.2.1

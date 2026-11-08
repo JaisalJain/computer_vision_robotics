@@ -1,0 +1,4 @@
+scene,n_images,n_registered,n_points3d,mean_reproj_error_px,features_s,matching_s,mapping_s,total_s
+kitchen,25,24,1862,0.3250,3.4000,4.4500,1.3000,9.1500
+south_building,24,22,4645,0.2012,4.1800,7.6400,1.5900,13.4100
+tum_desk,24,24,2819,0.5517,0.9100,3.1800,2.5300,6.6200

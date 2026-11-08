@@ -1,0 +1,47 @@
+# Scenes, models and evaluation settings of project 10 (feed-forward 3D reconstruction).
+# Read by scripts/ff3d.py, run_colmap.py, benchmark.py and the notebooks. Paths are
+# relative to the repository root.
+data_dir: data/10_feedforward_3d
+runs_dir: runs/10_feedforward_3d
+
+scenes:
+  kitchen:
+    label: Kitchen (25 views)
+    images: data/10_feedforward_3d/kitchen/images  # copied from the VGGT repo examples
+    reference: colmap            # pycolmap SfM computed in this project (no ground truth)
+  south_building:
+    label: South Building (24 views)
+    images: data/south_building/images             # 128 photos downscaled to 1024 px
+    subset: {start: 0, stop: 48, step: 2}          # 24 photos along one side of the building
+    reference: dataset_colmap    # COLMAP model shipped with the dataset (all 128 full-res photos)
+  tum_desk:
+    label: TUM fr1_desk (24 keyframes)
+    images: data/10_feedforward_3d/tum_fr1_desk/rgb  # undistorted 640x480 keyframes
+    reference: mocap             # motion-capture ground truth (metres)
+
+tum_desk:
+  sequence: fr1_desk
+  n_keyframes: 24                # one sharpest frame per window
+  window: 10                     # frames per window (30 Hz -> one keyframe every ~0.33 s)
+
+models:
+  vggt:
+    label: VGGT-1B
+    repo: facebook/VGGT-1B
+    precision: mixed             # bf16 aggregator + fp32 heads (see notebook 01)
+  da3-base:
+    label: DA3-Base
+    repo: depth-anything/DA3-BASE
+    process_res: 504
+  da3-large:
+    label: DA3-Large-1.1
+    repo: depth-anything/DA3-LARGE-1.1
+    process_res: 504
+
+colmap:
+  camera_model: SIMPLE_RADIAL    # one shared, self-calibrated camera per scene
+  max_num_features: 8192
+
+scaling:
+  scene: south_building          # frames are spread evenly over all 128 photos
+  n_frames: [2, 4, 8, 16, 24, 32, 48, 64, 96, 128]

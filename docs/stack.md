@@ -88,6 +88,22 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 | COLMAP South Building | colmap release 3.11.1 asset south-building.zip (419 MB; photos downscaled to 1024 px) | make data-09_multiview_geometry. Source: https://github.com/colmap/colmap/releases/download/3.11.1/south-building.zip (checked 2026-11-08) |
 | TUM RGB-D fr1_desk | rgbd_dataset_freiburg1_desk | make data-09_multiview_geometry (scripts/download_shared.py tum('fr1_desk')). Source: https://cvg.cit.tum.de/data/datasets/rgbd-dataset (checked 2026-11-08) |
 
+## 10_feedforward_3d (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| VGGT (code) | git a288dd0f14786c93483e45524328726ab7b1b4ce | bash scripts/setup_third_party.sh vggt (pinned clone, imported via cvlab.io.add_third_party('vggt'); not pip-installed because pyproject pins numpy<2). Source: https://github.com/facebookresearch/vggt (checked 2026-11-08) |
+| Depth Anything 3 (code) | git 3d835ec1a5802d64a8b8b15f817a1ab54809bfe4 | bash scripts/setup_third_party.sh depth-anything-3 (imported via add_third_party('depth-anything-3','src') with a moviepy.editor stub; not pip-installed because of numpy<2 / moviepy==1.0.3 pins). Source: https://github.com/ByteDance-Seed/Depth-Anything-3 (checked 2026-11-08) |
+| facebook/VGGT-1B | HF main (model.safetensors 5.03 GB fp32, 1.26 B params) | make data-10_feedforward_3d (hf_hub_download into HF cache). Source: https://huggingface.co/facebook/VGGT-1B (checked 2026-11-08) |
+| depth-anything/DA3-BASE | HF main (0.54 GB, 135 M params) | make data-10_feedforward_3d (HF cache). Source: https://huggingface.co/depth-anything/DA3-BASE (checked 2026-11-08) |
+| depth-anything/DA3-LARGE-1.1 | HF main (1.64 GB) | make data-10_feedforward_3d (HF cache). Source: https://huggingface.co/depth-anything/DA3-LARGE-1.1 (checked 2026-11-08) |
+| pycolmap | 4.2.1 | pip install -c requirements/constraints.txt pycolmap==4.2.1 (requirements/10_feedforward_3d.txt). Source: https://pypi.org/project/pycolmap/ (checked 2026-11-08) |
+| evo | 1.38.1 | pip install -c requirements/constraints.txt evo==1.38.1. Source: https://pypi.org/project/evo/ (checked 2026-11-08) |
+| einops / safetensors / omegaconf / addict / imageio / trimesh / plyfile | 0.8.2 / 0.8.0 / 2.4.0 / 2.4.0 / 2.38.1 / 5.2.0 / 1.1.5 | make setup-10_feedforward_3d (pip -c requirements/constraints.txt -r requirements/10_feedforward_3d.txt; already installed, no-op). Source: https://pypi.org/ (checked 2026-11-08) |
+| South Building dataset | COLMAP release 3.11.1 zip (128 photos -> 1024 px + reference sparse model) | make data-10_feedforward_3d. Source: https://github.com/colmap/colmap/releases/download/3.11.1/south-building.zip (checked 2026-11-08) |
+| VGGT kitchen example images | 25 PNG at vggt@a288dd0 | make data-10_feedforward_3d (copied from third_party/vggt or raw.githubusercontent.com). Source: https://github.com/facebookresearch/vggt/tree/a288dd0f14786c93483e45524328726ab7b1b4ce/examples/kitchen (checked 2026-11-08) |
+| TUM RGB-D fr1_desk | rgbd_dataset_freiburg1_desk (24 undistorted sharp keyframes derived) | make data-10_feedforward_3d (download_shared.tum). Source: https://cvg.cit.tum.de/data/datasets/rgbd-dataset (checked 2026-11-08) |
+
 ## 12_visual_odometry (checked 2026-11-08)
 
 | Package / model | Version | Install / source |
