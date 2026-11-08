@@ -1,0 +1,15 @@
+# BoT-SORT + GMC + appearance ReID. YOLO26 is end-to-end (NMS-free), so detector features
+# cannot be reused ("auto"); we use the dedicated Ultralytics yolo26n-reid.onnx encoder
+# (downloaded by scripts/download_06_tracking.py, run with onnxruntime on the GPU).
+tracker_type: botsort
+track_high_thresh: 0.25
+track_low_thresh: 0.1
+new_track_thresh: 0.25
+track_buffer: 30
+match_thresh: 0.8
+fuse_score: True
+gmc_method: sparseOptFlow
+proximity_thresh: 0.5
+appearance_thresh: 0.8
+with_reid: True
+model: weights/ultralytics/yolo26n-reid.onnx

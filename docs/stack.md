@@ -100,6 +100,22 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 | DAVIS 2017 TrainVal 480p (2 sequences, 17 MB extracted) | 2017 release | python scripts/download_05_segmentation.py (HTTP range requests into the 833 MB zip; --full-zip fallback). Source: https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip (checked 2026-11-08) |
 | coco8-seg / coco128-seg | Ultralytics assets v0.0.0 | python scripts/download_05_segmentation.py -> data/ultralytics/. Source: https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128-seg.zip (checked 2026-11-08) |
 
+## 06_tracking (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| ultralytics | 8.4.204 | pip install -c requirements/constraints.txt ultralytics==8.4.204 (make setup-06_tracking). Source: https://pypi.org/project/ultralytics/ (checked 2026-11-08) |
+| lap | 0.5.14 | pip install -c requirements/constraints.txt lap==0.5.14. Source: https://pypi.org/project/lap/ (checked 2026-11-08) |
+| onnxruntime-gpu | 1.26.0 | pip install -c requirements/constraints.txt onnxruntime-gpu==1.26.0. Source: https://pypi.org/project/onnxruntime-gpu/ (checked 2026-11-08) |
+| trackeval | 1.3.0 | pip install -c requirements/constraints.txt trackeval==1.3.0. Source: https://pypi.org/project/trackeval/ (checked 2026-11-08) |
+| transformers | 5.22.2 | pip install -c requirements/constraints.txt transformers==5.22.2. Source: https://pypi.org/project/transformers/ (checked 2026-11-08) |
+| co-tracker (CoTracker3 code) | commit 82e02e8029753ad4ef13cf06be7f4fc5facdda4d | bash scripts/setup_third_party.sh co-tracker (clone into third_party/, imported via cvlab.io.add_third_party). Source: https://github.com/facebookresearch/co-tracker (checked 2026-11-08) |
+| YOLO26n / YOLO26s / yolo26n-reid.onnx weights | ultralytics assets v8.4.0 | make data-06_tracking (downloads to weights/ultralytics/). Source: https://github.com/ultralytics/assets/releases/tag/v8.4.0 (checked 2026-11-08) |
+| CoTracker3 weights (scaled_offline.pth, scaled_online.pth) | facebook/cotracker3 main | make data-06_tracking (HF cache). Source: https://huggingface.co/facebook/cotracker3 (checked 2026-11-08) |
+| DINOv3 ViT-S/16 | facebook/dinov3-vits16-pretrain-lvd1689m | make data-06_tracking (HF cache, gated). Source: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m (checked 2026-11-08) |
+| SAM 3 | facebook/sam3 (860 M params, bf16) | make data-06_tracking (HF cache, gated, 3.3 GB). Source: https://huggingface.co/facebook/sam3 (checked 2026-11-08) |
+| MOT17 train sequences MOT17-02-FRCNN, MOT17-05-FRCNN | MOT17 (MOTChallenge) | make data-06_tracking (HTTP range requests into MOT17.zip, ~136 MB on disk in data/mot17/). Source: https://motchallenge.net/data/MOT17/ (checked 2026-11-08) |
+
 ## 07_pose_estimation (checked 2026-11-08)
 
 | Package / model | Version | Install / source |

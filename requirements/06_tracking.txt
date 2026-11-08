@@ -1,0 +1,9 @@
+# Project 06_tracking - extras on top of requirements/base.txt.
+# Install: make setup-06_tracking
+#   (= pip install -c requirements/constraints.txt -r requirements/06_tracking.txt)
+# CoTracker3 is not on PyPI: its code is a pinned clone (bash scripts/setup_third_party.sh co-tracker).
+ultralytics==8.4.204      # YOLO26 detector + ByteTrack / BoT-SORT / OC-SORT (AGPL-3.0)
+lap==0.5.14               # linear assignment used by the Ultralytics trackers (avoids a runtime pip install)
+onnxruntime-gpu==1.26.0   # runs the yolo26n-reid.onnx appearance encoder (BoT-SORT + ReID ablation)
+trackeval==1.3.0          # reference HOTA / CLEAR / Identity implementation for the cross-check (MIT)
+transformers==5.22.2      # SAM 3 video (notebook 03) + DINOv3 ViT-S/16 appearance encoder (dinoreid.py)

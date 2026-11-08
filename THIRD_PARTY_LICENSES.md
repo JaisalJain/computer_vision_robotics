@@ -103,6 +103,23 @@ The MIT license of this repository covers only its own code. Every model, datase
 | DAVIS 2017 TrainVal 480p (car-roundabout, dogs-jump only) | dataset | **Annotations described as CC BY 4.0 on the DAVIS challenge pages; frames from the original videos (research use); evaluation code BSD-3-Clause** | https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip | UNCLEAR: the current site states no explicit license. Not redistributed; only a few downscaled frames appear in figures and the GIF. |
 | TUM RGB-D fr1_desk (one frame) | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | Shared dataset (projects 08, 12, 15). |
 
+## 06_tracking
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| MOT17 (MOT17-02-FRCNN, MOT17-05-FRCNN images + GT) | dataset | **CC BY-NC-SA 3.0 (non-commercial, share-alike)** | https://motchallenge.net/data/MOT17/ | NON-COMMERCIAL, share-alike; fetched on demand via HTTP range reads of MOT17.zip, never redistributed |
+| YOLO26n / YOLO26s detectors (yolo26n.pt, yolo26s.pt) | model | **AGPL-3.0** | https://github.com/ultralytics/assets/releases/tag/v8.4.0 | COPYLEFT (AGPL) |
+| yolo26n-reid.onnx appearance encoder | model | **AGPL-3.0** | https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n-reid.onnx | COPYLEFT (AGPL) |
+| ultralytics 8.4.204 (ByteTrack, BoT-SORT, OC-SORT trackers) | library | **AGPL-3.0** | https://github.com/ultralytics/ultralytics | COPYLEFT (AGPL) |
+| CoTracker3 code (pinned clone 82e02e8) incl. assets/apple.mp4 demo clip | code | **CC BY-NC 4.0 (non-commercial)** | https://github.com/facebookresearch/co-tracker | NON-COMMERCIAL |
+| CoTracker3 weights scaled_offline.pth / scaled_online.pth (facebook/cotracker3) | model | **CC BY-NC 4.0 (non-commercial)** | https://huggingface.co/facebook/cotracker3 | NON-COMMERCIAL |
+| SAM 3 (facebook/sam3) | model | **SAM License (Meta, custom)** | https://huggingface.co/facebook/sam3 | Gated (accept licence on HF); custom licence, check terms before commercial use |
+| DINOv3 ViT-S/16 (facebook/dinov3-vits16-pretrain-lvd1689m) | model | **DINOv3 License (Meta, custom)** | https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m | Gated (accept licence on HF); custom licence https://ai.meta.com/resources/models-and-libraries/dinov3-license |
+| transformers 5.22.2 (Sam3VideoModel, DINOv3) | library | Apache-2.0 | https://github.com/huggingface/transformers |  |
+| trackeval 1.3.0 | library | MIT | https://pypi.org/project/trackeval/ | PyPI package from the kovalp/TrackEval fork of JonathonLuiten/TrackEval |
+| lap 0.5.14 | library | BSD-2-Clause | https://github.com/gatagat/lap |  |
+| onnxruntime-gpu 1.26.0 | library | MIT | https://github.com/microsoft/onnxruntime |  |
+
 ## 07_pose_estimation
 
 | Component | Kind | License | Source | Notes |

@@ -1,0 +1,14 @@
+# BoT-SORT (Aharon et al., 2022) - Ultralytics 8.4.204 defaults: ByteTrack association plus
+# global motion compensation (GMC) with sparse optical flow; appearance (ReID) off.
+tracker_type: botsort
+track_high_thresh: 0.25
+track_low_thresh: 0.1
+new_track_thresh: 0.25
+track_buffer: 30
+match_thresh: 0.8
+fuse_score: True
+gmc_method: sparseOptFlow # estimate the camera's 2D affine motion between frames
+proximity_thresh: 0.5 # min IoU for an appearance match to be considered
+appearance_thresh: 0.8 # max appearance (cosine) distance for ReID matching
+with_reid: False
+model: auto

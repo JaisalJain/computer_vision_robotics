@@ -1,0 +1,9 @@
+# ByteTrack (Zhang et al., ECCV 2022) - Ultralytics 8.4.204 defaults, copied here so every
+# parameter is visible. Used by scripts/run_mot_benchmark.py and the notebooks.
+tracker_type: bytetrack
+track_high_thresh: 0.25 # detections >= this enter the first (high-score) association
+track_low_thresh: 0.1 # detections in (low, high) are only used to extend existing tracks
+new_track_thresh: 0.25 # unmatched high-score detections >= this start a new track
+track_buffer: 30 # frames a lost track is kept alive (for re-identification by motion)
+match_thresh: 0.8 # max cost (1 - IoU, fused with score) for the first association
+fuse_score: True # multiply IoU by detection score before matching
