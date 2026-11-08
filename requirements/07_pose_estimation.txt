@@ -1,0 +1,4 @@
+# Project 07 (pose estimation): extras on top of requirements/base.txt.
+# Install with:  make setup-07_pose_estimation   (always uses requirements/constraints.txt)
+ultralytics==8.4.204            # YOLO26-pose models + COCO-style pose evaluation (AGPL-3.0)
+pupil-apriltags==1.0.4.post11   # AprilTag 3 C library bindings, comparison detector (MIT / BSD-2-Clause)

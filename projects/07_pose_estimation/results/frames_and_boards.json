@@ -1,0 +1,200 @@
+{
+  "setup": "synthetic work cell, TUM fr1 camera 640x480, CPU",
+  "object_in_base": {
+    "position_err_mm": 4.636456534207392,
+    "rotation_err_deg": 0.1290215889268895,
+    "distance_cam_to_tag_m": 1.0464616037939265
+  },
+  "grasp": [
+    {
+      "index": "grasp",
+      "x": 0.84648,
+      "y": -0.04972,
+      "z": 0.03803,
+      "qx": -0.96612,
+      "qy": -0.25808,
+      "qz": -0.00063,
+      "qw": 0.00053,
+      "err_mm": 4.65825
+    },
+    {
+      "index": "pre_grasp",
+      "x": 0.84638,
+      "y": -0.04985,
+      "z": 0.13803,
+      "qx": -0.96612,
+      "qy": -0.25808,
+      "qz": -0.00063,
+      "qw": 0.00053,
+      "err_mm": 4.72386
+    }
+  ],
+  "localisation": [
+    {
+      "method": "single tag",
+      "frames": "60/60",
+      "ATE_rmse_mm": 140.9002,
+      "pos_err_median_mm": 2.1804,
+      "pos_err_max_mm": 1071.4842,
+      "rot_err_median_deg": 0.1336,
+      "rot_err_max_deg": 70.2133,
+      "frames_>5deg": 3
+    },
+    {
+      "method": "joint PnP",
+      "frames": "60/60",
+      "ATE_rmse_mm": 1.3415,
+      "pos_err_median_mm": 0.2279,
+      "pos_err_max_mm": 6.26,
+      "rot_err_median_deg": 0.0117,
+      "rot_err_max_deg": 0.306,
+      "frames_>5deg": 0
+    }
+  ],
+  "board_vs_tag": [
+    {
+      "target": "AprilTag 15 cm",
+      "dist": 0.3,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.0224,
+      "rot_p90_deg": 0.3512,
+      "t_med_mm": 0.0153,
+      "corners": 4.0
+    },
+    {
+      "target": "AprilTag 15 cm",
+      "dist": 0.4,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.0311,
+      "rot_p90_deg": 0.0667,
+      "t_med_mm": 0.0252,
+      "corners": 4.0
+    },
+    {
+      "target": "AprilTag 15 cm",
+      "dist": 0.5,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.0429,
+      "rot_p90_deg": 0.1657,
+      "t_med_mm": 0.0642,
+      "corners": 4.0
+    },
+    {
+      "target": "AprilTag 15 cm",
+      "dist": 0.6,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.0576,
+      "rot_p90_deg": 0.3339,
+      "t_med_mm": 0.0776,
+      "corners": 4.0
+    },
+    {
+      "target": "AprilTag 15 cm",
+      "dist": 0.8,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.0695,
+      "rot_p90_deg": 0.7996,
+      "t_med_mm": 0.1487,
+      "corners": 4.0
+    },
+    {
+      "target": "AprilTag 15 cm",
+      "dist": 1.0,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.0854,
+      "rot_p90_deg": 0.3778,
+      "t_med_mm": 0.3001,
+      "corners": 4.0
+    },
+    {
+      "target": "AprilTag 15 cm",
+      "dist": 1.5,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.1456,
+      "rot_p90_deg": 1.0652,
+      "t_med_mm": 0.7494,
+      "corners": 4.0
+    },
+    {
+      "target": "AprilTag 15 cm",
+      "dist": 2.0,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.3303,
+      "rot_p90_deg": 2.5848,
+      "t_med_mm": 0.8611,
+      "corners": 4.0
+    },
+    {
+      "target": "ChArUco 5x7 (15x21 cm)",
+      "dist": 0.3,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.0593,
+      "rot_p90_deg": 0.1589,
+      "t_med_mm": 0.2067,
+      "corners": 24.0
+    },
+    {
+      "target": "ChArUco 5x7 (15x21 cm)",
+      "dist": 0.4,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.0484,
+      "rot_p90_deg": 0.1144,
+      "t_med_mm": 0.0814,
+      "corners": 24.0
+    },
+    {
+      "target": "ChArUco 5x7 (15x21 cm)",
+      "dist": 0.5,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.0286,
+      "rot_p90_deg": 0.0672,
+      "t_med_mm": 0.0671,
+      "corners": 24.0
+    },
+    {
+      "target": "ChArUco 5x7 (15x21 cm)",
+      "dist": 0.6,
+      "det_rate": 1.0,
+      "rot_med_deg": 0.0632,
+      "rot_p90_deg": 0.2507,
+      "t_med_mm": 0.1749,
+      "corners": 24.0
+    },
+    {
+      "target": "ChArUco 5x7 (15x21 cm)",
+      "dist": 0.8,
+      "det_rate": 0.7667,
+      "rot_med_deg": 0.2533,
+      "rot_p90_deg": 0.5543,
+      "t_med_mm": 0.7124,
+      "corners": 17.0
+    },
+    {
+      "target": "ChArUco 5x7 (15x21 cm)",
+      "dist": 1.0,
+      "det_rate": 0.1667,
+      "rot_med_deg": 1.2794,
+      "rot_p90_deg": 2.723,
+      "t_med_mm": 4.908,
+      "corners": 8.0
+    },
+    {
+      "target": "ChArUco 5x7 (15x21 cm)",
+      "dist": 1.5,
+      "det_rate": 0.0,
+      "rot_med_deg": NaN,
+      "rot_p90_deg": NaN,
+      "t_med_mm": NaN,
+      "corners": NaN
+    },
+    {
+      "target": "ChArUco 5x7 (15x21 cm)",
+      "dist": 2.0,
+      "det_rate": 0.0,
+      "rot_med_deg": NaN,
+      "rot_p90_deg": NaN,
+      "t_med_mm": NaN,
+      "corners": NaN
+    }
+  ]
+}

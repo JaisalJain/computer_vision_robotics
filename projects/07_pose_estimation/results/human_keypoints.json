@@ -1,0 +1,195 @@
+{
+  "hardware": "RTX 5060 Laptop GPU 8 GB, fp16, batch 1",
+  "summary": [
+    {
+      "model": "YOLO26n-pose",
+      "params_M": 2.9265,
+      "GFLOPs@640": 7.5718,
+      "box_mAP50-95": 0.6858,
+      "pose_mAP50": 0.6227,
+      "pose_mAP50-95": 0.4187,
+      "mean_OKS@640": 0.6026,
+      "mean_OKS@320": 0.4834,
+      "latency_ms@640": 3.7989,
+      "network_ms@640": 3.0394,
+      "peak_vram_MB@640": 88.7554,
+      "images_per_s@batch32": 593.6839,
+      "peak_vram_MB@batch32": 395.5391
+    },
+    {
+      "model": "YOLO26s-pose",
+      "params_M": 10.3598,
+      "GFLOPs@640": 24.122,
+      "box_mAP50-95": 0.7168,
+      "pose_mAP50": 0.7578,
+      "pose_mAP50-95": 0.4904,
+      "mean_OKS@640": 0.6738,
+      "mean_OKS@320": 0.5522,
+      "latency_ms@640": 5.9848,
+      "network_ms@640": 4.6425,
+      "peak_vram_MB@640": 95.2656,
+      "images_per_s@batch32": 286.7734,
+      "peak_vram_MB@batch32": 652.6714
+    }
+  ],
+  "imgsz_sweep": [
+    {
+      "model": "YOLO26n-pose",
+      "imgsz": 160,
+      "mean_OKS": 0.286,
+      "latency_ms": 3.6544,
+      "latency_p90_ms": 3.7153,
+      "network_ms": 2.9796,
+      "peak_vram_MB": 81.7593
+    },
+    {
+      "model": "YOLO26n-pose",
+      "imgsz": 256,
+      "mean_OKS": 0.3975,
+      "latency_ms": 3.7433,
+      "latency_p90_ms": 3.8034,
+      "network_ms": 2.9284,
+      "peak_vram_MB": 83.0898
+    },
+    {
+      "model": "YOLO26n-pose",
+      "imgsz": 320,
+      "mean_OKS": 0.4834,
+      "latency_ms": 3.6741,
+      "latency_p90_ms": 3.7523,
+      "network_ms": 2.9377,
+      "peak_vram_MB": 81.8013
+    },
+    {
+      "model": "YOLO26n-pose",
+      "imgsz": 416,
+      "mean_OKS": 0.5016,
+      "latency_ms": 3.8763,
+      "latency_p90_ms": 3.9307,
+      "network_ms": 2.9604,
+      "peak_vram_MB": 83.2065
+    },
+    {
+      "model": "YOLO26n-pose",
+      "imgsz": 512,
+      "mean_OKS": 0.5676,
+      "latency_ms": 4.0711,
+      "latency_p90_ms": 4.074,
+      "network_ms": 2.9743,
+      "peak_vram_MB": 85.3906
+    },
+    {
+      "model": "YOLO26n-pose",
+      "imgsz": 640,
+      "mean_OKS": 0.6026,
+      "latency_ms": 3.7989,
+      "latency_p90_ms": 3.8679,
+      "network_ms": 3.0394,
+      "peak_vram_MB": 88.7554
+    },
+    {
+      "model": "YOLO26s-pose",
+      "imgsz": 160,
+      "mean_OKS": 0.3462,
+      "latency_ms": 3.6531,
+      "latency_p90_ms": 3.7347,
+      "network_ms": 2.9587,
+      "peak_vram_MB": 85.1313
+    },
+    {
+      "model": "YOLO26s-pose",
+      "imgsz": 256,
+      "mean_OKS": 0.5549,
+      "latency_ms": 3.7332,
+      "latency_p90_ms": 3.8097,
+      "network_ms": 2.9955,
+      "peak_vram_MB": 87.6382
+    },
+    {
+      "model": "YOLO26s-pose",
+      "imgsz": 320,
+      "mean_OKS": 0.5522,
+      "latency_ms": 3.8757,
+      "latency_p90_ms": 3.9498,
+      "network_ms": 3.0622,
+      "peak_vram_MB": 83.6367
+    },
+    {
+      "model": "YOLO26s-pose",
+      "imgsz": 416,
+      "mean_OKS": 0.6602,
+      "latency_ms": 4.1043,
+      "latency_p90_ms": 4.1648,
+      "network_ms": 3.1567,
+      "peak_vram_MB": 86.918
+    },
+    {
+      "model": "YOLO26s-pose",
+      "imgsz": 512,
+      "mean_OKS": 0.5898,
+      "latency_ms": 6.35,
+      "latency_p90_ms": 6.4579,
+      "network_ms": 4.8076,
+      "peak_vram_MB": 89.8896
+    },
+    {
+      "model": "YOLO26s-pose",
+      "imgsz": 640,
+      "mean_OKS": 0.6738,
+      "latency_ms": 5.9848,
+      "latency_p90_ms": 6.2114,
+      "network_ms": 4.6425,
+      "peak_vram_MB": 95.2656
+    }
+  ],
+  "batch_throughput": [
+    {
+      "model": "YOLO26n-pose",
+      "batch": 1,
+      "ms_per_batch": 5.4673,
+      "ms_per_image": 5.4673,
+      "images_per_s": 182.9054,
+      "peak_vram_MB": 88.7554
+    },
+    {
+      "model": "YOLO26n-pose",
+      "batch": 8,
+      "ms_per_batch": 12.646,
+      "ms_per_image": 1.5807,
+      "images_per_s": 632.6123,
+      "peak_vram_MB": 159.4019
+    },
+    {
+      "model": "YOLO26n-pose",
+      "batch": 32,
+      "ms_per_batch": 53.9007,
+      "ms_per_image": 1.6844,
+      "images_per_s": 593.6839,
+      "peak_vram_MB": 395.5391
+    },
+    {
+      "model": "YOLO26s-pose",
+      "batch": 1,
+      "ms_per_batch": 4.3742,
+      "ms_per_image": 4.3742,
+      "images_per_s": 228.6146,
+      "peak_vram_MB": 95.3262
+    },
+    {
+      "model": "YOLO26s-pose",
+      "batch": 8,
+      "ms_per_batch": 22.5684,
+      "ms_per_image": 2.821,
+      "images_per_s": 354.4784,
+      "peak_vram_MB": 222.5815
+    },
+    {
+      "model": "YOLO26s-pose",
+      "batch": 32,
+      "ms_per_batch": 111.5864,
+      "ms_per_image": 3.4871,
+      "images_per_s": 286.7734,
+      "peak_vram_MB": 652.6714
+    }
+  ]
+}

@@ -24,6 +24,18 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 
 `torch.cuda.get_arch_list()` includes `sm_120`, so the Blackwell GPU runs native kernels without PTX JIT.
 
+## 07_pose_estimation (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| ultralytics | 8.4.204 | pip install -c requirements/constraints.txt ultralytics==8.4.204 (via make setup-07_pose_estimation; YOLO_AUTOINSTALL=false at runtime). Source: https://pypi.org/project/ultralytics/8.4.204/ (checked 2026-11-07) |
+| YOLO26n-pose / YOLO26s-pose weights | assets v8.4.0 (yolo26n-pose.pt 7.5 MB, yolo26s-pose.pt 23.0 MB) | python scripts/download_07_pose_estimation.py (make data-07_pose_estimation) -> weights/ultralytics/. Source: https://github.com/ultralytics/assets/releases/tag/v8.4.0 (checked 2026-11-07) |
+| pupil-apriltags | 1.0.4.post11 | pip install -c requirements/constraints.txt pupil-apriltags==1.0.4.post11 (cp312 manylinux wheel; dry-run changed no installed package). Source: https://pypi.org/project/pupil-apriltags/1.0.4.post11/ (checked 2026-11-07) |
+| opencv-python cv2.aruco + solvePnP (IPPE_SQUARE, IPPE, SQPNP, ITERATIVE, RefineLM) | 5.0.0.93 | core stack (requirements/base.txt). Source: https://github.com/opencv/opencv/tree/5.0.0/modules/objdetect/include/opencv2/objdetect (checked 2026-11-07) |
+| COCO8-Pose | assets v0.0.0 (0.34 MB zip, 4 train / 4 val images) | make data-07_pose_estimation -> data/ultralytics/coco8-pose. Source: https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8-pose.zip (checked 2026-11-07) |
+| TUM RGB-D fr1_desk | rgbd_dataset_freiburg1_desk | scripts/download_shared.py tum('fr1_desk') (called from download_07_pose_estimation.py). Source: https://cvg.cit.tum.de/data/datasets/rgbd-dataset (checked 2026-11-07) |
+| OpenCV ArUco tutorial photo + calibration | OpenCV 5.0.0 tag | make data-07_pose_estimation -> data/07_pose_estimation/. Source: https://raw.githubusercontent.com/opencv/opencv/5.0.0/doc/tutorials/objdetect/aruco_detection/images/singlemarkersoriginal.jpg (checked 2026-11-07) |
+
 ## 12_visual_odometry (checked 2026-11-08)
 
 | Package / model | Version | Install / source |
