@@ -1,0 +1,14 @@
+metric,value
+hand-labelled desk questions correct,11 / 14
+"presence accuracy (POPE-style, random negatives)",95.0% (n=483)
+hallucination rate (yes on absent objects),0.4%
+yes-ratio (truth 47.0%),42.4%
+"count accuracy, 1-6 (always-1 baseline)",66.0% (66.3%)
+"count accuracy, true count >= 2",34.5% (n=110)
+spatial left/right accuracy,76.2% (n=21)
+spatial above/below accuracy,70.0% (n=20)
+TTFT at 300 visual tokens (ms),64
+decode speed at 300 visual tokens (tok/s),72.2
+"weights on GPU (MiB, bf16)",1656
+"peak VRAM, 300 / 1200 visual tokens (MiB)",1748 / 1898
+probe benchmark: mean latency per question (s),0.104

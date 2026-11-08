@@ -17,6 +17,7 @@ Every notebook is a tutorial: an explanation precedes each code cell, every code
 | 07 | [Pose estimation](projects/07_pose_estimation/) | <img src="assets/07_pose_estimation/thumb.png" width="160" alt="Pose estimation"> | YOLO26 human keypoints with OKS/mAP, an AprilTag/ArUco 6-DoF PnP accuracy benchmark, and robot frame chains | YOLO26n/s-pose, cv2.aruco (AprilTag 36h11, ChArUco), AprilTag 3, solvePnP IPPE |
 | 08 | [Monocular depth](projects/08_monocular_depth/) | <img src="assets/08_monocular_depth/thumb.png" width="160" alt="Monocular depth"> | Depth Anything 3 vs V2 on TUM RGB-D: relative vs metric depth, alignment, benchmark, point clouds | DA3-Small/Base, DA3Metric-Large, Depth Anything V2 (Small, Metric-Indoor) |
 | 12 | [Visual odometry](projects/12_visual_odometry/) | <img src="assets/12_visual_odometry/thumb.png" width="160" alt="Visual odometry"> | Monocular and RGB-D feature-based VO on TUM fr1, scored with ATE/RPE, with drift and failure analysis | ORB, SIFT, 5-point E + MAGSAC++, EPnP-RANSAC, evo |
+| 13 | [Vision-language models](projects/13_vision_language/) | <img src="assets/13_vision_language/thumb.png" width="160" alt="Vision-language models"> | Zero-shot SigLIP 2/CLIP classification, Florence-2 captions and grounding, and a benchmarked small VLM for robot-desk VQA | SigLIP 2, CLIP ViT-B/32, Florence-2-base, Qwen3.5-0.8B |
 
 *Projects are added as they are completed.*
 

@@ -1,0 +1,31 @@
+# Checkpoints used by projects/13_vision_language (pinned Hugging Face revisions).
+# Downloaded by `make data-13_vision_language`; loaded by scripts/vl_common.py.
+# `allow` restricts the snapshot to the files the loader needs (no duplicate .bin copies).
+
+siglip2:
+  repo: google/siglip2-base-patch16-224
+  revision: 75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2
+  license: Apache-2.0
+  allow: ["*.json", "model.safetensors", "tokenizer.model"]
+
+clip:
+  # open_clip ViT-B-32 / laion2b_s34b_b79k (loaded with open_clip.create_model_and_transforms)
+  repo: laion/CLIP-ViT-B-32-laion2B-s34B-b79K
+  revision: 1a25a446712ba5ee05982a381eed697ef9b435cf
+  open_clip_arch: ViT-B-32
+  open_clip_tag: laion2b_s34b_b79k
+  license: MIT
+  allow: ["open_clip_config.json", "open_clip_model.safetensors"]
+
+florence2:
+  repo: florence-community/Florence-2-base
+  revision: 00921df66db728a9ceb750f5eca43e5c203a2051
+  license: MIT
+  allow: ["*.json", "*.txt", "model.safetensors"]
+
+vlm:
+  # Natively multimodal (vision encoder + hybrid Gated-DeltaNet/attention decoder), 1.75 GB bf16.
+  repo: Qwen/Qwen3.5-0.8B
+  revision: 2fc06364715b967f1860aea9cf38778875588b17
+  license: Apache-2.0
+  allow: ["*.json", "*.txt", "*.jinja", "*.safetensors"]

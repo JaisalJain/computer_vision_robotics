@@ -1,0 +1,12 @@
+metric,value
+<OD> precision@0.5 on coco128 (label-normalised),0.4656
+<OD> recall@0.5 on coco128 (label-normalised),0.5608
+<OD> predictions with non-COCO labels,347.0000
+grounding: absent phrases that still got a box,4.0000
+grounding: absent phrases rejected by SigLIP 2 (p < 0.5),4.0000
+grounding: present phrases accepted by SigLIP 2 (p >= 0.5),5.0000
+"<CAPTION> latency, 3 beams (ms)",91.8663
+"<OD> latency, 3 beams (ms)",189.2817
+"<OD> latency, greedy (ms)",135.0293
+Florence-2 weights (MiB),452.0811
+"peak VRAM, <OD> on coco128 (MiB)",628.4805

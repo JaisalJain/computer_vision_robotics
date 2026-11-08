@@ -1,0 +1,3 @@
+model,best prompt,top-1 (best prompt),top-1 (class name only),top-1 (80-template ensemble),AUROC Imagenette vs desk,params (M),embed dim,end-to-end img/s,peak VRAM (MiB),model-only img/s (bs 64),latency bs 64 (ms),activations bs 64 (MiB)
+CLIP B/32 (LAION-2B),class name only,0.9911,0.9911,0.9906,0.9683,151.2773,512.0000,39.9407,371.3633,1873.3234,34.1639,56.2500
+SigLIP 2 B/16-224,7-template ensemble,0.9832,0.9755,0.9778,0.8063,375.1880,768.0000,32.9201,979.7114,382.3905,167.3682,220.5000

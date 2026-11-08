@@ -1,0 +1,851 @@
+image,kind,object,question,truth,answer,pred,correct,visual_tokens,prompt_tokens,new_tokens,latency_s
+000000000009.jpg,presence,broccoli,Is there a broccoli in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0718
+000000000009.jpg,presence,orange,Is there an orange in the image? Answer yes or no.,True,No,False,False,70,97,4,0.0713
+000000000009.jpg,presence,giraffe,Is there a giraffe in the image? Answer yes or no.,False,No,False,True,70,98,4,0.072
+000000000009.jpg,presence,elephant,Is there an elephant in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0713
+000000000025.jpg,presence,giraffe,Is there a giraffe in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0715
+000000000025.jpg,presence,bicycle,Is there a bicycle in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0845
+000000000025.jpg,presence,bus,Is there a bus in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0715
+000000000030.jpg,presence,potted plant,Is there a potted plant in the image? Answer yes or no.,True,Yes,True,True,70,99,4,0.0719
+000000000030.jpg,presence,vase,Is there a vase in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0715
+000000000030.jpg,presence,sink,Is there a sink in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0721
+000000000030.jpg,presence,bottle,Is there a bottle in the image? Answer yes or no.,False,No,False,True,70,97,4,0.075
+000000000034.jpg,presence,zebra,Is there a zebra in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0754
+000000000034.jpg,presence,scissors,Is there a scissors in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0762
+000000000034.jpg,presence,potted plant,Is there a potted plant in the image? Answer yes or no.,False,No,False,True,70,99,4,0.0722
+000000000036.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0692
+000000000036.jpg,presence,umbrella,Is there an umbrella in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.067
+000000000036.jpg,presence,clock,Is there a clock in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0668
+000000000036.jpg,presence,zebra,Is there a zebra in the image? Answer yes or no.,False,no,False,True,63,91,4,0.067
+000000000042.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0686
+000000000042.jpg,presence,person,Is there a person in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0681
+000000000042.jpg,presence,pizza,Is there a pizza in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0683
+000000000049.jpg,presence,potted plant,Is there a potted plant in the image? Answer yes or no.,True,Yes,True,True,63,92,4,0.0664
+000000000049.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0667
+000000000049.jpg,presence,toilet,Is there a toilet in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0683
+000000000049.jpg,presence,bed,Is there a bed in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0698
+000000000061.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0715
+000000000061.jpg,presence,elephant,Is there an elephant in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.071
+000000000061.jpg,presence,microwave,Is there a microwave in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0698
+000000000061.jpg,presence,car,Is there a car in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0683
+000000000064.jpg,presence,clock,Is there a clock in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0695
+000000000064.jpg,presence,car,Is there a car in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0691
+000000000064.jpg,presence,kite,Is there a kite in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0683
+000000000064.jpg,presence,baseball bat,Is there a baseball bat in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0813
+000000000071.jpg,presence,truck,Is there a truck in the image? Answer yes or no.,True,No,False,False,70,97,4,0.0697
+000000000071.jpg,presence,car,Is there a car in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0683
+000000000071.jpg,presence,pizza,Is there a pizza in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0686
+000000000071.jpg,presence,knife,Is there a knife in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0693
+000000000072.jpg,presence,giraffe,Is there a giraffe in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0699
+000000000072.jpg,presence,elephant,Is there an elephant in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0717
+000000000072.jpg,presence,orange,Is there an orange in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0726
+000000000073.jpg,presence,motorcycle,Is there a motorcycle in the image? Answer yes or no.,True,Yes,True,True,72,99,4,0.0721
+000000000073.jpg,presence,skis,Is there a skis in the image? Answer yes or no.,False,No,False,True,72,100,4,0.071
+000000000073.jpg,presence,surfboard,Is there a surfboard in the image? Answer yes or no.,False,No,False,True,72,100,4,0.0705
+000000000074.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0689
+000000000074.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0688
+000000000074.jpg,presence,cake,Is there a cake in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0686
+000000000074.jpg,presence,scissors,Is there a scissors in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0684
+000000000077.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0683
+000000000077.jpg,presence,skateboard,Is there a skateboard in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0684
+000000000077.jpg,presence,chair,Is there a chair in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0688
+000000000077.jpg,presence,snowboard,Is there a snowboard in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0693
+000000000078.jpg,presence,clock,Is there a clock in the image? Answer yes or no.,True,Yes,True,True,64,91,4,0.0698
+000000000078.jpg,presence,fire hydrant,Is there a fire hydrant in the image? Answer yes or no.,False,No,False,True,64,93,4,0.0689
+000000000078.jpg,presence,bowl,Is there a bowl in the image? Answer yes or no.,False,No,False,True,64,91,4,0.0698
+000000000081.jpg,presence,airplane,Is there an airplane in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0709
+000000000081.jpg,presence,fork,Is there a fork in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0707
+000000000081.jpg,presence,keyboard,Is there a keyboard in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0705
+000000000086.jpg,presence,motorcycle,Is there a motorcycle in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0709
+000000000086.jpg,presence,handbag,Is there a handbag in the image? Answer yes or no.,True,Yes,True,True,63,91,4,0.0661
+000000000086.jpg,presence,sink,Is there a sink in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0671
+000000000086.jpg,presence,couch,Is there a couch in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0664
+000000000089.jpg,presence,oven,Is there an oven in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0703
+000000000089.jpg,presence,microwave,Is there a microwave in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0679
+000000000089.jpg,presence,spoon,Is there a spoon in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0809
+000000000089.jpg,presence,carrot,Is there a carrot in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0685
+000000000092.jpg,presence,cake,Is there a cake in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.07
+000000000092.jpg,presence,fork,Is there a fork in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0704
+000000000092.jpg,presence,bottle,Is there a bottle in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0704
+000000000092.jpg,presence,banana,Is there a banana in the image? Answer yes or no.,False,No,False,True,70,97,4,0.071
+000000000094.jpg,presence,truck,Is there a truck in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0722
+000000000094.jpg,presence,car,Is there a car in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0694
+000000000094.jpg,presence,sink,Is there a sink in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0693
+000000000094.jpg,presence,tie,Is there a tie in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0682
+000000000109.jpg,presence,bench,Is there a bench in the image? Answer yes or no.,True,Yes,True,True,60,87,4,0.0698
+000000000109.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,60,87,4,0.0676
+000000000109.jpg,presence,truck,Is there a truck in the image? Answer yes or no.,False,No,False,True,60,87,4,0.0716
+000000000109.jpg,presence,airplane,Is there an airplane in the image? Answer yes or no.,False,No,False,True,60,87,4,0.0658
+000000000110.jpg,presence,knife,Is there a knife in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0682
+000000000110.jpg,presence,dining table,Is there a dining table in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0687
+000000000110.jpg,presence,giraffe,Is there a giraffe in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0694
+000000000110.jpg,presence,sheep,Is there a sheep in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0701
+000000000113.jpg,presence,cake,Is there a cake in the image? Answer yes or no.,True,Yes,True,True,60,87,4,0.0686
+000000000113.jpg,presence,knife,Is there a knife in the image? Answer yes or no.,True,Yes,True,True,60,87,4,0.0684
+000000000113.jpg,presence,hot dog,Is there a hot dog in the image? Answer yes or no.,False,No,False,True,60,88,4,0.0684
+000000000113.jpg,presence,umbrella,Is there an umbrella in the image? Answer yes or no.,False,No,False,True,60,87,4,0.0676
+000000000127.jpg,presence,spoon,Is there a spoon in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0677
+000000000127.jpg,presence,book,Is there a book in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0674
+000000000127.jpg,presence,toaster,Is there a toaster in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0687
+000000000127.jpg,presence,mouse,Is there a mouse in the image? Answer yes or no.,False,No,False,True,63,90,4,0.068
+000000000133.jpg,presence,bed,Is there a bed in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0691
+000000000133.jpg,presence,teddy bear,Is there a teddy bear in the image? Answer yes or no.,True,No,False,False,70,99,4,0.0684
+000000000133.jpg,presence,spoon,Is there a spoon in the image? Answer yes or no.,False,No,False,True,70,97,4,0.069
+000000000133.jpg,presence,airplane,Is there an airplane in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0688
+000000000136.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0693
+000000000136.jpg,presence,giraffe,Is there a giraffe in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0699
+000000000136.jpg,presence,clock,Is there a clock in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0701
+000000000136.jpg,presence,boat,Is there a boat in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0703
+000000000138.jpg,presence,vase,Is there a vase in the image? Answer yes or no.,True,Yes,True,True,72,99,4,0.0694
+000000000138.jpg,presence,potted plant,Is there a potted plant in the image? Answer yes or no.,True,Yes,True,True,72,101,4,0.0702
+000000000138.jpg,presence,keyboard,Is there a keyboard in the image? Answer yes or no.,False,No,False,True,72,99,4,0.0695
+000000000138.jpg,presence,broccoli,Is there a broccoli in the image? Answer yes or no.,False,No,False,True,72,99,4,0.0698
+000000000142.jpg,presence,banana,Is there a banana in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0705
+000000000142.jpg,presence,sandwich,Is there a sandwich in the image? Answer yes or no.,True,No,False,False,70,97,4,0.069
+000000000142.jpg,presence,motorcycle,Is there a motorcycle in the image? Answer yes or no.,False,No,False,True,70,97,4,0.069
+000000000142.jpg,presence,tie,Is there a tie in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0687
+000000000143.jpg,presence,bird,Is there a bird in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0675
+000000000143.jpg,presence,boat,Is there a boat in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0673
+000000000143.jpg,presence,cup,Is there a cup in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0679
+000000000144.jpg,presence,giraffe,Is there a giraffe in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0697
+000000000144.jpg,presence,clock,Is there a clock in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0824
+000000000144.jpg,presence,dining table,Is there a dining table in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0824
+000000000149.jpg,presence,car,Is there a car in the image? Answer yes or no.,True,no,False,False,70,97,4,0.0698
+000000000149.jpg,presence,kite,Is there a kite in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0694
+000000000149.jpg,presence,cup,Is there a cup in the image? Answer yes or no.,False,no,False,True,70,97,4,0.07
+000000000149.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0695
+000000000151.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0694
+000000000151.jpg,presence,train,Is there a train in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0706
+000000000151.jpg,presence,frisbee,Is there a frisbee in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0719
+000000000151.jpg,presence,toothbrush,Is there a toothbrush in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0807
+000000000154.jpg,presence,zebra,Is there a zebra in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0686
+000000000154.jpg,presence,bicycle,Is there a bicycle in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0818
+000000000154.jpg,presence,vase,Is there a vase in the image? Answer yes or no.,False,No,False,True,70,97,4,0.069
+000000000164.jpg,presence,wine glass,Is there a wine glass in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0702
+000000000164.jpg,presence,oven,Is there an oven in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0694
+000000000164.jpg,presence,baseball bat,Is there a baseball bat in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.082
+000000000164.jpg,presence,frisbee,Is there a frisbee in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0694
+000000000165.jpg,presence,tie,Is there a tie in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0683
+000000000165.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0675
+000000000165.jpg,presence,kite,Is there a kite in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0683
+000000000165.jpg,presence,zebra,Is there a zebra in the image? Answer yes or no.,False,No,False,True,63,91,4,0.0687
+000000000192.jpg,presence,baseball bat,Is there a baseball bat in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0694
+000000000192.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0689
+000000000192.jpg,presence,clock,Is there a clock in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0816
+000000000192.jpg,presence,book,Is there a book in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0687
+000000000194.jpg,presence,pizza,Is there a pizza in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0697
+000000000194.jpg,presence,knife,Is there a knife in the image? Answer yes or no.,True,No,False,False,70,97,4,0.0691
+000000000194.jpg,presence,potted plant,Is there a potted plant in the image? Answer yes or no.,False,No,False,True,70,99,4,0.0698
+000000000194.jpg,presence,teddy bear,Is there a teddy bear in the image? Answer yes or no.,False,No,False,True,70,99,4,0.0698
+000000000196.jpg,presence,dining table,Is there a dining table in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0693
+000000000196.jpg,presence,spoon,Is there a spoon in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0702
+000000000196.jpg,presence,bicycle,Is there a bicycle in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0824
+000000000196.jpg,presence,boat,Is there a boat in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0696
+000000000201.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,No,False,False,70,97,4,0.0702
+000000000201.jpg,presence,snowboard,Is there a snowboard in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0701
+000000000201.jpg,presence,scissors,Is there a scissors in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.082
+000000000201.jpg,presence,remote,Is there a remote in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0815
+000000000208.jpg,presence,sink,Is there a sink in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0693
+000000000208.jpg,presence,toothbrush,Is there a toothbrush in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0697
+000000000208.jpg,presence,vase,Is there a vase in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0823
+000000000208.jpg,presence,suitcase,Is there a suitcase in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0815
+000000000241.jpg,presence,potted plant,Is there a potted plant in the image? Answer yes or no.,True,Yes,True,True,70,99,4,0.0695
+000000000241.jpg,presence,cup,Is there a cup in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0696
+000000000241.jpg,presence,backpack,Is there a backpack in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0816
+000000000241.jpg,presence,skateboard,Is there a skateboard in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0819
+000000000247.jpg,presence,airplane,Is there an airplane in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0697
+000000000247.jpg,presence,car,Is there a car in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0698
+000000000247.jpg,presence,parking meter,Is there a parking meter in the image? Answer yes or no.,False,No,False,True,70,98,4,0.071
+000000000247.jpg,presence,clock,Is there a clock in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0699
+000000000250.jpg,presence,bear,Is there a bear in the image? Answer yes or no.,False,No,False,True,70,97,4,0.069
+000000000250.jpg,presence,baseball bat,Is there a baseball bat in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.082
+000000000257.jpg,presence,truck,Is there a truck in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0692
+000000000257.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0698
+000000000257.jpg,presence,chair,Is there a chair in the image? Answer yes or no.,False,Yes,True,False,70,97,4,0.0696
+000000000257.jpg,presence,book,Is there a book in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0694
+000000000260.jpg,presence,suitcase,Is there a suitcase in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0702
+000000000260.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0693
+000000000260.jpg,presence,fork,Is there a fork in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0697
+000000000260.jpg,presence,broccoli,Is there a broccoli in the image? Answer yes or no.,False,No,False,True,70,97,4,0.069
+000000000263.jpg,presence,elephant,Is there an elephant in the image? Answer yes or no.,True,Yes,True,True,72,99,4,0.0699
+000000000263.jpg,presence,couch,Is there a couch in the image? Answer yes or no.,False,No,False,True,72,99,4,0.0697
+000000000263.jpg,presence,book,Is there a book in the image? Answer yes or no.,False,No,False,True,72,99,4,0.0699
+000000000283.jpg,presence,bottle,Is there a bottle in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0698
+000000000283.jpg,presence,wine glass,Is there a wine glass in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0698
+000000000283.jpg,presence,stop sign,Is there a stop sign in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0697
+000000000283.jpg,presence,tennis racket,Is there a tennis racket in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0694
+000000000294.jpg,presence,fork,Is there a fork in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0706
+000000000294.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0681
+000000000294.jpg,presence,surfboard,Is there a surfboard in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0691
+000000000294.jpg,presence,keyboard,Is there a keyboard in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0689
+000000000307.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0691
+000000000307.jpg,presence,car,Is there a car in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0695
+000000000307.jpg,presence,cow,Is there a cow in the image? Answer yes or no.,False,No,False,True,70,97,4,0.069
+000000000307.jpg,presence,skateboard,Is there a skateboard in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0698
+000000000308.jpg,presence,umbrella,Is there an umbrella in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0689
+000000000308.jpg,presence,clock,Is there a clock in the image? Answer yes or no.,True,No,False,False,70,97,4,0.0699
+000000000308.jpg,presence,elephant,Is there an elephant in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0698
+000000000308.jpg,presence,dining table,Is there a dining table in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0695
+000000000309.jpg,presence,teddy bear,Is there a teddy bear in the image? Answer yes or no.,True,Yes,True,True,64,93,4,0.069
+000000000309.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,True,Yes,True,True,64,91,4,0.0683
+000000000309.jpg,presence,sheep,Is there a sheep in the image? Answer yes or no.,False,No,False,True,64,91,4,0.0678
+000000000309.jpg,presence,oven,Is there an oven in the image? Answer yes or no.,False,No,False,True,64,91,4,0.0672
+000000000312.jpg,presence,elephant,Is there an elephant in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0693
+000000000312.jpg,presence,traffic light,Is there a traffic light in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0688
+000000000312.jpg,presence,toothbrush,Is there a toothbrush in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0823
+000000000315.jpg,presence,chair,Is there a chair in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0689
+000000000315.jpg,presence,umbrella,Is there an umbrella in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0696
+000000000315.jpg,presence,microwave,Is there a microwave in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0692
+000000000315.jpg,presence,bowl,Is there a bowl in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0697
+000000000321.jpg,presence,sandwich,Is there a sandwich in the image? Answer yes or no.,True,No,False,False,70,97,4,0.0731
+000000000321.jpg,presence,hot dog,Is there a hot dog in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0685
+000000000321.jpg,presence,baseball glove,Is there a baseball glove in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0818
+000000000321.jpg,presence,knife,Is there a knife in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0692
+000000000322.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0677
+000000000322.jpg,presence,frisbee,Is there a frisbee in the image? Answer yes or no.,True,Yes,True,True,63,91,4,0.067
+000000000322.jpg,presence,bottle,Is there a bottle in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0676
+000000000322.jpg,presence,remote,Is there a remote in the image? Answer yes or no.,False,No.,False,True,63,90,5,0.0799
+000000000326.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0687
+000000000326.jpg,presence,wine glass,Is there a wine glass in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0697
+000000000326.jpg,presence,carrot,Is there a carrot in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0689
+000000000326.jpg,presence,vase,Is there a vase in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0696
+000000000328.jpg,presence,car,Is there a car in the image? Answer yes or no.,True,No,False,False,63,90,4,0.0686
+000000000328.jpg,presence,backpack,Is there a backpack in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0678
+000000000328.jpg,presence,apple,Is there an apple in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0711
+000000000328.jpg,presence,motorcycle,Is there a motorcycle in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0667
+000000000332.jpg,presence,cup,Is there a cup in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0707
+000000000332.jpg,presence,bowl,Is there a bowl in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0707
+000000000332.jpg,presence,skis,Is there a skis in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0676
+000000000332.jpg,presence,motorcycle,Is there a motorcycle in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0684
+000000000338.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,72,99,4,0.0683
+000000000338.jpg,presence,clock,Is there a clock in the image? Answer yes or no.,True,Yes,True,True,72,99,4,0.0695
+000000000338.jpg,presence,toilet,Is there a toilet in the image? Answer yes or no.,False,No,False,True,72,99,4,0.0689
+000000000338.jpg,presence,tv,Is there a tv in the image? Answer yes or no.,False,No,False,True,72,99,4,0.0698
+000000000349.jpg,presence,potted plant,Is there a potted plant in the image? Answer yes or no.,True,Yes,True,True,70,99,4,0.0699
+000000000349.jpg,presence,train,Is there a train in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0704
+000000000349.jpg,presence,person,Is there a person in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0717
+000000000349.jpg,presence,traffic light,Is there a traffic light in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0693
+000000000357.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0715
+000000000357.jpg,presence,baseball bat,Is there a baseball bat in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0712
+000000000357.jpg,presence,elephant,Is there an elephant in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0706
+000000000357.jpg,presence,pizza,Is there a pizza in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0811
+000000000359.jpg,presence,car,Is there a car in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0682
+000000000359.jpg,presence,traffic light,Is there a traffic light in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0686
+000000000359.jpg,presence,chair,Is there a chair in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0685
+000000000359.jpg,presence,carrot,Is there a carrot in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0689
+000000000360.jpg,presence,snowboard,Is there a snowboard in the image? Answer yes or no.,True,No,False,False,70,98,4,0.0689
+000000000360.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0699
+000000000360.jpg,presence,oven,Is there an oven in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0698
+000000000360.jpg,presence,motorcycle,Is there a motorcycle in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0708
+000000000368.jpg,presence,sports ball,Is there a sports ball in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0714
+000000000368.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0705
+000000000368.jpg,presence,baseball glove,Is there a baseball glove in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0708
+000000000368.jpg,presence,skis,Is there a skis in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0701
+000000000370.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0694
+000000000370.jpg,presence,broccoli,Is there a broccoli in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0693
+000000000370.jpg,presence,tennis racket,Is there a tennis racket in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0687
+000000000370.jpg,presence,hair drier,Is there a hair drier in the image? Answer yes or no.,False,No,False,True,70,99,4,0.0695
+000000000382.jpg,presence,backpack,Is there a backpack in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0688
+000000000382.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0691
+000000000382.jpg,presence,teddy bear,Is there a teddy bear in the image? Answer yes or no.,False,No,False,True,70,99,4,0.0695
+000000000382.jpg,presence,bear,Is there a bear in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0695
+000000000384.jpg,presence,mouse,Is there a mouse in the image? Answer yes or no.,True,no,False,False,70,97,4,0.0707
+000000000384.jpg,presence,laptop,Is there a laptop in the image? Answer yes or no.,True,No,False,False,70,97,4,0.07
+000000000384.jpg,presence,parking meter,Is there a parking meter in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0832
+000000000384.jpg,presence,surfboard,Is there a surfboard in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0703
+000000000387.jpg,presence,cell phone,Is there a cell phone in the image? Answer yes or no.,True,No,False,False,70,98,4,0.0707
+000000000387.jpg,presence,laptop,Is there a laptop in the image? Answer yes or no.,True,No,False,False,70,97,4,0.07
+000000000387.jpg,presence,couch,Is there a couch in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0693
+000000000387.jpg,presence,hair drier,Is there a hair drier in the image? Answer yes or no.,False,No,False,True,70,99,4,0.0707
+000000000389.jpg,presence,tie,Is there a tie in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.068
+000000000389.jpg,presence,backpack,Is there a backpack in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0682
+000000000389.jpg,presence,oven,Is there an oven in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0688
+000000000389.jpg,presence,bear,Is there a bear in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0685
+000000000394.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,True,Yes,True,True,64,91,4,0.0679
+000000000394.jpg,presence,frisbee,Is there a frisbee in the image? Answer yes or no.,True,Yes,True,True,64,92,4,0.0676
+000000000394.jpg,presence,fork,Is there a fork in the image? Answer yes or no.,False,No,False,True,64,91,4,0.0682
+000000000394.jpg,presence,scissors,Is there a scissors in the image? Answer yes or no.,False,No,False,True,64,91,4,0.0675
+000000000395.jpg,presence,cell phone,Is there a cell phone in the image? Answer yes or no.,True,Yes,True,True,72,100,4,0.0704
+000000000395.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,72,99,4,0.0708
+000000000395.jpg,presence,potted plant,Is there a potted plant in the image? Answer yes or no.,False,No,False,True,72,101,4,0.0697
+000000000395.jpg,presence,broccoli,Is there a broccoli in the image? Answer yes or no.,False,No,False,True,72,99,4,0.0712
+000000000397.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0702
+000000000397.jpg,presence,cup,Is there a cup in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0688
+000000000397.jpg,presence,stop sign,Is there a stop sign in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0686
+000000000397.jpg,presence,boat,Is there a boat in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0687
+000000000400.jpg,presence,boat,Is there a boat in the image? Answer yes or no.,True,Yes,True,True,64,91,4,0.0672
+000000000400.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,True,Yes,True,True,64,91,4,0.0672
+000000000400.jpg,presence,remote,Is there a remote in the image? Answer yes or no.,False,No,False,True,64,91,4,0.0675
+000000000400.jpg,presence,bird,Is there a bird in the image? Answer yes or no.,False,No,False,True,64,91,4,0.0677
+000000000404.jpg,presence,boat,Is there a boat in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0701
+000000000404.jpg,presence,snowboard,Is there a snowboard in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0695
+000000000404.jpg,presence,sink,Is there a sink in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0839
+000000000415.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,66,93,4,0.0693
+000000000415.jpg,presence,tennis racket,Is there a tennis racket in the image? Answer yes or no.,True,Yes,True,True,66,94,4,0.07
+000000000415.jpg,presence,chair,Is there a chair in the image? Answer yes or no.,False,No,False,True,66,93,4,0.0689
+000000000415.jpg,presence,apple,Is there an apple in the image? Answer yes or no.,False,No,False,True,66,93,4,0.0684
+000000000419.jpg,presence,car,Is there a car in the image? Answer yes or no.,True,No,False,False,70,97,4,0.0686
+000000000419.jpg,presence,tennis racket,Is there a tennis racket in the image? Answer yes or no.,True,No.,False,False,70,98,5,0.0812
+000000000419.jpg,presence,knife,Is there a knife in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0689
+000000000419.jpg,presence,dining table,Is there a dining table in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.082
+000000000428.jpg,presence,cake,Is there a cake in the image? Answer yes or no.,True,Yes,True,True,66,93,4,0.0681
+000000000428.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,66,93,4,0.0685
+000000000428.jpg,presence,bowl,Is there a bowl in the image? Answer yes or no.,False,No,False,True,66,93,4,0.0689
+000000000428.jpg,presence,motorcycle,Is there a motorcycle in the image? Answer yes or no.,False,No,False,True,66,93,4,0.0688
+000000000431.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,66,93,4,0.069
+000000000431.jpg,presence,sports ball,Is there a sports ball in the image? Answer yes or no.,True,Yes,True,True,66,94,4,0.0688
+000000000431.jpg,presence,bed,Is there a bed in the image? Answer yes or no.,False,No,False,True,66,93,4,0.0691
+000000000431.jpg,presence,hair drier,Is there a hair drier in the image? Answer yes or no.,False,No,False,True,66,95,4,0.0694
+000000000436.jpg,presence,donut,Is there a donut in the image? Answer yes or no.,True,No,False,False,70,98,4,0.0693
+000000000436.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0697
+000000000436.jpg,presence,mouse,Is there a mouse in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0693
+000000000436.jpg,presence,umbrella,Is there an umbrella in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0691
+000000000438.jpg,presence,donut,Is there a donut in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0688
+000000000438.jpg,presence,suitcase,Is there a suitcase in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0817
+000000000438.jpg,presence,pizza,Is there a pizza in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0814
+000000000443.jpg,presence,cat,Is there a cat in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0719
+000000000443.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0685
+000000000443.jpg,presence,book,Is there a book in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0691
+000000000443.jpg,presence,apple,Is there an apple in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0696
+000000000446.jpg,presence,book,Is there a book in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0694
+000000000446.jpg,presence,potted plant,Is there a potted plant in the image? Answer yes or no.,True,Yes,True,True,70,99,4,0.0702
+000000000446.jpg,presence,tennis racket,Is there a tennis racket in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0696
+000000000446.jpg,presence,toothbrush,Is there a toothbrush in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0695
+000000000450.jpg,presence,dining table,Is there a dining table in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0691
+000000000450.jpg,presence,pizza,Is there a pizza in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0691
+000000000450.jpg,presence,donut,Is there a donut in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0821
+000000000450.jpg,presence,frisbee,Is there a frisbee in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0818
+000000000459.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0684
+000000000459.jpg,presence,tie,Is there a tie in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0683
+000000000459.jpg,presence,zebra,Is there a zebra in the image? Answer yes or no.,False,No,False,True,63,91,4,0.0673
+000000000459.jpg,presence,couch,Is there a couch in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0679
+000000000471.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,No,False,False,70,97,4,0.0689
+000000000471.jpg,presence,bus,Is there a bus in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0709
+000000000471.jpg,presence,toaster,Is there a toaster in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0681
+000000000471.jpg,presence,teddy bear,Is there a teddy bear in the image? Answer yes or no.,False,No,False,True,70,99,4,0.0681
+000000000472.jpg,presence,airplane,Is there an airplane in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0691
+000000000472.jpg,presence,surfboard,Is there a surfboard in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0684
+000000000472.jpg,presence,sandwich,Is there a sandwich in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0691
+000000000474.jpg,presence,baseball glove,Is there a baseball glove in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0694
+000000000474.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.07
+000000000474.jpg,presence,toothbrush,Is there a toothbrush in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0826
+000000000474.jpg,presence,book,Is there a book in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0691
+000000000486.jpg,presence,knife,Is there a knife in the image? Answer yes or no.,True,No.,False,False,70,97,5,0.0818
+000000000486.jpg,presence,bottle,Is there a bottle in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0697
+000000000486.jpg,presence,bus,Is there a bus in the image? Answer yes or no.,False,No,False,True,70,97,4,0.071
+000000000486.jpg,presence,traffic light,Is there a traffic light in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0688
+000000000488.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,60,87,4,0.0671
+000000000488.jpg,presence,sports ball,Is there a sports ball in the image? Answer yes or no.,True,Yes,True,True,60,88,4,0.0665
+000000000488.jpg,presence,cup,Is there a cup in the image? Answer yes or no.,False,No,False,True,60,87,4,0.067
+000000000488.jpg,presence,teddy bear,Is there a teddy bear in the image? Answer yes or no.,False,No,False,True,60,89,4,0.0669
+000000000490.jpg,presence,skateboard,Is there a skateboard in the image? Answer yes or no.,True,Yes,True,True,64,91,4,0.0673
+000000000490.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,True,Yes,True,True,64,91,4,0.0675
+000000000490.jpg,presence,suitcase,Is there a suitcase in the image? Answer yes or no.,False,No,False,True,64,91,4,0.068
+000000000490.jpg,presence,pizza,Is there a pizza in the image? Answer yes or no.,False,No,False,True,64,91,4,0.0683
+000000000491.jpg,presence,teddy bear,Is there a teddy bear in the image? Answer yes or no.,True,Yes,True,True,60,89,4,0.0677
+000000000491.jpg,presence,chair,Is there a chair in the image? Answer yes or no.,False,"No, there is no chair in the image.",False,True,60,87,13,0.1806
+000000000491.jpg,presence,boat,Is there a boat in the image? Answer yes or no.,False,No,False,True,60,87,4,0.068
+000000000502.jpg,presence,bear,Is there a bear in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0705
+000000000502.jpg,presence,skateboard,Is there a skateboard in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0818
+000000000502.jpg,presence,bed,Is there a bed in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0686
+000000000508.jpg,presence,laptop,Is there a laptop in the image? Answer yes or no.,False,No,False,True,70,97,4,0.069
+000000000508.jpg,presence,donut,Is there a donut in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0694
+000000000510.jpg,presence,bench,Is there a bench in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0688
+000000000510.jpg,presence,traffic light,Is there a traffic light in the image? Answer yes or no.,True,No,False,False,70,98,4,0.0698
+000000000510.jpg,presence,giraffe,Is there a giraffe in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0694
+000000000510.jpg,presence,sheep,Is there a sheep in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0694
+000000000514.jpg,presence,bed,Is there a bed in the image? Answer yes or no.,True,Yes,True,True,66,93,4,0.0704
+000000000514.jpg,presence,scissors,Is there a scissors in the image? Answer yes or no.,False,No,False,True,66,93,4,0.0676
+000000000514.jpg,presence,mouse,Is there a mouse in the image? Answer yes or no.,False,No,False,True,66,93,4,0.0683
+000000000520.jpg,presence,bird,Is there a bird in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0698
+000000000520.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0695
+000000000520.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,False,No,False,True,70,97,4,0.071
+000000000520.jpg,presence,wine glass,Is there a wine glass in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0817
+000000000529.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.069
+000000000529.jpg,presence,motorcycle,Is there a motorcycle in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.069
+000000000529.jpg,presence,hot dog,Is there a hot dog in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0696
+000000000529.jpg,presence,laptop,Is there a laptop in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0693
+000000000531.jpg,presence,tennis racket,Is there a tennis racket in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0691
+000000000531.jpg,presence,sports ball,Is there a sports ball in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0709
+000000000531.jpg,presence,orange,Is there an orange in the image? Answer yes or no.,False,no,False,True,70,97,4,0.0704
+000000000531.jpg,presence,tv,Is there a tv in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0698
+000000000532.jpg,presence,bus,Is there a bus in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0695
+000000000532.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0694
+000000000532.jpg,presence,train,Is there a train in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0696
+000000000532.jpg,presence,bowl,Is there a bowl in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0698
+000000000536.jpg,presence,cell phone,Is there a cell phone in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0698
+000000000536.jpg,presence,chair,Is there a chair in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0691
+000000000536.jpg,presence,umbrella,Is there an umbrella in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0692
+000000000536.jpg,presence,donut,Is there a donut in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0693
+000000000540.jpg,presence,traffic light,Is there a traffic light in the image? Answer yes or no.,True,No,False,False,70,98,4,0.0705
+000000000540.jpg,presence,bus,Is there a bus in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0684
+000000000540.jpg,presence,person,Is there a person in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0693
+000000000540.jpg,presence,wine glass,Is there a wine glass in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0693
+000000000542.jpg,presence,airplane,Is there an airplane in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0681
+000000000542.jpg,presence,tie,Is there a tie in the image? Answer yes or no.,True,No,False,False,63,90,4,0.0673
+000000000542.jpg,presence,boat,Is there a boat in the image? Answer yes or no.,False,No,False,True,63,90,4,0.07
+000000000542.jpg,presence,keyboard,Is there a keyboard in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0669
+000000000544.jpg,presence,baseball bat,Is there a baseball bat in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0685
+000000000544.jpg,presence,sports ball,Is there a sports ball in the image? Answer yes or no.,True,No.,False,False,70,98,5,0.0826
+000000000544.jpg,presence,chair,Is there a chair in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0814
+000000000544.jpg,presence,laptop,Is there a laptop in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0813
+000000000560.jpg,presence,potted plant,Is there a potted plant in the image? Answer yes or no.,True,Yes,True,True,70,99,4,0.0707
+000000000560.jpg,presence,toilet,Is there a toilet in the image? Answer yes or no.,True,No,False,False,70,97,4,0.0692
+000000000560.jpg,presence,snowboard,Is there a snowboard in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0695
+000000000560.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0691
+000000000562.jpg,presence,toothbrush,Is there a toothbrush in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0697
+000000000562.jpg,presence,cup,Is there a cup in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0689
+000000000562.jpg,presence,sports ball,Is there a sports ball in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0718
+000000000562.jpg,presence,knife,Is there a knife in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0699
+000000000564.jpg,presence,tennis racket,Is there a tennis racket in the image? Answer yes or no.,True,Yes,True,True,63,91,4,0.0674
+000000000564.jpg,presence,chair,Is there a chair in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0671
+000000000564.jpg,presence,bicycle,Is there a bicycle in the image? Answer yes or no.,False,No.,False,True,63,90,5,0.0801
+000000000564.jpg,presence,bird,Is there a bird in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0724
+000000000569.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0682
+000000000569.jpg,presence,kite,Is there a kite in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0693
+000000000569.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,False,No,False,True,70,97,4,0.069
+000000000569.jpg,presence,cell phone,Is there a cell phone in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0692
+000000000572.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0694
+000000000572.jpg,presence,suitcase,Is there a suitcase in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0691
+000000000572.jpg,presence,keyboard,Is there a keyboard in the image? Answer yes or no.,False,No,False,True,70,97,4,0.07
+000000000572.jpg,presence,backpack,Is there a backpack in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0701
+000000000575.jpg,presence,cat,Is there a cat in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0697
+000000000575.jpg,presence,teddy bear,Is there a teddy bear in the image? Answer yes or no.,False,No,False,True,63,92,4,0.0669
+000000000575.jpg,presence,motorcycle,Is there a motorcycle in the image? Answer yes or no.,False,No,False,True,63,90,4,0.0671
+000000000581.jpg,presence,dog,Is there a dog in the image? Answer yes or no.,True,No,False,False,64,91,4,0.069
+000000000581.jpg,presence,baseball bat,Is there a baseball bat in the image? Answer yes or no.,False,No,False,True,64,92,4,0.0673
+000000000581.jpg,presence,person,Is there a person in the image? Answer yes or no.,False,Yes,True,False,64,91,4,0.0675
+000000000584.jpg,presence,carrot,Is there a carrot in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0687
+000000000584.jpg,presence,spoon,Is there a spoon in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0697
+000000000584.jpg,presence,snowboard,Is there a snowboard in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0817
+000000000584.jpg,presence,tennis racket,Is there a tennis racket in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0816
+000000000589.jpg,presence,frisbee,Is there a frisbee in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0693
+000000000589.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0696
+000000000589.jpg,presence,cat,Is there a cat in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0719
+000000000589.jpg,presence,refrigerator,Is there a refrigerator in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0705
+000000000590.jpg,presence,bowl,Is there a bowl in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0675
+000000000590.jpg,presence,sink,Is there a sink in the image? Answer yes or no.,True,Yes,True,True,63,90,4,0.0679
+000000000590.jpg,presence,fire hydrant,Is there a fire hydrant in the image? Answer yes or no.,False,No,False,True,63,92,4,0.0677
+000000000590.jpg,presence,cake,Is there a cake in the image? Answer yes or no.,False,No,False,True,63,90,4,0.068
+000000000595.jpg,presence,tv,Is there a tv in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.069
+000000000595.jpg,presence,zebra,Is there a zebra in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0698
+000000000595.jpg,presence,toothbrush,Is there a toothbrush in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0694
+000000000597.jpg,presence,elephant,Is there an elephant in the image? Answer yes or no.,True,Yes,True,True,65,92,4,0.069
+000000000597.jpg,presence,apple,Is there an apple in the image? Answer yes or no.,False,No,False,True,65,92,4,0.0684
+000000000597.jpg,presence,banana,Is there a banana in the image? Answer yes or no.,False,No,False,True,65,92,4,0.0684
+000000000599.jpg,presence,couch,Is there a couch in the image? Answer yes or no.,True,Yes,True,True,60,87,4,0.0677
+000000000599.jpg,presence,cat,Is there a cat in the image? Answer yes or no.,True,Yes,True,True,60,87,4,0.068
+000000000599.jpg,presence,bus,Is there a bus in the image? Answer yes or no.,False,No,False,True,60,87,4,0.0698
+000000000599.jpg,presence,refrigerator,Is there a refrigerator in the image? Answer yes or no.,False,No,False,True,60,87,4,0.067
+000000000605.jpg,presence,spoon,Is there a spoon in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0692
+000000000605.jpg,presence,cup,Is there a cup in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0693
+000000000605.jpg,presence,sports ball,Is there a sports ball in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0693
+000000000605.jpg,presence,carrot,Is there a carrot in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0697
+000000000612.jpg,presence,bed,Is there a bed in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0746
+000000000612.jpg,presence,teddy bear,Is there a teddy bear in the image? Answer yes or no.,True,Yes,True,True,70,99,4,0.0683
+000000000612.jpg,presence,traffic light,Is there a traffic light in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0688
+000000000612.jpg,presence,zebra,Is there a zebra in the image? Answer yes or no.,False,No,False,True,70,98,4,0.0688
+000000000620.jpg,presence,pizza,Is there a pizza in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0687
+000000000620.jpg,presence,refrigerator,Is there a refrigerator in the image? Answer yes or no.,True,No,False,False,70,97,4,0.0698
+000000000620.jpg,presence,tie,Is there a tie in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0716
+000000000620.jpg,presence,remote,Is there a remote in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0821
+000000000623.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0691
+000000000623.jpg,presence,teddy bear,Is there a teddy bear in the image? Answer yes or no.,True,Yes,True,True,70,99,4,0.0694
+000000000623.jpg,presence,airplane,Is there an airplane in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0693
+000000000623.jpg,presence,tennis racket,Is there a tennis racket in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0814
+000000000625.jpg,presence,frisbee,Is there a frisbee in the image? Answer yes or no.,True,Yes,True,True,70,98,4,0.0702
+000000000625.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0697
+000000000625.jpg,presence,bowl,Is there a bowl in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0685
+000000000625.jpg,presence,fire hydrant,Is there a fire hydrant in the image? Answer yes or no.,False,No,False,True,70,99,4,0.069
+000000000626.jpg,presence,clock,Is there a clock in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0687
+000000000626.jpg,presence,fork,Is there a fork in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0687
+000000000626.jpg,presence,tv,Is there a tv in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0696
+000000000629.jpg,presence,motorcycle,Is there a motorcycle in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0697
+000000000629.jpg,presence,mouse,Is there a mouse in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0702
+000000000629.jpg,presence,fork,Is there a fork in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0692
+000000000634.jpg,presence,skateboard,Is there a skateboard in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0694
+000000000634.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0691
+000000000634.jpg,presence,bird,Is there a bird in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0693
+000000000634.jpg,presence,laptop,Is there a laptop in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0698
+000000000636.jpg,presence,toilet,Is there a toilet in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0694
+000000000636.jpg,presence,skis,Is there a skis in the image? Answer yes or no.,False,No.,False,True,70,98,5,0.0822
+000000000636.jpg,presence,couch,Is there a couch in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0689
+000000000641.jpg,presence,bus,Is there a bus in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0689
+000000000641.jpg,presence,person,Is there a person in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0685
+000000000641.jpg,presence,tv,Is there a tv in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0696
+000000000641.jpg,presence,apple,Is there an apple in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0693
+000000000643.jpg,presence,teddy bear,Is there a teddy bear in the image? Answer yes or no.,True,"No, there is no teddy bear in the image.",False,False,70,99,15,0.2067
+000000000643.jpg,presence,bottle,Is there a bottle in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0685
+000000000643.jpg,presence,hair drier,Is there a hair drier in the image? Answer yes or no.,False,No,False,True,70,99,4,0.0703
+000000000643.jpg,presence,elephant,Is there an elephant in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0697
+000000000650.jpg,presence,car,Is there a car in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0695
+000000000650.jpg,presence,cat,Is there a cat in the image? Answer yes or no.,True,Yes,True,True,70,97,4,0.0694
+000000000650.jpg,presence,banana,Is there a banana in the image? Answer yes or no.,False,No,False,True,70,97,4,0.0701
+000000000650.jpg,presence,bench,Is there a bench in the image? Answer yes or no.,False,No.,False,True,70,97,5,0.0841
+000000000009.jpg,count,bowl,How many bowls are in the image? Answer with a single number.,3,3,3,True,70,98,4,0.068
+000000000009.jpg,count,broccoli,How many pieces of broccoli are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0688
+000000000009.jpg,count,orange,How many oranges are in the image? Answer with a single number.,4,0,0,False,70,98,4,0.0697
+000000000025.jpg,count,giraffe,How many giraffes are in the image? Answer with a single number.,2,2,2,True,70,100,4,0.0693
+000000000030.jpg,count,potted plant,How many potted plants are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0702
+000000000030.jpg,count,vase,How many vases are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0689
+000000000034.jpg,count,zebra,How many zebras are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0696
+000000000036.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0678
+000000000036.jpg,count,umbrella,How many umbrellas are in the image? Answer with a single number.,1,1,1,True,63,92,4,0.0682
+000000000042.jpg,count,dog,How many dogs are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0694
+000000000049.jpg,count,horse,How many horses are in the image? Answer with a single number.,2,3,3,False,63,91,4,0.0682
+000000000049.jpg,count,person,How many people are in the image? Answer with a single number.,6,2,2,False,63,91,4,0.0691
+000000000049.jpg,count,potted plant,How many potted plants are in the image? Answer with a single number.,1,1,1,True,63,93,4,0.0691
+000000000061.jpg,count,elephant,How many elephants are in the image? Answer with a single number.,2,3,3,False,63,91,4,0.0675
+000000000061.jpg,count,person,How many people are in the image? Answer with a single number.,3,3,3,True,63,91,4,0.0673
+000000000064.jpg,count,car,How many cars are in the image? Answer with a single number.,1,2,2,False,70,98,4,0.0689
+000000000064.jpg,count,clock,How many clocks are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0691
+000000000064.jpg,count,stop sign,How many stop signs are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.07
+000000000064.jpg,count,truck,How many trucks are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.069
+000000000071.jpg,count,train,How many trains are in the image? Answer with a single number.,1,2,2,False,70,98,4,0.0702
+000000000071.jpg,count,truck,How many trucks are in the image? Answer with a single number.,2,0,0,False,70,98,4,0.0696
+000000000072.jpg,count,giraffe,How many giraffes are in the image? Answer with a single number.,2,2,2,True,70,100,4,0.0699
+000000000073.jpg,count,motorcycle,How many motorcycles are in the image? Answer with a single number.,2,3,3,False,72,100,4,0.07
+000000000074.jpg,count,bicycle,How many bicycles are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0697
+000000000074.jpg,count,dog,How many dogs are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0706
+000000000074.jpg,count,person,How many people are in the image? Answer with a single number.,6,2,2,False,70,98,4,0.0704
+000000000077.jpg,count,person,How many people are in the image? Answer with a single number.,5,3,3,False,70,98,4,0.0701
+000000000077.jpg,count,skateboard,How many skateboards are in the image? Answer with a single number.,3,2,2,False,70,99,4,0.0694
+000000000078.jpg,count,clock,How many clocks are in the image? Answer with a single number.,1,1,1,True,64,92,4,0.0677
+000000000081.jpg,count,airplane,How many airplanes are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0699
+000000000086.jpg,count,handbag,How many handbags are in the image? Answer with a single number.,1,1,1,True,63,92,4,0.0679
+000000000086.jpg,count,motorcycle,How many motorcycles are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0681
+000000000086.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0675
+000000000089.jpg,count,book,How many books are in the image? Answer with a single number.,3,1,1,False,70,98,4,0.0701
+000000000089.jpg,count,knife,How many knives are in the image? Answer with a single number.,5,3,3,False,70,98,4,0.0691
+000000000089.jpg,count,microwave,How many microwaves are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0707
+000000000089.jpg,count,oven,How many ovens are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0691
+000000000092.jpg,count,cake,How many cakes are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0696
+000000000092.jpg,count,fork,How many forks are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0711
+000000000094.jpg,count,car,How many cars are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0686
+000000000094.jpg,count,truck,How many trucks are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0707
+000000000109.jpg,count,bench,How many benches are in the image? Answer with a single number.,2,3,3,False,60,88,4,0.0675
+000000000109.jpg,count,dog,How many dogs are in the image? Answer with a single number.,1,0,0,False,60,88,4,0.0678
+000000000109.jpg,count,person,How many people are in the image? Answer with a single number.,5,3,3,False,60,88,4,0.0671
+000000000110.jpg,count,chair,How many chairs are in the image? Answer with a single number.,4,2,2,False,70,98,4,0.069
+000000000110.jpg,count,cup,How many cups are in the image? Answer with a single number.,4,0,0,False,70,98,4,0.0697
+000000000110.jpg,count,dining table,How many dining tables are in the image? Answer with a single number.,3,2,2,False,70,99,4,0.07
+000000000110.jpg,count,fork,How many forks are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0708
+000000000110.jpg,count,knife,How many knives are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0702
+000000000110.jpg,count,pizza,How many pizzas are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0694
+000000000113.jpg,count,cake,How many cakes are in the image? Answer with a single number.,1,1,1,True,60,88,4,0.069
+000000000113.jpg,count,chair,How many chairs are in the image? Answer with a single number.,2,2,2,True,60,88,4,0.0686
+000000000113.jpg,count,dining table,How many dining tables are in the image? Answer with a single number.,1,1,1,True,60,89,4,0.0679
+000000000113.jpg,count,knife,How many knives are in the image? Answer with a single number.,1,1,1,True,60,88,4,0.0674
+000000000113.jpg,count,person,How many people are in the image? Answer with a single number.,3,3,3,True,60,88,4,0.0671
+000000000127.jpg,count,bench,How many benches are in the image? Answer with a single number.,4,1,1,False,63,91,4,0.0675
+000000000127.jpg,count,book,How many books are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0676
+000000000127.jpg,count,cake,How many cakes are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0672
+000000000127.jpg,count,cup,How many cups are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0673
+000000000127.jpg,count,dining table,How many dining tables are in the image? Answer with a single number.,2,1,1,False,63,92,4,0.0675
+000000000127.jpg,count,handbag,How many handbags are in the image? Answer with a single number.,1,1,1,True,63,92,4,0.0682
+000000000127.jpg,count,knife,How many knives are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0676
+000000000127.jpg,count,person,How many people are in the image? Answer with a single number.,1,0,0,False,63,91,4,0.068
+000000000127.jpg,count,potted plant,How many potted plants are in the image? Answer with a single number.,1,1,1,True,63,93,4,0.0678
+000000000127.jpg,count,spoon,How many spoons are in the image? Answer with a single number.,1,1,1,True,63,92,4,0.0686
+000000000127.jpg,count,umbrella,How many umbrellas are in the image? Answer with a single number.,3,1,1,False,63,92,4,0.068
+000000000133.jpg,count,bed,How many beds are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0702
+000000000133.jpg,count,teddy bear,How many teddy bears are in the image? Answer with a single number.,1,0,0,False,70,100,4,0.0702
+000000000136.jpg,count,giraffe,How many giraffes are in the image? Answer with a single number.,2,2,2,True,70,100,4,0.0695
+000000000136.jpg,count,person,How many people are in the image? Answer with a single number.,2,2,2,True,70,98,4,0.0697
+000000000138.jpg,count,bowl,How many bowls are in the image? Answer with a single number.,1,3,3,False,72,100,4,0.0691
+000000000138.jpg,count,clock,How many clocks are in the image? Answer with a single number.,1,1,1,True,72,100,4,0.0701
+000000000138.jpg,count,oven,How many ovens are in the image? Answer with a single number.,1,1,1,True,72,101,4,0.069
+000000000138.jpg,count,potted plant,How many potted plants are in the image? Answer with a single number.,1,1,1,True,72,102,4,0.0701
+000000000138.jpg,count,refrigerator,How many refrigerators are in the image? Answer with a single number.,1,1,1,True,72,101,4,0.07
+000000000138.jpg,count,sink,How many sinks are in the image? Answer with a single number.,1,2,2,False,72,100,4,0.0695
+000000000138.jpg,count,vase,How many vases are in the image? Answer with a single number.,1,3,3,False,72,101,4,0.0701
+000000000142.jpg,count,banana,How many bananas are in the image? Answer with a single number.,1,6,6,False,70,98,4,0.0699
+000000000142.jpg,count,bottle,How many bottles are in the image? Answer with a single number.,1,2,2,False,70,98,4,0.0702
+000000000142.jpg,count,dining table,How many dining tables are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0695
+000000000142.jpg,count,sandwich,How many sandwiches are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.07
+000000000144.jpg,count,giraffe,How many giraffes are in the image? Answer with a single number.,3,4,4,False,70,100,4,0.0705
+000000000149.jpg,count,car,How many cars are in the image? Answer with a single number.,4,0,0,False,70,98,4,0.0699
+000000000149.jpg,count,kite,How many kites are in the image? Answer with a single number.,6,4,4,False,70,99,4,0.0731
+000000000151.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0683
+000000000151.jpg,count,stop sign,How many stop signs are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0698
+000000000151.jpg,count,train,How many trains are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0685
+000000000154.jpg,count,zebra,How many zebras are in the image? Answer with a single number.,3,3,3,True,70,99,4,0.0699
+000000000164.jpg,count,bowl,How many bowls are in the image? Answer with a single number.,6,1,1,False,70,98,4,0.0692
+000000000164.jpg,count,chair,How many chairs are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0696
+000000000164.jpg,count,dining table,How many dining tables are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0708
+000000000164.jpg,count,microwave,How many microwaves are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0695
+000000000164.jpg,count,oven,How many ovens are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0706
+000000000164.jpg,count,refrigerator,How many refrigerators are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0697
+000000000165.jpg,count,person,How many people are in the image? Answer with a single number.,2,2,2,True,63,91,4,0.0678
+000000000165.jpg,count,scissors,How many pairs of scissors are in the image? Answer with a single number.,1,0,0,False,63,93,4,0.0695
+000000000165.jpg,count,tie,How many ties are in the image? Answer with a single number.,1,2,2,False,63,91,4,0.0688
+000000000192.jpg,count,baseball bat,How many baseball bats are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0702
+000000000192.jpg,count,person,How many people are in the image? Answer with a single number.,4,4,4,True,70,98,4,0.0688
+000000000194.jpg,count,knife,How many knives are in the image? Answer with a single number.,1,0,0,False,70,98,4,0.0698
+000000000194.jpg,count,pizza,How many pizzas are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0692
+000000000196.jpg,count,dining table,How many dining tables are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0696
+000000000196.jpg,count,fork,How many forks are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0694
+000000000201.jpg,count,person,How many people are in the image? Answer with a single number.,2,0,0,False,70,98,4,0.0699
+000000000201.jpg,count,snowboard,How many snowboards are in the image? Answer with a single number.,6,5,5,False,70,99,4,0.0716
+000000000208.jpg,count,sink,How many sinks are in the image? Answer with a single number.,2,1,1,False,70,98,4,0.0688
+000000000208.jpg,count,toothbrush,How many toothbrushes are in the image? Answer with a single number.,2,1,1,False,70,100,4,0.0684
+000000000241.jpg,count,bottle,How many bottles are in the image? Answer with a single number.,1,2,2,False,70,98,4,0.0698
+000000000241.jpg,count,couch,How many couches are in the image? Answer with a single number.,2,2,2,True,70,98,4,0.0703
+000000000241.jpg,count,cup,How many cups are in the image? Answer with a single number.,2,2,2,True,70,98,4,0.07
+000000000241.jpg,count,handbag,How many handbags are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0694
+000000000241.jpg,count,person,How many people are in the image? Answer with a single number.,5,3,3,False,70,98,4,0.069
+000000000241.jpg,count,potted plant,How many potted plants are in the image? Answer with a single number.,2,1,1,False,70,100,4,0.0698
+000000000241.jpg,count,remote,How many remotes are in the image? Answer with a single number.,1,2,2,False,70,99,4,0.0686
+000000000247.jpg,count,airplane,How many airplanes are in the image? Answer with a single number.,2,1,1,False,70,98,4,0.0694
+000000000247.jpg,count,car,How many cars are in the image? Answer with a single number.,6,1,1,False,70,98,4,0.0692
+000000000257.jpg,count,backpack,How many backpacks are in the image? Answer with a single number.,2,2,2,True,70,99,4,0.0707
+000000000257.jpg,count,handbag,How many handbags are in the image? Answer with a single number.,4,1,1,False,70,99,4,0.0709
+000000000257.jpg,count,truck,How many trucks are in the image? Answer with a single number.,5,2,2,False,70,98,4,0.0708
+000000000260.jpg,count,bus,How many buses are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.068
+000000000260.jpg,count,car,How many cars are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0694
+000000000260.jpg,count,person,How many people are in the image? Answer with a single number.,2,1,1,False,70,98,4,0.0693
+000000000260.jpg,count,suitcase,How many suitcases are in the image? Answer with a single number.,3,1,1,False,70,99,4,0.0702
+000000000263.jpg,count,elephant,How many elephants are in the image? Answer with a single number.,2,2,2,True,72,100,4,0.0697
+000000000283.jpg,count,bottle,How many bottles are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0704
+000000000283.jpg,count,chair,How many chairs are in the image? Answer with a single number.,2,2,2,True,70,98,4,0.0694
+000000000283.jpg,count,dining table,How many dining tables are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0688
+000000000283.jpg,count,wine glass,How many wine glasses are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0701
+000000000294.jpg,count,clock,How many clocks are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0691
+000000000294.jpg,count,fork,How many forks are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0701
+000000000294.jpg,count,knife,How many knives are in the image? Answer with a single number.,5,1,1,False,70,98,4,0.0716
+000000000294.jpg,count,microwave,How many microwaves are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0711
+000000000294.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0692
+000000000307.jpg,count,car,How many cars are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.069
+000000000307.jpg,count,dog,How many dogs are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0694
+000000000307.jpg,count,frisbee,How many frisbees are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0694
+000000000308.jpg,count,clock,How many clocks are in the image? Answer with a single number.,1,0,0,False,70,98,4,0.0695
+000000000308.jpg,count,umbrella,How many umbrellas are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.07
+000000000308.jpg,count,wine glass,How many wine glasses are in the image? Answer with a single number.,4,4,4,True,70,99,4,0.0692
+000000000309.jpg,count,dog,How many dogs are in the image? Answer with a single number.,1,1,1,True,64,92,4,0.0679
+000000000309.jpg,count,teddy bear,How many teddy bears are in the image? Answer with a single number.,3,1,1,False,64,94,4,0.0676
+000000000312.jpg,count,elephant,How many elephants are in the image? Answer with a single number.,6,6,6,True,70,98,4,0.0698
+000000000315.jpg,count,handbag,How many handbags are in the image? Answer with a single number.,3,1,1,False,70,99,4,0.0694
+000000000321.jpg,count,hot dog,How many hot dogs are in the image? Answer with a single number.,2,2,2,True,70,99,4,0.0703
+000000000321.jpg,count,sandwich,How many sandwiches are in the image? Answer with a single number.,1,2,2,False,70,98,4,0.0706
+000000000322.jpg,count,frisbee,How many frisbees are in the image? Answer with a single number.,1,1,1,True,63,93,4,0.0685
+000000000322.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0682
+000000000326.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0691
+000000000326.jpg,count,wine glass,How many wine glasses are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0706
+000000000328.jpg,count,backpack,How many backpacks are in the image? Answer with a single number.,2,1,1,False,63,92,4,0.0674
+000000000328.jpg,count,bench,How many benches are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0681
+000000000328.jpg,count,book,How many books are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0676
+000000000328.jpg,count,car,How many cars are in the image? Answer with a single number.,1,0,0,False,63,91,4,0.0682
+000000000328.jpg,count,cell phone,How many cell phones are in the image? Answer with a single number.,1,0,0,False,63,92,4,0.0673
+000000000328.jpg,count,person,How many people are in the image? Answer with a single number.,3,3,3,True,63,91,4,0.0677
+000000000328.jpg,count,tie,How many ties are in the image? Answer with a single number.,2,1,1,False,63,91,4,0.0677
+000000000332.jpg,count,bowl,How many bowls are in the image? Answer with a single number.,1,2,2,False,70,98,4,0.0703
+000000000332.jpg,count,carrot,How many carrots are in the image? Answer with a single number.,2,1,1,False,70,98,4,0.0702
+000000000332.jpg,count,cup,How many cups are in the image? Answer with a single number.,3,1,1,False,70,98,4,0.0701
+000000000332.jpg,count,fork,How many forks are in the image? Answer with a single number.,1,0,0,False,70,98,4,0.0701
+000000000338.jpg,count,clock,How many clocks are in the image? Answer with a single number.,1,1,1,True,72,100,4,0.0694
+000000000338.jpg,count,handbag,How many handbags are in the image? Answer with a single number.,1,1,1,True,72,101,4,0.0706
+000000000338.jpg,count,oven,How many ovens are in the image? Answer with a single number.,1,1,1,True,72,101,4,0.0698
+000000000338.jpg,count,person,How many people are in the image? Answer with a single number.,2,2,2,True,72,100,4,0.0704
+000000000338.jpg,count,refrigerator,How many refrigerators are in the image? Answer with a single number.,1,2,2,False,72,101,4,0.07
+000000000349.jpg,count,potted plant,How many potted plants are in the image? Answer with a single number.,3,1,1,False,70,100,4,0.0696
+000000000349.jpg,count,train,How many trains are in the image? Answer with a single number.,1,2,2,False,70,98,4,0.0712
+000000000357.jpg,count,baseball bat,How many baseball bats are in the image? Answer with a single number.,1,3,3,False,70,99,4,0.0698
+000000000357.jpg,count,baseball glove,How many baseball gloves are in the image? Answer with a single number.,3,1,1,False,70,99,4,0.0694
+000000000359.jpg,count,car,How many cars are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0697
+000000000359.jpg,count,traffic light,How many traffic lights are in the image? Answer with a single number.,3,1,1,False,70,99,4,0.0696
+000000000360.jpg,count,person,How many people are in the image? Answer with a single number.,2,1,1,False,70,98,4,0.0708
+000000000360.jpg,count,snowboard,How many snowboards are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.07
+000000000368.jpg,count,sports ball,How many balls are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.07
+000000000370.jpg,count,broccoli,How many pieces of broccoli are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0705
+000000000370.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0694
+000000000382.jpg,count,backpack,How many backpacks are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0703
+000000000382.jpg,count,person,How many people are in the image? Answer with a single number.,1,2,2,False,70,98,4,0.0694
+000000000382.jpg,count,skis,How many pairs of skis are in the image? Answer with a single number.,1,1,1,True,70,101,4,0.0699
+000000000384.jpg,count,book,How many books are in the image? Answer with a single number.,4,1,1,False,70,98,4,0.0698
+000000000384.jpg,count,clock,How many clocks are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0697
+000000000384.jpg,count,couch,How many couches are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0699
+000000000384.jpg,count,laptop,How many laptops are in the image? Answer with a single number.,1,0,0,False,70,98,4,0.0696
+000000000384.jpg,count,mouse,How many computer mice are in the image? Answer with a single number.,1,0,0,False,70,99,4,0.0704
+000000000384.jpg,count,remote,How many remotes are in the image? Answer with a single number.,3,0,0,False,70,99,4,0.0697
+000000000387.jpg,count,cell phone,How many cell phones are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.07
+000000000387.jpg,count,laptop,How many laptops are in the image? Answer with a single number.,2,1,1,False,70,98,4,0.0703
+000000000389.jpg,count,backpack,How many backpacks are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0698
+000000000389.jpg,count,tie,How many ties are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0707
+000000000394.jpg,count,dog,How many dogs are in the image? Answer with a single number.,1,1,1,True,64,92,4,0.0678
+000000000394.jpg,count,frisbee,How many frisbees are in the image? Answer with a single number.,1,1,1,True,64,94,4,0.0678
+000000000395.jpg,count,cell phone,How many cell phones are in the image? Answer with a single number.,2,1,1,False,72,101,4,0.0698
+000000000397.jpg,count,chair,How many chairs are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0697
+000000000397.jpg,count,cup,How many cups are in the image? Answer with a single number.,2,1,1,False,70,98,4,0.0701
+000000000397.jpg,count,dining table,How many dining tables are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0701
+000000000397.jpg,count,fork,How many forks are in the image? Answer with a single number.,1,0,0,False,70,98,4,0.0695
+000000000397.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0695
+000000000397.jpg,count,pizza,How many pizzas are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.07
+000000000400.jpg,count,boat,How many boats are in the image? Answer with a single number.,1,2,2,False,64,92,4,0.0706
+000000000400.jpg,count,dog,How many dogs are in the image? Answer with a single number.,1,1,1,True,64,92,4,0.0671
+000000000404.jpg,count,boat,How many boats are in the image? Answer with a single number.,5,3,3,False,70,98,4,0.069
+000000000415.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,66,94,4,0.0688
+000000000415.jpg,count,tennis racket,How many tennis rackets are in the image? Answer with a single number.,1,1,1,True,66,96,4,0.0685
+000000000419.jpg,count,car,How many cars are in the image? Answer with a single number.,3,0,0,False,70,98,4,0.0701
+000000000419.jpg,count,person,How many people are in the image? Answer with a single number.,2,2,2,True,70,98,4,0.0691
+000000000419.jpg,count,sports ball,How many balls are in the image? Answer with a single number.,1,0,0,False,70,98,4,0.0697
+000000000419.jpg,count,tennis racket,How many tennis rackets are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0695
+000000000428.jpg,count,cake,How many cakes are in the image? Answer with a single number.,1,1,1,True,66,94,4,0.0689
+000000000428.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,66,94,4,0.0698
+000000000428.jpg,count,tie,How many ties are in the image? Answer with a single number.,1,1,1,True,66,94,4,0.0692
+000000000431.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,66,94,4,0.0702
+000000000431.jpg,count,sports ball,How many balls are in the image? Answer with a single number.,1,1,1,True,66,94,4,0.0695
+000000000431.jpg,count,tennis racket,How many tennis rackets are in the image? Answer with a single number.,1,1,1,True,66,96,4,0.0691
+000000000436.jpg,count,donut,How many donuts are in the image? Answer with a single number.,1,0,0,False,70,99,4,0.069
+000000000436.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0695
+000000000443.jpg,count,cat,How many cats are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0696
+000000000443.jpg,count,couch,How many couches are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0692
+000000000443.jpg,count,person,How many people are in the image? Answer with a single number.,3,3,3,True,70,98,4,0.0697
+000000000443.jpg,count,remote,How many remotes are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0692
+000000000446.jpg,count,couch,How many couches are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0701
+000000000446.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0686
+000000000446.jpg,count,potted plant,How many potted plants are in the image? Answer with a single number.,3,2,2,False,70,100,4,0.07
+000000000446.jpg,count,remote,How many remotes are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0695
+000000000450.jpg,count,cup,How many cups are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0704
+000000000450.jpg,count,dining table,How many dining tables are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0706
+000000000450.jpg,count,pizza,How many pizzas are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.07
+000000000450.jpg,count,wine glass,How many wine glasses are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0696
+000000000459.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0677
+000000000459.jpg,count,tie,How many ties are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0681
+000000000471.jpg,count,bus,How many buses are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0694
+000000000471.jpg,count,person,How many people are in the image? Answer with a single number.,1,0,0,False,70,98,4,0.0693
+000000000472.jpg,count,airplane,How many airplanes are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0694
+000000000474.jpg,count,baseball glove,How many baseball gloves are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0691
+000000000474.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0698
+000000000486.jpg,count,bottle,How many bottles are in the image? Answer with a single number.,3,1,1,False,70,98,4,0.0693
+000000000486.jpg,count,bowl,How many bowls are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.07
+000000000486.jpg,count,knife,How many knives are in the image? Answer with a single number.,2,0,0,False,70,98,4,0.0699
+000000000486.jpg,count,oven,How many ovens are in the image? Answer with a single number.,1,2,2,False,70,99,4,0.0711
+000000000486.jpg,count,refrigerator,How many refrigerators are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0713
+000000000488.jpg,count,baseball bat,How many baseball bats are in the image? Answer with a single number.,1,1,1,True,60,89,4,0.0675
+000000000488.jpg,count,baseball glove,How many baseball gloves are in the image? Answer with a single number.,2,1,1,False,60,89,4,0.0681
+000000000488.jpg,count,person,How many people are in the image? Answer with a single number.,6,5,5,False,60,88,4,0.0673
+000000000488.jpg,count,sports ball,How many balls are in the image? Answer with a single number.,1,1,1,True,60,88,4,0.0678
+000000000490.jpg,count,dog,How many dogs are in the image? Answer with a single number.,1,1,1,True,64,92,4,0.0676
+000000000490.jpg,count,skateboard,How many skateboards are in the image? Answer with a single number.,1,1,1,True,64,93,4,0.0682
+000000000491.jpg,count,teddy bear,How many teddy bears are in the image? Answer with a single number.,4,3,3,False,60,90,4,0.0672
+000000000502.jpg,count,bear,How many bears are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0699
+000000000510.jpg,count,bench,How many benches are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0691
+000000000510.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0698
+000000000510.jpg,count,traffic light,How many traffic lights are in the image? Answer with a single number.,1,0,0,False,70,99,4,0.0697
+000000000514.jpg,count,bed,How many beds are in the image? Answer with a single number.,1,1,1,True,66,94,4,0.0691
+000000000520.jpg,count,person,How many people are in the image? Answer with a single number.,3,0,0,False,70,98,4,0.0725
+000000000529.jpg,count,motorcycle,How many motorcycles are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.068
+000000000529.jpg,count,person,How many people are in the image? Answer with a single number.,2,2,2,True,70,98,4,0.0689
+000000000531.jpg,count,bicycle,How many bicycles are in the image? Answer with a single number.,3,0,0,False,70,98,4,0.0691
+000000000531.jpg,count,sports ball,How many balls are in the image? Answer with a single number.,1,0,0,False,70,98,4,0.0693
+000000000531.jpg,count,tennis racket,How many tennis rackets are in the image? Answer with a single number.,3,1,1,False,70,100,4,0.0691
+000000000532.jpg,count,bus,How many buses are in the image? Answer with a single number.,2,2,2,True,70,98,4,0.0698
+000000000532.jpg,count,handbag,How many handbags are in the image? Answer with a single number.,2,0,0,False,70,99,4,0.0693
+000000000532.jpg,count,person,How many people are in the image? Answer with a single number.,4,3,3,False,70,98,4,0.0694
+000000000536.jpg,count,cell phone,How many cell phones are in the image? Answer with a single number.,3,2,2,False,70,99,4,0.0702
+000000000536.jpg,count,chair,How many chairs are in the image? Answer with a single number.,2,3,3,False,70,98,4,0.0692
+000000000536.jpg,count,handbag,How many handbags are in the image? Answer with a single number.,3,1,1,False,70,99,4,0.0697
+000000000536.jpg,count,person,How many people are in the image? Answer with a single number.,3,3,3,True,70,98,4,0.0712
+000000000540.jpg,count,airplane,How many airplanes are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0718
+000000000540.jpg,count,bus,How many buses are in the image? Answer with a single number.,2,1,1,False,70,98,4,0.0686
+000000000540.jpg,count,traffic light,How many traffic lights are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0692
+000000000540.jpg,count,truck,How many trucks are in the image? Answer with a single number.,3,1,1,False,70,98,4,0.0691
+000000000542.jpg,count,airplane,How many airplanes are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0674
+000000000542.jpg,count,handbag,How many handbags are in the image? Answer with a single number.,3,0,0,False,63,92,4,0.0678
+000000000542.jpg,count,tie,How many ties are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0677
+000000000544.jpg,count,baseball bat,How many baseball bats are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0691
+000000000544.jpg,count,baseball glove,How many baseball gloves are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0695
+000000000544.jpg,count,sports ball,How many balls are in the image? Answer with a single number.,1,0,0,False,70,98,4,0.0695
+000000000560.jpg,count,cell phone,How many cell phones are in the image? Answer with a single number.,1,0,0,False,70,99,4,0.0696
+000000000560.jpg,count,potted plant,How many potted plants are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0695
+000000000560.jpg,count,sink,How many sinks are in the image? Answer with a single number.,2,1,1,False,70,98,4,0.0718
+000000000560.jpg,count,toilet,How many toilets are in the image? Answer with a single number.,1,0,0,False,70,98,4,0.0715
+000000000562.jpg,count,cup,How many cups are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0699
+000000000562.jpg,count,toothbrush,How many toothbrushes are in the image? Answer with a single number.,3,2,2,False,70,100,4,0.0701
+000000000564.jpg,count,person,How many people are in the image? Answer with a single number.,2,2,2,True,63,91,4,0.0673
+000000000564.jpg,count,tennis racket,How many tennis rackets are in the image? Answer with a single number.,1,1,1,True,63,93,4,0.0678
+000000000569.jpg,count,kite,How many kites are in the image? Answer with a single number.,4,3,3,False,70,99,4,0.0691
+000000000569.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0699
+000000000572.jpg,count,person,How many people are in the image? Answer with a single number.,2,2,2,True,70,98,4,0.0694
+000000000572.jpg,count,suitcase,How many suitcases are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0695
+000000000575.jpg,count,cat,How many cats are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0678
+000000000581.jpg,count,dog,How many dogs are in the image? Answer with a single number.,1,1,1,True,64,92,4,0.0678
+000000000584.jpg,count,bowl,How many bowls are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0694
+000000000584.jpg,count,broccoli,How many pieces of broccoli are in the image? Answer with a single number.,2,0,0,False,70,100,4,0.0705
+000000000584.jpg,count,spoon,How many spoons are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0713
+000000000589.jpg,count,frisbee,How many frisbees are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0703
+000000000589.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0714
+000000000590.jpg,count,bowl,How many bowls are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0685
+000000000590.jpg,count,sink,How many sinks are in the image? Answer with a single number.,1,1,1,True,63,91,4,0.0675
+000000000595.jpg,count,tv,How many TVs are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0697
+000000000599.jpg,count,cat,How many cats are in the image? Answer with a single number.,1,1,1,True,60,88,4,0.0677
+000000000599.jpg,count,couch,How many couches are in the image? Answer with a single number.,1,1,1,True,60,88,4,0.068
+000000000599.jpg,count,potted plant,How many potted plants are in the image? Answer with a single number.,1,1,1,True,60,90,4,0.0675
+000000000599.jpg,count,remote,How many remotes are in the image? Answer with a single number.,2,2,2,True,60,89,4,0.0682
+000000000605.jpg,count,cup,How many cups are in the image? Answer with a single number.,2,2,2,True,70,98,4,0.0703
+000000000605.jpg,count,dining table,How many dining tables are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0684
+000000000605.jpg,count,spoon,How many spoons are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0697
+000000000612.jpg,count,bed,How many beds are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0693
+000000000620.jpg,count,pizza,How many pizzas are in the image? Answer with a single number.,1,3,3,False,70,98,4,0.0706
+000000000620.jpg,count,refrigerator,How many refrigerators are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0701
+000000000623.jpg,count,bench,How many benches are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0698
+000000000623.jpg,count,chair,How many chairs are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.07
+000000000623.jpg,count,person,How many people are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.069
+000000000623.jpg,count,teddy bear,How many teddy bears are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0696
+000000000625.jpg,count,frisbee,How many frisbees are in the image? Answer with a single number.,1,1,1,True,70,100,4,0.0691
+000000000625.jpg,count,person,How many people are in the image? Answer with a single number.,3,3,3,True,70,98,4,0.0693
+000000000626.jpg,count,clock,How many clocks are in the image? Answer with a single number.,2,2,2,True,70,98,4,0.0708
+000000000629.jpg,count,motorcycle,How many motorcycles are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0701
+000000000634.jpg,count,person,How many people are in the image? Answer with a single number.,5,3,3,False,70,98,4,0.0704
+000000000634.jpg,count,skateboard,How many skateboards are in the image? Answer with a single number.,1,1,1,True,70,99,4,0.0691
+000000000636.jpg,count,toilet,How many toilets are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0697
+000000000641.jpg,count,bicycle,How many bicycles are in the image? Answer with a single number.,2,0,0,False,70,98,4,0.0695
+000000000641.jpg,count,bus,How many buses are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.07
+000000000643.jpg,count,bottle,How many bottles are in the image? Answer with a single number.,2,1,1,False,70,98,4,0.0703
+000000000643.jpg,count,bowl,How many bowls are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0695
+000000000643.jpg,count,mouse,How many computer mice are in the image? Answer with a single number.,1,0,0,False,70,99,4,0.0697
+000000000643.jpg,count,teddy bear,How many teddy bears are in the image? Answer with a single number.,2,1,1,False,70,100,4,0.0697
+000000000643.jpg,count,tv,How many TVs are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0702
+000000000650.jpg,count,car,How many cars are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0696
+000000000650.jpg,count,cat,How many cats are in the image? Answer with a single number.,1,1,1,True,70,98,4,0.0702
+000000000064.jpg,spatial,car vs clock,Is the car above or below the clock in the image? Answer with one word: above or below.,below,above,above,False,70,105,4,0.0706
+000000000094.jpg,spatial,truck vs car,Is the truck to the left or to the right of the car in the image? Answer with one word: left or right.,right,right,right,True,70,110,4,0.0699
+000000000127.jpg,spatial,potted plant vs person,Is the potted plant to the left or to the right of the person in the image? Answer with one word: left or right.,left,left,left,True,63,105,4,0.0688
+000000000127.jpg,spatial,person vs knife,Is the person above or below the knife in the image? Answer with one word: above or below.,above,above,above,True,63,98,4,0.0688
+000000000138.jpg,spatial,potted plant vs refrigerator,Is the potted plant to the left or to the right of the refrigerator in the image? Answer with one word: left or right.,right,right,right,True,72,114,4,0.0707
+000000000138.jpg,spatial,clock vs sink,Is the clock above or below the sink in the image? Answer with one word: above or below.,above,above,above,True,72,107,4,0.0705
+000000000142.jpg,spatial,bottle vs sandwich,Is the bottle above or below the sandwich in the image? Answer with one word: above or below.,above,above,above,True,70,105,4,0.0694
+000000000151.jpg,spatial,person vs stop sign,Is the person to the left or to the right of the stop sign in the image? Answer with one word: left or right.,right,right,right,True,70,111,4,0.0701
+000000000151.jpg,spatial,person vs stop sign,Is the person above or below the stop sign in the image? Answer with one word: above or below.,above,above,above,True,70,106,4,0.0717
+000000000164.jpg,spatial,chair vs refrigerator,Is the chair to the left or to the right of the refrigerator in the image? Answer with one word: left or right.,left,left,left,True,70,110,4,0.0697
+000000000164.jpg,spatial,dining table vs microwave,Is the dining table above or below the microwave in the image? Answer with one word: above or below.,below,above,above,False,70,106,4,0.0698
+000000000241.jpg,spatial,handbag vs bottle,Is the handbag to the left or to the right of the bottle in the image? Answer with one word: left or right.,right,right,right,True,70,111,4,0.0696
+000000000241.jpg,spatial,bottle vs remote,Is the bottle above or below the remote in the image? Answer with one word: above or below.,below,above,above,False,70,105,4,0.0697
+000000000260.jpg,spatial,car vs bus,Is the car to the left or to the right of the bus in the image? Answer with one word: left or right.,right,left,left,False,70,110,4,0.0702
+000000000294.jpg,spatial,clock vs fork,Is the clock to the left or to the right of the fork in the image? Answer with one word: left or right.,left,left,left,True,70,110,4,0.0698
+000000000294.jpg,spatial,microwave vs clock,Is the microwave above or below the clock in the image? Answer with one word: above or below.,below,below,below,True,70,105,4,0.0705
+000000000307.jpg,spatial,car vs frisbee,Is the car above or below the frisbee in the image? Answer with one word: above or below.,above,above,above,True,70,106,4,0.0693
+000000000308.jpg,spatial,clock vs umbrella,Is the clock to the left or to the right of the umbrella in the image? Answer with one word: left or right.,right,left,left,False,70,110,4,0.0696
+000000000308.jpg,spatial,umbrella vs clock,Is the umbrella above or below the clock in the image? Answer with one word: above or below.,above,above,above,True,70,105,4,0.0699
+000000000328.jpg,spatial,cell phone vs book,Is the cell phone to the left or to the right of the book in the image? Answer with one word: left or right.,right,left,left,False,63,104,4,0.0694
+000000000328.jpg,spatial,cell phone vs car,Is the cell phone above or below the car in the image? Answer with one word: above or below.,below,above,above,False,63,99,4,0.0694
+000000000338.jpg,spatial,oven vs handbag,Is the oven to the left or to the right of the handbag in the image? Answer with one word: left or right.,left,left,left,True,72,113,4,0.0701
+000000000338.jpg,spatial,clock vs oven,Is the clock above or below the oven in the image? Answer with one word: above or below.,above,above,above,True,72,107,4,0.07
+000000000382.jpg,spatial,backpack vs skis,Is the backpack above or below the skis in the image? Answer with one word: above or below.,above,above,above,True,70,106,4,0.0694
+000000000384.jpg,spatial,clock vs mouse,Is the clock to the left or to the right of the mouse in the image? Answer with one word: left or right.,right,left,left,False,70,110,4,0.0695
+000000000384.jpg,spatial,laptop vs clock,Is the laptop above or below the clock in the image? Answer with one word: above or below.,below,above,above,False,70,105,4,0.0696
+000000000397.jpg,spatial,fork vs person,Is the fork to the left or to the right of the person in the image? Answer with one word: left or right.,right,left,left,False,70,110,4,0.0694
+000000000397.jpg,spatial,chair vs fork,Is the chair above or below the fork in the image? Answer with one word: above or below.,above,above,above,True,70,105,4,0.0701
+000000000431.jpg,spatial,person vs sports ball,Is the person to the left or to the right of the sports ball in the image? Answer with one word: left or right.,left,left,left,True,66,107,4,0.0699
+000000000446.jpg,spatial,couch vs remote,Is the couch to the left or to the right of the remote in the image? Answer with one word: left or right.,left,left,left,True,70,110,4,0.0698
+000000000446.jpg,spatial,couch vs remote,Is the couch above or below the remote in the image? Answer with one word: above or below.,below,below,below,True,70,105,4,0.0694
+000000000488.jpg,spatial,sports ball vs baseball bat,Is the sports ball to the left or to the right of the baseball bat in the image? Answer with one word: left or right.,right,left,left,False,60,102,4,0.0696
+000000000490.jpg,spatial,skateboard vs dog,Is the skateboard to the left or to the right of the dog in the image? Answer with one word: left or right.,right,right,right,True,64,104,4,0.0694
+000000000510.jpg,spatial,person vs traffic light,Is the person to the left or to the right of the traffic light in the image? Answer with one word: left or right.,right,left,left,False,70,111,4,0.0701
+000000000510.jpg,spatial,bench vs traffic light,Is the bench above or below the traffic light in the image? Answer with one word: above or below.,below,above,above,False,70,106,4,0.07
+000000000540.jpg,spatial,traffic light vs airplane,Is the traffic light above or below the airplane in the image? Answer with one word: above or below.,above,above,above,True,70,106,4,0.0697
+000000000544.jpg,spatial,sports ball vs baseball glove,Is the sports ball to the left or to the right of the baseball glove in the image? Answer with one word: left or right.,right,left,left,False,70,112,4,0.0699
+000000000544.jpg,spatial,baseball glove vs sports ball,Is the baseball glove above or below the sports ball in the image? Answer with one word: above or below.,below,above,above,False,70,107,4,0.0704
+000000000560.jpg,spatial,potted plant vs toilet,Is the potted plant to the left or to the right of the toilet in the image? Answer with one word: left or right.,left,left,left,True,70,112,4,0.0701
+000000000599.jpg,spatial,potted plant vs cat,Is the potted plant to the left or to the right of the cat in the image? Answer with one word: left or right.,right,right,right,True,60,102,4,0.0699
+000000000643.jpg,spatial,bowl vs mouse,Is the bowl above or below the mouse in the image? Answer with one word: above or below.,above,above,above,True,70,105,4,0.0694

@@ -1,0 +1,30 @@
+{
+  "model": "Qwen/Qwen3.5-0.8B",
+  "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "dtype": "bfloat16",
+  "decoding": "greedy, max_new_tokens=16, enable_thinking=False",
+  "max_visual_tokens": 75,
+  "pixel_budget": [
+    65536,
+    76800
+  ],
+  "n_probes": 850,
+  "accuracy": {
+    "count": 0.638,
+    "presence": 0.9379,
+    "spatial": 0.6341
+  },
+  "n": {
+    "count": 326,
+    "presence": 483,
+    "spatial": 41
+  },
+  "mean_visual_tokens": 68.44,
+  "mean_latency_s": 0.07028164705882353,
+  "wall_time_s": 62.4,
+  "weights_mib": 1656.1,
+  "peak_vram_mib": 1705.6,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "torch": "2.11.0+cu128",
+  "transformers": "5.22.2"
+}

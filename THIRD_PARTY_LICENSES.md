@@ -80,3 +80,19 @@ The MIT license of this repository covers only its own code. Every model, datase
 | OpenCV 5.0 (ORB, SIFT, findEssentialMat/USAC_MAGSAC, recoverPose, solvePnPRansac/RefineLM, triangulatePoints, calcOpticalFlowPyrLK) | library | Apache-2.0 | https://github.com/opencv/opencv | SIFT patent expired in 2020; it is in the main package. |
 | NumPy / SciPy / pandas / matplotlib | library | BSD-3-Clause (matplotlib: Matplotlib license, BSD-style) | https://numpy.org, https://scipy.org, https://pandas.pydata.org, https://matplotlib.org | Core stack. |
 | seaborn, rosbags (evo transitive dependencies) | library | BSD-3-Clause / Apache-2.0 | https://pypi.org/project/seaborn/, https://pypi.org/project/rosbags/ | Installed by evo; not imported by project code. |
+
+## 13_vision_language
+
+| Component | Kind | License | Source | Notes |
+|---|---|---|---|---|
+| google/siglip2-base-patch16-224 | model | Apache-2.0 | https://huggingface.co/google/siglip2-base-patch16-224 | revision 75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2 |
+| laion/CLIP-ViT-B-32-laion2B-s34B-b79K (open_clip ViT-B-32 laion2b_s34b_b79k) | model | MIT | https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K | trained on LAION-2B web data; revision 1a25a446712ba5ee05982a381eed697ef9b435cf |
+| florence-community/Florence-2-base | model | MIT | https://huggingface.co/florence-community/Florence-2-base | native transformers port of microsoft/Florence-2-base; revision 00921df66db728a9ceb750f5eca43e5c203a2051 |
+| Qwen/Qwen3.5-0.8B | model | Apache-2.0 | https://huggingface.co/Qwen/Qwen3.5-0.8B | revision 2fc06364715b967f1860aea9cf38778875588b17 |
+| Imagenette-160 (fast.ai) | dataset | **Apache-2.0 (repository); images are an ImageNet subset under the ImageNet terms of access** | https://github.com/fastai/imagenette | NON-COMMERCIAL: ImageNet terms (research/education) apply to the images; shared with project 02 |
+| TUM RGB-D fr1_desk | dataset | CC BY 4.0 | https://cvg.cit.tum.de/data/datasets/rgbd-dataset | attribution required (Sturm et al., IROS 2012); shared dataset |
+| Ultralytics coco128 | dataset | **GPL-3.0 (LICENSE file shipped in the Ultralytics zip); COCO annotations CC BY 4.0; images under their Flickr licenses** | https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128.zip | COPYLEFT packaging; mixed per-image Flickr licenses; COCO train2017 subset (part of Florence-2 training data) |
+| transformers | library | Apache-2.0 | https://github.com/huggingface/transformers |  |
+| open_clip_torch | library | MIT | https://github.com/mlfoundations/open_clip |  |
+| timm | library | Apache-2.0 | https://github.com/huggingface/pytorch-image-models | dependency of open_clip |
+| scikit-learn | library | BSD-3-Clause | https://github.com/scikit-learn/scikit-learn | core stack; used for the logistic-regression probe in the ex01 solution |

@@ -1,0 +1,43 @@
+# Hand-labelled questions about TUM RGB-D fr1_desk frames (robot-workspace scenes).
+# The answers were written by looking at each frame; `kind` decides how a free-text answer
+# is scored in notebooks/03_small_vlm_vqa.ipynb:
+#   presence -> first yes/no word,  count -> first number,  spatial -> first left/right word,
+#   state -> first on/off word,     keyword -> any listed keyword appears in the answer.
+# Frames live in data/tum/fr1_desk/rgbd_dataset_freiburg1_desk/rgb/.
+
+frames:
+  desk_a: 1305031452.791720.png   # frame 0: two monitors, keyboard, mouse, papers
+  desk_b: 1305031455.459589.png   # frame 80: desk overview with books, phone, keyboard, mug
+  desk_c: 1305031460.791660.png   # frame 240: laptop (screen on), keyboard, mouse on a mouse pad
+  desk_d: 1305031467.459692.png   # frame 440: wide view, three monitors, chair, plush toy
+  desk_e: 1305031471.459647.png   # frame 560: close-up: book, telephone, game controller
+
+questions:
+  - {frame: desk_a, kind: count, truth: 2,
+     question: "How many computer monitors are in the image? Answer with a single number."}
+  - {frame: desk_a, kind: presence, truth: true,
+     question: "Is there a computer mouse in the image? Answer yes or no."}
+  - {frame: desk_b, kind: presence, truth: true,
+     question: "Is there a coffee mug in the image? Answer yes or no."}
+  - {frame: desk_b, kind: spatial, truth: right,
+     question: "Is the keyboard to the left or to the right of the telephone? Answer with one word: left or right."}
+  - {frame: desk_c, kind: state, truth: "on",
+     question: "Is the laptop screen switched on or off? Answer with one word: on or off."}
+  - {frame: desk_c, kind: spatial, truth: left,
+     question: "Is the laptop to the left or to the right of the computer mouse? Answer with one word: left or right."}
+  - {frame: desk_c, kind: count, truth: 1,
+     question: "How many laptops are in the image? Answer with a single number."}
+  - {frame: desk_d, kind: count, truth: 3,
+     question: "How many computer monitors are in the image? Answer with a single number."}
+  - {frame: desk_d, kind: presence, truth: false,
+     question: "Is there a cat in the image? Answer yes or no."}
+  - {frame: desk_e, kind: keyword, truth: ["multiple view geometry"],
+     question: "What is the title of the blue book on the left? Answer with the title only."}
+  - {frame: desk_e, kind: presence, truth: false,
+     question: "Is there a laptop in the image? Answer yes or no."}
+  - {frame: desk_e, kind: presence, truth: true,
+     question: "Is there a game controller in the image? Answer yes or no."}
+  - {frame: desk_e, kind: spatial, truth: right,
+     question: "Is the game controller to the left or to the right of the blue book? Answer with one word: left or right."}
+  - {frame: desk_e, kind: keyword, truth: ["phone"],
+     question: "A robot is asked to bring the object used for making phone calls. Which object on the desk should it pick up? Answer in a few words."}

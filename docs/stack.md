@@ -82,3 +82,17 @@ Versions below were installed and verified in the `cv` environment (Ubuntu 24.04
 | evo | 1.38.1 | pip install -c requirements/constraints.txt evo==1.38.1 (make setup-12_visual_odometry; already installed, verified no-op, pip check clean). Source: https://pypi.org/project/evo/ (checked 2026-11-07) |
 | opencv-python (core stack) | 5.0.0.93 | requirements/base.txt. Source: https://pypi.org/project/opencv-python/ (checked 2026-11-07) |
 | TUM RGB-D fr1/xyz + fr1/desk | freiburg1 sequences (~0.45 GB + ~0.34 GB tgz) | make data-12_visual_odometry (scripts/download_12_visual_odometry.py -> scripts/download_shared.tum()). Source: https://cvg.cit.tum.de/rgbd/dataset/freiburg1/ (checked 2026-11-07) |
+
+## 13_vision_language (checked 2026-11-08)
+
+| Package / model | Version | Install / source |
+|---|---|---|
+| transformers | 5.22.2 | pip install -c requirements/constraints.txt transformers==5.22.2 (make setup-13_vision_language). Source: https://pypi.org/project/transformers/ (checked 2026-11-08) |
+| open_clip_torch | 4.2.1 | pip install -c requirements/constraints.txt open_clip_torch==4.2.1 (make setup-13_vision_language). Source: https://pypi.org/project/open-clip-torch/ (checked 2026-11-08) |
+| timm | 1.0.31 | pip install -c requirements/constraints.txt timm==1.0.31 (make setup-13_vision_language). Source: https://pypi.org/project/timm/ (checked 2026-11-08) |
+| google/siglip2-base-patch16-224 | rev 75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2 (1.4 GB snapshot) | make data-13_vision_language (HF hub, pinned in projects/13_vision_language/configs/models.yaml). Source: https://huggingface.co/google/siglip2-base-patch16-224 (checked 2026-11-08) |
+| laion/CLIP-ViT-B-32-laion2B-s34B-b79K | rev 1a25a446712ba5ee05982a381eed697ef9b435cf (577 MB, open_clip_model.safetensors) | make data-13_vision_language (HF hub, pinned). Source: https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K (checked 2026-11-08) |
+| florence-community/Florence-2-base | rev 00921df66db728a9ceb750f5eca43e5c203a2051 (447 MB) | make data-13_vision_language (HF hub, pinned); Florence2ForConditionalGeneration, no trust_remote_code. Source: https://huggingface.co/florence-community/Florence-2-base (checked 2026-11-08) |
+| Qwen/Qwen3.5-0.8B | rev 2fc06364715b967f1860aea9cf38778875588b17 (1.6 GB bf16) | make data-13_vision_language (HF hub, pinned); Qwen3_5ForConditionalGeneration, native in transformers 5.22. Source: https://huggingface.co/Qwen/Qwen3.5-0.8B (checked 2026-11-08) |
+| Ultralytics coco128 | assets v0.0.0 (128 images, 929 boxes) | make data-13_vision_language -> data/ultralytics/coco128. Source: https://github.com/ultralytics/assets/releases/download/v0.0.0/coco128.zip (checked 2026-11-08) |
+| Imagenette-160 + TUM RGB-D fr1_desk | imagenette2-160; rgbd_dataset_freiburg1_desk | make data-13_vision_language (calls scripts/download_shared.py imagenette() and tum('fr1_desk')). Source: https://github.com/fastai/imagenette, https://cvg.cit.tum.de/data/datasets/rgbd-dataset (checked 2026-11-08) |
